@@ -8,7 +8,7 @@ const servicesList = [
   { name: "SEO Optimization", link: "/seo" },
   { name: "Mobile Application Development", link: "/mobile-application" },
   { name: "Web & APP Development", link: "/web-development" },
-  { name: "Video Editing & Motion Graphic", link: "/motion-graphic" },
+  { name: "Video Editing & Motion Graphic", link: "/video-editing" },
   { name: "UI/UX Design", link: "/ui-ux" },
   { name: "Social Media", link: "/social-media" },
   { name: "Content Writer", link: "/content-writer" },
