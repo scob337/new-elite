@@ -3,6 +3,7 @@ import Layout from "@/layout";
 import JeenaAccordion from "@/src/components/JeenaAccordion";
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
+import Head from 'next/head';
 
 const ServiceDetails = () => {
   const accordionTitle = [
@@ -31,6 +32,17 @@ const ServiceDetails = () => {
   ]
   return (
     <Layout>
+      <Head>
+          <title>Elite-Agency | Content Writing</title>
+          <meta name="description" content="هذا وصف لصفحتك الرائعة." />
+          <meta name="keywords" content="Next.js, React, SEO, تطوير ويب" />
+          <meta name="author" content="اسمك" />
+          <meta property="og:title" content="صفحة رئيسية رائعة" />
+          <meta property="og:description" content="هذا وصف لصفحتك الرائعة." />
+          <meta property="og:image" content="/path-to-your-image.jpg" />
+          <meta property="og:url" content="https://yourwebsite.com" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </Head>
       <PageBanner pageName={"Content Writing"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
