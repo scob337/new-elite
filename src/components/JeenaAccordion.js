@@ -1,4 +1,4 @@
-import { Fragment, useCallback, useState } from "react";
+import {  useCallback, useState } from "react";
 import { Accordion } from "react-bootstrap";
 
 const JeenaAccordion = ({ defaultActive = 1, accordionsTitle = [], accordionContent = [] }) => {
@@ -46,4 +46,4 @@ const JeenaAccordion = ({ defaultActive = 1, accordionsTitle = [], accordionCont
   );
 };
 
-export { JeenaAccordion };
+export default JeenaAccordion ;
