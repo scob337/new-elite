@@ -1,0 +1,154 @@
+import PageBanner from "@/components/PageBanner";
+import Layout from "@/layout";
+import { JeenaAccordion } from "@/src/components/JeenaAccordion";
+import ServiceAside from "@/src/components/ServiceAside";
+import Link from "next/link";
+
+const GraphicDesign = () => {
+  const accordionTitle = [
+    { id: 1, title: "Why Choose Our Graphic Design Services?" },
+    { id: 2, title: "How Our Designers Create Stunning Visuals?" },
+    { id: 3, title: "Our Proven Graphic Design Process for Effective Results" },
+    { id: 4, title: "Affordable Graphic Design Packages and Solutions" },
+  ];
+  const accordionContent = [
+    {
+      id: 1,
+      content: "Our graphic design services are focused on creating visually appealing and impactful designs that communicate your brand’s message effectively. We work on a variety of design projects, including logo design, branding, brochures, websites, and social media visuals."
+    },
+    {
+      id: 2,
+      content: "Our team of expert designers uses the latest design tools and techniques to create custom, high-quality visuals. Whether it's crafting a unique logo, designing a stunning website, or creating eye-catching marketing materials, we ensure that your designs leave a lasting impression on your audience."
+    },
+    {
+      id: 3,
+      content: "Our design process begins with understanding your business and goals. We collaborate closely with you to ensure the designs reflect your vision. From initial sketches to final designs, we focus on every detail to ensure your project exceeds expectations."
+    },
+    {
+      id: 4,
+      content: "We offer flexible and affordable pricing for our graphic design services, providing solutions that fit your business’s budget. Whether you're a startup or a large corporation, our services are tailored to meet your specific design needs."
+    }
+  ];
+
+  return (
+    <Layout>
+      <PageBanner pageName={"Graphic Design Services"} />
+      <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
+        <div className="container">
+          <div className="row gap-100">
+            <div className="col-lg-8">
+              <div className="service-details-content">
+                <div className="section-title mb-30">
+                  <h2>Expert Graphic Design Services to Elevate Your Brand</h2>
+                </div>
+                <p>
+                  At Elite, we specialize in delivering professional graphic design services that enhance your brand’s identity. Whether you need a new logo, a complete brand overhaul, or creative visuals for your marketing campaigns, our designs are crafted to tell your story and captivate your audience.
+                </p>
+                <div className="image my-40 wow fadeInUp delay-0-2s">
+                  <img
+                    src="assets/images/services/service-details.jpg"
+                    alt="Graphic Design Services"
+                  />
+                </div>
+                <div className="row">
+                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                    <h3>Why Graphic Design is Essential for Your Brand</h3>
+                  </div>
+                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                    <ul className="list-style-one">
+                      <li>Enhance Your Brand’s Identity and Recognition</li>
+                      <li>Create Visually Stunning and Effective Marketing Materials</li>
+                      <li>Attract and Engage Your Target Audience</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="row pb-30">
+                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                    <p>
+                      Graphic design is more than just creating pretty visuals; it's about strategically using design to communicate your brand’s message and resonate with your audience. Whether for print or digital media, our designs help you stand out and leave a lasting impression.
+                    </p>
+                  </div>
+                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                    <div className="image">
+                      <img
+                        src="assets/images/services/service-middle.jpg"
+                        alt="Graphic Design Process"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <h3>Our Graphic Design Strategy and Process</h3>
+                <p>
+                  We approach each design project with a strategic mindset. Our process includes understanding your brand, defining your objectives, and crafting designs that align with your business goals. We pay attention to every detail, ensuring that the final design is visually compelling and effectively communicates your message.
+                </p>
+                <div
+                  className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
+                  id="faq-accordion"
+                >
+                  <JeenaAccordion accordionsTitle={accordionTitle} accordionContent={accordionContent} />
+                </div>
+              </div>
+            </div>
+
+            <ServiceAside />
+          </div>
+        </div>
+      </section>
+
+      <div className="next-prev-service pb-80 rpb-50">
+        <div className="container">
+          <hr />
+          <div className="next-prev-service mt-80">
+            <div className="next-prev-item wow fadeInLeft delay-0-2s">
+              <div className="image">
+                <img
+                  src="assets/images/services/service-prev.jpg"
+                  alt="Content Writing"
+                />
+              </div>
+              <div className="content">
+                <h4>
+                  <Link legacyBehavior href="/content-writing">
+                    Content Writing
+                  </Link>
+                </h4>
+                <Link legacyBehavior href="/content-writing">
+                  <a className="read-more">
+                    Read More <i className="fal fa-angle-double-right" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+
+            <Link legacyBehavior href="/services">
+              <a className="show-all" />
+            </Link>
+
+            <div className="next-prev-item wow fadeInRight delay-0-2s">
+              <div className="content">
+                <h4>
+                  <Link legacyBehavior href="/graphic-design">
+                    Graphic Design
+                  </Link>
+                </h4>
+                <Link legacyBehavior href="/graphic-design">
+                  <a className="read-more">
+                    Read More <i className="fal fa-angle-double-right" />
+                  </a>
+                </Link>
+              </div>
+              <div className="image">
+                <img
+                  src="assets/images/services/service-next.jpg"
+                  alt="Graphic Design Services"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default GraphicDesign;

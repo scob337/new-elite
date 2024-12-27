@@ -1,0 +1,73 @@
+import Link from "next/link";
+
+const projects = [
+    {
+      id: 1,
+      image: "assets/images/projects/project1.jpg",
+      title: "Mobile Application Development",
+      description:
+        "We develop cross-platform mobile applications that provide seamless user experiences.",
+      link: "/mobile-application",
+      delay: "0-2s",
+    },
+    {
+      id: 2,
+      image: "assets/images/projects/project2.jpg",
+      title: "Web Design & Development",
+      description:
+        "We create responsive websites with modern designs to enhance your business presence.",
+      link: "/web-development",
+      delay: "0-4s",
+    },
+    {
+      id: 3,
+      image: "assets/images/projects/project3.jpg",
+      title: "Social Media Marketing",
+      description:
+        "Maximize your brand’s presence through effective social media marketing strategies.",
+      link: "/social-media",
+      delay: "0-6s",
+    },
+    {
+      id: 4,
+      image: "assets/images/projects/project4.jpg",
+      title: "Digital Marketing & SEO",
+      description:
+        "Boost your website traffic and online visibility with tailored digital marketing strategies.",
+      link: "/digital-marketing",
+      delay: "0-8s",
+    },
+  ];
+  
+  export default function ProjectArea() {
+    return (
+      <section className="project-area-two">
+        <div className="container-fluid gap-wide">
+          <div className="row no-gap justify-content-center">
+            {projects.map((project) => (
+              <div key={project.id} className="col-xl-3 col-lg-4 col-sm-6">
+                <div
+                  className={`project-item wow fadeInUp delay-${project.delay}`}
+                >
+                  <div className="image">
+                    <img src={project.image} alt="Project" />
+                  </div>
+                  <div className="content">
+                    <span className="number">{`0${project.id}`}</span>
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <Link legacyBehavior href={project.link}>
+                      <a className="theme-btn">
+                        View Details <i className="fas fa-long-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+  
