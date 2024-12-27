@@ -4,7 +4,7 @@ import { Fragment } from "react";
 const E404 = () => {
   return (
     <Fragment>
-      <section className="error-page-area py-80">
+      <section className="error-page-area py-20">
         <div className="container">
           <div className="error-page-content text-center">
             <div className="logo w-75 mb-75 rmb-35 mx-auto wow fadeInUp delay-0-2s">
@@ -34,7 +34,7 @@ const E404 = () => {
               </div>
             </div>
             <div className="btn-social pt-15 wow fadeInUp delay-0-4s">
-              <Link legacyBehavior legacyBehavior href="/">
+              <Link legacyBehavior  href="/">
                 <a className="theme-btn mb-30 mx-2">
                   Go to Home <i className="fas fa-long-arrow-right" />
                 </a>

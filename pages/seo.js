@@ -1,6 +1,6 @@
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
-import {JeenaAccordion} from "@/src/components/JeenaAccordion";
+import JeenaAccordion from "@/src/components/JeenaAccordion";
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 
