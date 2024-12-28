@@ -3185,7 +3185,7 @@ h6, .h6 {
 /** Header Main Menu **/
 @media only screen and (max-width: 991px) {
   .main-menu {
-    width: 100%; } }
+    width: 40; } }
 
 .main-menu .mobile-logo {
   margin-right: auto; }
@@ -3351,7 +3351,8 @@ h6, .h6 {
 
 .main-menu .navbar-header {
   display: none; }
-  @media only screen and (max-width: 991px) {
+
+  @media (max-width: 989px) {
     .main-menu .navbar-header {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3367,6 +3368,7 @@ h6, .h6 {
     padding: 4px 0;
     cursor: pointer;
     background: transparent; }
+
     .main-menu .navbar-header .navbar-toggle .icon-bar {
       background: var(--base-color);
       height: 2px;
@@ -3385,9 +3387,17 @@ h6, .h6 {
   .menu-btns .theme-btn {
     padding-top: 9px;
     padding-bottom: 9px; }
-    @media only screen and (max-width: 1199px) {
+    
+    @media(max-width: 989px) {
       .menu-btns .theme-btn {
-        display: none; } }
+        display: none; } 
+
+      }
+      @media(min-width: 992px) {
+        .navbar-toggle {
+          display: none !important; } 
+  
+        }
 
 /* Header Search */
 .nav-search {
@@ -3681,6 +3691,18 @@ h6, .h6 {
   .main-header.header-two .main-menu .mobile-logo {
     max-width: 135px; } }
 
+    @media only screen and (min-width:992px) {
+      .main-header.header-two .main-menu .mobile-logo {
+        display:none;
+      } 
+      .mobile-menu .accordion{
+        display: flex !important
+        ;
+            flex-direction: row-reverse !important;
+      }
+    }
+
+    
 @media only screen and (max-width: 1199px) {
   .main-header.header-two .nav-search {
     margin-right: 0; } }
@@ -3719,6 +3741,7 @@ h6, .h6 {
   .main-header.header-four .menu-btns {
     margin-left: 25px; } }
 
+    
 /*******************************************************/
 /******************** ## Hero Area ********************/
 /*******************************************************/

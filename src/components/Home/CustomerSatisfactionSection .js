@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const customerSatisfactionContent = {
     title: "Guaranteed Customer Satisfaction",
@@ -22,6 +22,7 @@ const customerSatisfactionContent = {
   };
   
   const CustomerSatisfactionSection = () => {
+    const { t } = useTranslation();
     return (
       <section className="customer-satisfaction-area py-100 rpy-70 rel z-1">
         <div className="container">
@@ -29,8 +30,8 @@ const customerSatisfactionContent = {
             <div className="col-xl-5 col-lg-6">
               <div className="cs-content-part rmb-35 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-15">
-                  <span className="sub-title mb-15">{customerSatisfactionContent.title}</span>
-                  <h2>{customerSatisfactionContent.subtitle}</h2>
+                  <span className="sub-title mb-15">{t(customerSatisfactionContent.title)}</span>
+                  <h2>{t(customerSatisfactionContent.subtitle)}</h2>
                 </div>
                 <p>{customerSatisfactionContent.description}</p>
                 <div className="row pt-15">
@@ -41,7 +42,7 @@ const customerSatisfactionContent = {
                           <i className={service.icon} />
                         </div>
                         <h4>
-                            {service.title}
+                            {t(service.title)}
                         </h4>
                       </div>
                     </div>
@@ -62,7 +63,7 @@ const customerSatisfactionContent = {
                   <img src={customerSatisfactionContent.image} alt="Satisfaction" />
                 </div>
                 <div className="experience-years">
-                  <h4>{customerSatisfactionContent.experienceYears}</h4>
+                  <h4>{t(customerSatisfactionContent.experienceYears)}</h4>
                   <img
                     src={customerSatisfactionContent.authorImage}
                     alt="Author"

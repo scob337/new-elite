@@ -4,7 +4,9 @@ import JeenaAccordion from "@/src/components/JeenaAccordion";
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
+import { useTranslation } from "react-i18next";
 const UIUXDesign = () => {
+  const { t } = useTranslation();
   const accordionTitle = [
     { id: 1, title: "Why Choose Our UI/UX Design Services?" },
     { id: 2, title: "How Our UI/UX Designers Create Intuitive Experiences?" },
@@ -50,10 +52,10 @@ const UIUXDesign = () => {
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Professional UI/UX Design Services to Enhance User Experience</h2>
+                  <h2>{t('Professional UI/UX Design Services to Enhance User Experience')}</h2>
                 </div>
                 <p>
-                  At Elite, we specialize in creating beautiful and intuitive user interfaces and experiences. Our UI/UX design services include user research, wireframing, prototyping, and usability testing to ensure your digital products engage users and meet their needs.
+                  {t('At Elite, we specialize in creating beautiful and intuitive user interfaces and experiences. Our UI/UX design services include user research, wireframing, prototyping, and usability testing to ensure your digital products engage users and meet their needs.')}
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
@@ -63,20 +65,20 @@ const UIUXDesign = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>Why UI/UX Design is Crucial for Your Digital Product</h3>
+                    <h3>{t('Why UI/UX Design is Crucial for Your Digital Product')}</h3>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
-                      <li>Improve User Engagement and Retention</li>
-                      <li>Create Visually Appealing and Functional Designs</li>
-                      <li>Enhance Usability and Accessibility</li>
+                      <li>{t('Improve User Engagement and Retention')}</li>
+                      <li>{t('Create Visually Appealing and Functional Designs')}</li>
+                      <li>{t('Enhance Usability and Accessibility')}</li>
                     </ul>
                   </div>
                 </div>
                 <div className="row pb-30">
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
-                      A well-designed UI/UX is essential for making a positive first impression with your users. Whether you're developing a website, mobile app, or web application, our team ensures your product is easy to use and visually appealing, helping you achieve higher user satisfaction and better conversion rates.
+                      {t('A well-designed UI/UX is essential for making a positive first impression with your users. Whether youre developing a website, mobile app, or web application, our team ensures your product is easy to use and visually appealing, helping you achieve higher user satisfaction and better conversion rates.')}
                     </p>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -88,9 +90,9 @@ const UIUXDesign = () => {
                     </div>
                   </div>
                 </div>
-                <h3>Our UI/UX Design Strategy and Process</h3>
+                <h3>{t('Our UI/UX Design Strategy and Process')}</h3>
                 <p>
-                  We follow a user-centered design approach to ensure that every aspect of your product meets the needs and expectations of your target audience. From wireframes to prototypes, we iterate and refine the design to ensure it’s intuitive and easy to navigate.
+                  {t('We follow a user-centered design approach to ensure that every aspect of your product meets the needs and expectations of your target audience. From wireframes to prototypes, we iterate and refine the design to ensure it’s intuitive and easy to navigate.')}
                 </p>
                 <div
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
@@ -120,12 +122,12 @@ const UIUXDesign = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/web-development">
-                    Web Development
+                    "{t('Web Development')}"
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/web-development">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
@@ -139,12 +141,12 @@ const UIUXDesign = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/ui-ux-design">
-                    UI/UX Design
+                    {t('UI/UX Design')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/ui-ux-design">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>

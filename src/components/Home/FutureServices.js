@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const features = [
     // {
@@ -40,6 +41,7 @@ const features = [
   ];
   
   const FeaturesGrid = () => {
+    const { t } = useTranslation();
     return (
       <div className="row justify-content-center">
         {features.map((feature, index) => (
@@ -55,7 +57,7 @@ const features = [
               </div>
               <h5>
                 <Link legacyBehavior href={feature.href}>
-                  {feature.title}
+                  {t(feature.title)}
                 </Link>
               </h5>
             </div>

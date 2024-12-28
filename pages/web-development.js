@@ -4,8 +4,10 @@ import JeenaAccordion from "@/src/components/JeenaAccordion";
 
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const WebDevelopment = () => {
+  const { t } = useTranslation();
   const accordionTitle = [
     { id: 1, title: "Why Choose Our Web Development Services?" },
     { id: 2, title: "How Our Web Development Experts Deliver High-Quality Websites?" },
@@ -40,10 +42,10 @@ const WebDevelopment = () => {
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Professional Web Development Services to Build Your Online Presence</h2>
+                  <h2>{t('Professional Web Development Services to Build Your Online Presence')}</h2>
                 </div>
                 <p>
-                  At Elite, we specialize in building custom websites that deliver results. Our services include front-end and back-end development, web design, e-commerce solutions, and CMS development. We focus on creating websites that are fast, responsive, and user-friendly.
+                  {t('At Elite, we specialize in building custom websites that deliver results. Our services include front-end and back-end development, web design, e-commerce solutions, and CMS development. We focus on creating websites that are fast, responsive, and user-friendly.')}
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
@@ -53,20 +55,20 @@ const WebDevelopment = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>Why Web Development is Key to Your Business Growth</h3>
+                    <h3>{t('Why Web Development is Key to Your Business Growth')}</h3>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
-                      <li>Build a Strong Online Presence</li>
-                      <li>Enhance User Experience and Engagement</li>
-                      <li>Optimize for Mobile and Desktop Devices</li>
+                      <li>{t('Build a Strong Online Presence')}</li>
+                      <li>{t('Enhance User Experience and Engagement')}</li>
+                      <li>{t('Optimize for Mobile and Desktop Devices')}</li>
                     </ul>
                   </div>
                 </div>
                 <div className="row pb-30">
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
-                      Having a professional website is crucial in today's digital landscape. A well-designed and functional website not only helps you attract new customers but also keeps them engaged and coming back. Our team ensures that every project meets the highest standards of design and performance.
+                      {t('Having a professional website is crucial in todays digital landscape. A well-designed and functional website not only helps you attract new customers but also keeps them engaged and coming back. Our team ensures that every project meets the highest standards of design and performance.')}
                     </p>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -78,9 +80,9 @@ const WebDevelopment = () => {
                     </div>
                   </div>
                 </div>
-                <h3>Our Web Development Strategy and Process</h3>
+                <h3>{t('Our Web Development Strategy and Process')}</h3>
                 <p>
-                  We follow a structured process to ensure the success of every project. From ideation and wireframing to development and testing, our team works closely with you to create a website that meets your needs and exceeds your expectations.
+                  {t('We follow a structured process to ensure the success of every project. From ideation and wireframing to development and testing, our team works closely with you to create a website that meets your needs and exceeds your expectations.')}
                 </p>
                 <div
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
@@ -110,12 +112,12 @@ const WebDevelopment = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/mobile-application">
-                    Mobile Application Development
+                    {t('Mobile Application Development')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/mobile-application">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
@@ -129,12 +131,12 @@ const WebDevelopment = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/web-development">
-                    Web Development
+                    {t('Web Development')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/web-development">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>

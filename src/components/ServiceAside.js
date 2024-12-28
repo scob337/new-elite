@@ -1,13 +1,15 @@
 import React from 'react'
 import ServicesLinks from './ServicesLinks'
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next';
 
 const ServiceAside = () => {
+  const { t } = useTranslation();
   return (
     <div className="col-lg-4">
     <div className="service-sidebar">
       <div className="widget widget-category wow fadeInUp delay-0-2s">
-        <h4 className="widget-title">Services Category</h4>
+        <h4 className="widget-title">{t('Services Category')}</h4>
           <ServicesLinks/>
       </div>
       <div
@@ -17,11 +19,11 @@ const ServiceAside = () => {
             "url(assets/images/widgets/cta-widget-bg.jpg)",
         }}
       >
-        <span className="h5">Let's Work Together</span>
-        <h2>Elite  Agency</h2>
+        <span className="h5">{t('Lets Work Together')}</span>
+        <h2>{t('Elite  Agency')}</h2>
         <Link legacyBehavior href="/contact">
           <a className="theme-btn style-four">
-            Contact Us <i className="fas fa-angle-double-right" />
+            {t('Contact Us')} <i className="fas fa-angle-double-right" />
           </a>
         </Link>
         <br />
@@ -35,12 +37,12 @@ const ServiceAside = () => {
         />
       </div>
       <div className="widget widget-download wow fadeInUp delay-0-2s">
-        <h4 className="widget-title">Download</h4>
+        <h4 className="widget-title">{t('Download')}</h4>
         <ul>
         <li>
   <Link href="/assets/Profile.pdf" legacyBehavior>
     <a download>
-      Download PDF <i className="far fa-file-pdf" />
+      {t('Download PDF')} <i className="far fa-file-pdf" />
     </a>
   </Link>
 </li>

@@ -1,9 +1,10 @@
 import {  useCallback, useState } from "react";
 import { Accordion } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const JeenaAccordion = ({ defaultActive = 1, accordionsTitle = [], accordionContent = [] }) => {
   const [active, setActive] = useState(defaultActive);
-
+const { t } = useTranslation();
   const toggleAccordion = useCallback(
     (id) => {
       setActive(active === id ? null : id);
@@ -22,7 +23,7 @@ const JeenaAccordion = ({ defaultActive = 1, accordionsTitle = [], accordionCont
               eventKey={accordion.id}
               onClick={() => toggleAccordion(accordion.id)}
             >
-              {accordion.title}
+              {t(accordion.title)}
             </Accordion.Toggle>
           </h5>
 
@@ -33,7 +34,7 @@ const JeenaAccordion = ({ defaultActive = 1, accordionsTitle = [], accordionCont
                   .filter((item) => item.id === accordion.id) // التأكد من توافق الـ content مع الـ accordion المناسب
                   .map((item) => (
                     <div className="col-12" key={item.id}>
-                      <p>{item.content}</p>
+                      <p>{t(item.content)}</p>
                     </div>
                   ))}
                 {accordionContent.length === 0 && <p>No content available</p>}

@@ -41,9 +41,9 @@ const MobileMenu = () => {
   };
 
   return (
-    <nav className="main-menu navbar-expand-lg mobile-menu">
+    <nav className="main-menu navbar-expand-lg mobile-menu w-100 m-auto ">
       <Accordion>
-        <div className={`navbar-header d-flex ${storedLang === 'en' && 'justify-content-between'} ${storedLang === 'ar' && 'flex-row-reverse'}`}>
+        <div className={`navbar-header gap-5 d-flex  justify-content-between ${storedLang === 'ar' && 'flex-row-reverse'}`}>
           <div className="mobile-logo">
             <Link href="/">
                 <img
@@ -107,8 +107,8 @@ const DeskTopMenu = () => {
   };
 
   return (
-    <nav className="main-menu navbar-expand-lg desktop-menu">
-      <div className="navbar-header">
+    <nav className="main-menu navbar-expand-lg desktop-menu mx-auto w-50">
+      <div className="navbar-header w-100">
         <div className="mobile-logo">
           <Link href="/">
               <img
@@ -131,7 +131,7 @@ const DeskTopMenu = () => {
         </button>
       </div>
 
-      <div className="navbar-collapse collapse clearfix">
+      <div className="navbar-collapse collapse d-flex ">
         <div className="d-flex justify-content-between w-100">
           <ul className="navigation clearfix d-flex">
             {NavLinks.map((item, index) => (
@@ -142,7 +142,9 @@ const DeskTopMenu = () => {
               </li>
             ))}
           </ul>
-          <div className="menu-btns mx-3">
+
+        </div>
+                  <div className="menu-btns mx-3 ">
             <img
               onClick={toggleLanguage}
               src={`${i18n.language === 'en' ? 'assets/images/AR.svg' : 'assets/images/EN.svg'}`}
@@ -153,7 +155,6 @@ const DeskTopMenu = () => {
               style={{ cursor: 'pointer', objectFit: 'cover' }}
             />
           </div>
-        </div>
       </div>
     </nav>
   );

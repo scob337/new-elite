@@ -1,8 +1,10 @@
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
 import Head from 'next/head';
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <Layout>
           <Head>
@@ -22,11 +24,11 @@ const Contact = () => {
           <div className="row text-center mb-35 justify-content-center wow fadeInUp delay-0-2s">
           <div className="col-xl-8 col-lg-10">
   <div className="section-title mb-25">
-    <span className="sub-title mb-15">About Our Company</span>
-    <h2>Company Information</h2>
+    <span className="sub-title mb-15">{t('About Our Company')}</span>
+    <h2>{t('Company Information')}</h2>
   </div>
   <p>
-    At Elite, we specialize in providing top-notch web development, mobile application development, and marketing services. With a commitment to delivering high-quality solutions tailored to your business needs, we help companies grow and thrive in the digital world. Our team of experts works tirelessly to ensure that every project is executed with precision and dedication, ensuring client satisfaction at every step.
+    {t('At Elite, we specialize in providing top-notch web development, mobile application development, and marketing services. With a commitment to delivering high-quality solutions tailored to your business needs, we help companies grow and thrive in the digital world. Our team of experts works tirelessly to ensure that every project is executed with precision and dedication, ensuring client satisfaction at every step.')}
   </p>
 </div>
 
@@ -37,8 +39,8 @@ const Contact = () => {
                 <div className="icon">
                   <i className="fal fa-map-marker-alt" />
                 </div>
-                <h4>Locations</h4>
-                <span> Saudi Arabia, Riyadh</span>
+                <h4>{t('Locations')}</h4>
+                <span> {t('Saudi Arabia, Riyadh')}</span>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6">
@@ -46,7 +48,7 @@ const Contact = () => {
                 <div className="icon">
                   <i className="fal fa-envelope-open" />
                 </div>
-                <h4>Email Us</h4>
+                <h4>t{('Email Us')}</h4>
                 <a href="mailto:elitearab2030@gmail.com">
                 elitearab2030@gmail.com
                 </a>
@@ -59,9 +61,9 @@ const Contact = () => {
                 <div className="icon">
                   <i className="fal fa-phone-plus" />
                 </div>
-                <h4>Locations</h4>
+                <h4>{t('Locations')}</h4>
                 <span>
-                  Mobile : <a href="callto:+966559949013">+966 55 994 9013</a>
+                  {t('Mobile')} : <a href="callto:+966559949013">+966 55 994 9013</a>
                 </span>
                 {/* <span>
                   Teliphone : <a href="callto:+966 55 9949013">+1234566</a>
@@ -73,8 +75,8 @@ const Contact = () => {
                 <div className="icon">
                   <i className="fal fa-clock" />
                 </div>
-                <h4>Working Hour</h4>
-                <b>Saturday _ Thursday,</b>
+                <h4>{t('Working Hour')}</h4>
+                <b>{t('Saturday')} _ {t('Thursday')},</b>
                 <span>10:00am - 06:00pm</span>
               </div>
             </div>
@@ -102,11 +104,11 @@ const Contact = () => {
           <div className="row text-center mb-35 justify-content-center">
   <div className="col-xl-9 col-lg-11">
     <div className="section-title mb-25 wow fadeInUp delay-0-2s">
-      <span className="sub-title mb-15">Contact Us</span>
-      <h2>Send Us a Message</h2>
+      <span className="sub-title mb-15">{t('Contact Us')}</span>
+      <h2>{t('Send Us a Message')}</h2>
     </div>
     <p>
-      At Elite, we are always here to assist you. Whether you have questions about our services, need support with your projects, or want to discuss new ideas, our team is ready to help. Reach out to us, and we will get back to you as soon as possible to provide the best solutions for your business needs.
+      {t('At Elite, we are always here to assist you. Whether you have questions about our services, need support with your projects, or want to discuss new ideas, our team is ready to help. Reach out to us, and we will get back to you as soon as possible to provide the best solutions for your business needs.')}
     </p>
   </div>
 </div>
@@ -197,7 +199,7 @@ const Contact = () => {
                 <div className="col-xl-12">
                   <div className="form-group text-center mb-0">
                     <button type="submit" className="theme-btn style-two">
-                      send message <i className="far fa-long-arrow-right" />
+                      {t('send message')} <i className="far fa-long-arrow-right" />
                     </button>
                     <div id="msgSubmit" className="hidden" />
                   </div>

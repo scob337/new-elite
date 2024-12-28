@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const aboutContent = {
     title: "Elite Company: Small Enough to Care, Big Enough to Succeed",
@@ -16,6 +17,7 @@ const aboutContent = {
   };
   
   const AboutSection = () => {
+    const { t } = useTranslation();
     return (
       <section className="about-area-two py-130 rpy-100 rel z-1">
         <div className="container">
@@ -29,20 +31,20 @@ const aboutContent = {
             <div className="col-lg-6">
               <div className="about-content rel z-1 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
-                  <span className="sub-title mb-15">About Company</span>
-                  <h2>{aboutContent.title}</h2>
+                  <span className="sub-title mb-15">{t('About Company')}</span>
+                  <h2>{t(aboutContent.title)}</h2>
                 </div>
-                <p>{aboutContent.description}</p>
-                <div className="about-btns">
+                <p>{t(aboutContent.description)}</p>
+                <div className={` about-btns`}>
                   <Link legacyBehavior href={aboutContent.button.href}>
                     <a className="theme-btn style-three mt-15">
-                      {aboutContent.button.text} <i className={aboutContent.button.iconClass} />
+                      {t(aboutContent.button.text)} <i className={aboutContent.button.iconClass} />
                     </a>
                   </Link>
                   <div className="hotline mt-15">
                     <i className="fas fa-phone" />
                     <div className="content">
-                      <span>Hotline</span>
+                      <span>{t("Hotline")}</span>
                       <br />
                       <a href={aboutContent.hotline.href}>{aboutContent.hotline.number}</a>
                     </div>

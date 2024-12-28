@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 import { Nav, Tab } from "react-bootstrap";
+import { useTranslation } from 'react-i18next';
 const services = [
     {
       id: "wc-tap1",
@@ -57,14 +58,15 @@ const services = [
   ];
   
 const WhyChooseUs = () => {
+  const { t } = useTranslation();
   return (
 <section className="why-choose-us-area py-130 rpy-100 rel z-1">
   <div className="container">
     <div className="row justify-content-center">
       <div className="col-xl-8">
         <div className="section-title text-center mb-45 wow fadeInUp delay-0-2s">
-          <span className="sub-title mb-15">Why Choose Us</span>
-          <h2>Top-Notch Software Development and Digital Transformation</h2>
+          <span className="sub-title mb-15">{t('Why Choose Us')}</span>
+          <h2>{t('Top-Notch Software Development and Digital Transformation')}</h2>
         </div>
       </div>
     </div>
@@ -83,7 +85,7 @@ const WhyChooseUs = () => {
                 data-bs-toggle="tab"
                 href={`#${service.id}`}
               >
-                <i className={service.icon} /> <span>{service.title}</span>
+                <i className={service.icon} /> <span>{t(service.title)}</span>
               </Nav.Link>
             </li>
           ))}
@@ -99,16 +101,16 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="col-lg-6">
                   <div className="why-choose-content">
-                    <h3>{service.title}</h3>
+                    <h3>{t(service.title)}</h3>
                     <p>{service.description}</p>
                     <ul className="list-style-one pt-5">
                       {service.listItems.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <li key={index}>{t(item)}</li>
                       ))}
                     </ul>
                     <Link legacyBehavior href="/about">
                       <a className="theme-btn mt-30">
-                        Learn More <i className="fas fa-long-arrow-right" />
+                        {t('Learn More')} <i className="fas fa-long-arrow-right" />
                       </a>
                     </Link>
                   </div>

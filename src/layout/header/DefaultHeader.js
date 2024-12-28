@@ -12,7 +12,7 @@ const DefaultHeader = () => {
       {/* Header-Upper */}
       <div className="header-upper bg-white">
         <div className="container-fluid clearfix">
-          <div className={"header-inner rel d-flex align-items-center"}>
+          <div className={"header-inner rel d-flex align-items-center justify-content-between"}>
             <div className="logo-outer">
               <div className="logo bgc-gray">
                 <Link legacyBehavior href="/" >
@@ -26,7 +26,7 @@ const DefaultHeader = () => {
                 </Link>
               </div>
             </div>
-            <div className="nav-outer mx-auto clearfix">
+            <div className="nav-outer  d-flex align-items-center justify-content-between w-75">
               {/* Main Menu */}
               <Menu />
               {/* Main Menu End */}

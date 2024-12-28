@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const services = [
     {
@@ -44,6 +45,7 @@ const services = [
   ];
   
   const ServicesArea = () => {
+    const { t } = useTranslation();
     return (
       <section className="services-area bgc-lighter pt-75 pb-10 rel z-1">
         <div className="container">
@@ -63,10 +65,10 @@ const services = [
                   <div className="content">
                     <h4>
                       <Link legacyBehavior href={service.link}>
-                        {service.title}
+                        {t(service.title)}
                       </Link>
                     </h4>
-                    <p>{service.description}</p>
+                    <p>{t(service.description)}</p>
                   </div>
                 </div>
               </div>

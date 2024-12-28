@@ -11,7 +11,7 @@ const HomeBanner = () => {
         <h1>{t("Hdescription")}</h1>
         <Link legacyBehavior href="/about">
           <a className="theme-btn mt-25 wow fadeInUp delay-0-6s">
-            Let’s Get Started <i className="fas fa-long-arrow-right" />
+            {t('Let’s Get Started')} <i className="fas fa-long-arrow-right" />
           </a>
         </Link>
       </div>

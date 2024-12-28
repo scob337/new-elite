@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
 import FooterLinks from './FooterLinks'
+import { useTranslation } from 'react-i18next';
 
 const UpperFooter = () => {
+  const { t } = useTranslation();
   return (
     <div className="container">
     <div className="row medium-gap">
@@ -16,12 +18,11 @@ const UpperFooter = () => {
             </Link>
           </div>
           <p>
-            Sed perspiciatis unde omnste natus error voluptatem accusanti
-            doloreue audantium totamrem aeriam.
+            {t('FooterLogoDesc')}
           </p>
           <Link legacyBehavior href="/about">
             <a className="read-more">
-              Learn More Us <i className="fas fa-long-arrow-right" />
+            {t('FooterLogoLearnMore')} <i className="fas fa-long-arrow-right" />
             </a>
           </Link>
         </div>

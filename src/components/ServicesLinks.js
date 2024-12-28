@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { useRouter } from 'next/router'; // استيراد useRouter
+import { useTranslation } from 'react-i18next';
 
 const servicesList = [
   { name: "Graphic Design", link: "/graphic-design" },
@@ -15,6 +16,7 @@ const servicesList = [
 ];
 
 const ServicesLinks = () => {
+  const { t } = useTranslation();
   const router = useRouter(); // الحصول على معلومات المسار الحالي
 
   return (
@@ -25,7 +27,7 @@ const ServicesLinks = () => {
           className={router.pathname === service.link ? "active" : ""}
         >
           <Link legacyBehavior href={service.link}>
-            {service.name}
+            {t(service.name)}
           </Link>
         </li>
       ))}

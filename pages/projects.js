@@ -3,6 +3,7 @@ import Layout from "@/layout";
 import Link from "next/link";
 import Head from 'next/head';
 const ProjectGrid = () => {
+  
   return (
     <Layout>
                 <Head>
@@ -22,7 +23,7 @@ const ProjectGrid = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
               <div className="section-title text-center mb-50 wow fadeInUp delay-0-2s">
-                <h2>Let’s Insides About Recent Project Best Work Gallery</h2>
+                <h2>{t('Let’s Insides About Recent Project Best Work Gallery')}</h2>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium totam rem aperiam eaque ipsa

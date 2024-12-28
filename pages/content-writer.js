@@ -4,8 +4,10 @@ import JeenaAccordion from "@/src/components/JeenaAccordion";
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
+import { useTranslation } from "react-i18next";
 
 const ServiceDetails = () => {
+  const { t } = useTranslation();
   const accordionTitle = [
     { id: 1, title: "Why Choose Our Content Writing Services?" },
     { id: 2, title: "How Our Writers Deliver Quality Content?" },
@@ -50,10 +52,10 @@ const ServiceDetails = () => {
           <div className="col-lg-8">
   <div className="service-details-content">
     <div className="section-title mb-30">
-      <h2>Content Writing Services</h2>
+      <h2>{t('Content Writing Services')}</h2>
     </div>
     <p>
-      At Elite, we offer professional content writing services designed to elevate your brand's presence and engage your target audience effectively. Our team specializes in creating compelling, SEO-friendly, and tailored content to meet your business needs.
+      {t('At Elite, we offer professional content writing services designed to elevate your brands presence and engage your target audience effectively. Our team specializes in creating compelling, SEO-friendly, and tailored content to meet your business needs.')}
     </p>
     <div className="image my-40 wow fadeInUp delay-0-2s">
       <img
@@ -63,20 +65,20 @@ const ServiceDetails = () => {
     </div>
     <div className="row">
       <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-        <h3>Empowering Your Brand with Quality Content</h3>
+        <h3>{t('Empowering Your Brand with Quality Content')}</h3>
       </div>
       <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
         <ul className="list-style-one">
-          <li>SEO-Optimized Blog Posts</li>
-          <li>Creative Copywriting</li>
-          <li>Comprehensive Content Strategies</li>
+          <li>{t('SEO-Optimized Blog Posts')}</li>
+          <li>{t('Creative Copywriting')}</li>
+          <li>{t('Comprehensive Content Strategies')}</li>
         </ul>
       </div>
     </div>
     <div className="row pb-30">
       <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
         <p>
-          Our expertise lies in crafting content that resonates with your audience, builds trust, and drives meaningful engagement. Whether it's for your website, social media, or marketing campaigns, we deliver quality and consistency.
+          {t('Our expertise lies in crafting content that resonates with your audience, builds trust, and drives meaningful engagement. Whether its for your website, social media, or marketing campaigns, we deliver quality and consistency.')}
         </p>
       </div>
       <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -88,9 +90,9 @@ const ServiceDetails = () => {
         </div>
       </div>
     </div>
-    <h3>Service Management</h3>
+    <h3>{t('Service Management')}</h3>
     <p>
-      We understand the importance of aligning content with your brand’s voice and objectives. Our streamlined process ensures timely delivery and exceptional quality, helping your business stand out in a competitive landscape.
+      {t('We understand the importance of aligning content with your brand’s voice and objectives. Our streamlined process ensures timely delivery and exceptional quality, helping your business stand out in a competitive landscape.')}
     </p>
     <div
       className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
@@ -125,12 +127,12 @@ const ServiceDetails = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="services">
-                    SEO 
+                    {t('SEO Optimization')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/seo">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
@@ -142,12 +144,12 @@ const ServiceDetails = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="services">
-                    Graphic Design
+                   {t('Graphic Design')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/graphic-design">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>

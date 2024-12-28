@@ -6,10 +6,13 @@ import WhyChooseUs from "@/src/components/Home/WhyChooseUs";
 import PageBanner from "@/src/components/PageBanner";
 import Layout from "@/src/layout/Layout";
 import Head from 'next/head';
+import { useTranslation } from "react-i18next";
 
 
 
 const About = () => {
+  const { t } = useTranslation();
+  
   return (
     <Layout>
     <Head>
@@ -23,7 +26,7 @@ const About = () => {
               <meta property="og:url" content="https://yourwebsite.com" />
               <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
-      <PageBanner pageName={"About Us"} />
+      <PageBanner pageName={t("About")} />
       
         <AboutSection/>
       {/* About Area end */}

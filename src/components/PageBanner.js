@@ -1,5 +1,8 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+
 const PageBanner = ({ pageName, pageTitle }) => {
+const { t } = useTranslation();
   return (
     <section
       className="page-banner-area bgs-cover py-135 rpy-100"
@@ -8,16 +11,16 @@ const PageBanner = ({ pageName, pageTitle }) => {
       <div className="container">
         <div className="banner-inner text-white text-center">
           <h1 className="page-title wow fadeInUp delay-0-2s animated">
-            {pageTitle ? pageTitle : pageName}
+            {t(pageTitle ? pageTitle : pageName)}
           </h1>
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb justify-content-center mb-5 wow fadeInUp delay-0-4s animated">
               <li className="breadcrumb-item">
                 <Link legacyBehavior href="/">
-                  <a>home</a>
+                  <a>{t("Home")}</a>
                 </Link>
               </li>
-              <li className="breadcrumb-item active">{pageName}</li>
+              <li className="breadcrumb-item active">{t(pageName)}</li>
             </ol>
           </nav>
         </div>

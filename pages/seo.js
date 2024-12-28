@@ -4,7 +4,9 @@ import JeenaAccordion from "@/src/components/JeenaAccordion";
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
+import { useTranslation } from "react-i18next";
 const SEO = () => {
+  const { t } = useTranslation();
   const accordionTitle = [
     { id: 1, title: "Why Choose Our SEO Services?" },
     { id: 2, title: "How Our SEO Experts Improve Your Rankings?" },
@@ -49,10 +51,10 @@ const SEO = () => {
           <div className="col-lg-8">
   <div className="service-details-content">
     <div className="section-title mb-30">
-      <h2>Professional SEO Services to Rank Your Website Higher</h2>
+      <h2>{t('Professional SEO Services to Rank Your Website Higher')}</h2>
     </div>
     <p>
-      At Elite, we offer expert SEO services that are tailored to improve your website’s search engine ranking, drive organic traffic, and increase your online visibility. Our team specializes in white-hat SEO strategies that help businesses achieve long-term results and stay ahead of the competition.
+      {t('At Elite, we offer expert SEO services that are tailored to improve your website’s search engine ranking, drive organic traffic, and increase your online visibility. Our team specializes in white-hat SEO strategies that help businesses achieve long-term results and stay ahead of the competition.')}
     </p>
     <div className="image my-40 wow fadeInUp delay-0-2s">
       <img
@@ -62,20 +64,20 @@ const SEO = () => {
     </div>
     <div className="row">
       <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-        <h3>Why SEO is Essential for Your Business Growth</h3>
+        <h3>{t('Why SEO is Essential for Your Business Growth')}</h3>
       </div>
       <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
         <ul className="list-style-one">
-          <li>Increase Organic Traffic and Visibility</li>
-          <li>Improve Website Rankings on Search Engines</li>
-          <li>Boost User Engagement and Conversion Rates</li>
+          <li>{t('Increase Organic Traffic and Visibility')}</li>
+          <li>{t('Improve Website Rankings on Search Engines')}</li>
+          <li>{t('Boost User Engagement and Conversion Rates')}</li>
         </ul>
       </div>
     </div>
     <div className="row pb-30">
       <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
         <p>
-          SEO is critical for any business looking to succeed online. Our team employs the latest SEO trends and strategies to ensure your website is fully optimized for search engines like Google. We focus on on-page SEO, off-page optimization, and technical improvements to help your business rank higher and attract the right audience.
+          {t('SEO is critical for any business looking to succeed online. Our team employs the latest SEO trends and strategies to ensure your website is fully optimized for search engines like Google. We focus on on-page SEO, off-page optimization, and technical improvements to help your business rank higher and attract the right audience.')}
         </p>
       </div>
       <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -87,9 +89,9 @@ const SEO = () => {
         </div>
       </div>
     </div>
-    <h3>SEO Strategy and Process</h3>
+    <h3>{t('SEO Strategy and Process')}</h3>
     <p>
-      Our SEO experts follow a data-driven approach to create custom strategies that align with your business goals. We begin by conducting a thorough SEO audit, identifying areas for improvement, and implementing changes that will improve your website's search engine rankings and performance.
+      {t('Our SEO experts follow a data-driven approach to create custom strategies that align with your business goals. We begin by conducting a thorough SEO audit, identifying areas for improvement, and implementing changes that will improve your websites search engine rankings and performance.')}
     </p>
     <div
       className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
@@ -124,12 +126,12 @@ const SEO = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/content-writing">
-                    Content Writing 
+                    {t('Content Writing ')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/content-writing">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
@@ -143,12 +145,12 @@ const SEO = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/digital-marketing">
-                    Digital Marketing
+                    {t('Digital Marketing')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/digital-marketing">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>

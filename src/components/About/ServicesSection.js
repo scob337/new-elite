@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const servicesData = [
     {
@@ -23,6 +24,7 @@ const servicesData = [
   
   
   const ServicesSection = () => {
+    const { t } = useTranslation();
     return (
       <section className="services-area-six pb-100 rpb-70 rel z-1">
         <div className="container">
@@ -35,10 +37,10 @@ const servicesData = [
                   </div>
                   <h4>
                     <Link legacyBehavior href={service.link}>
-                      {service.title}
+                      {t(service.title)}
                     </Link>
                   </h4>
-                  <p>{service.description}</p>
+                  <p>{t(service.description)}</p>
                 </div>
               </div>
             ))}

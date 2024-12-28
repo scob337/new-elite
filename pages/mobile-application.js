@@ -4,6 +4,7 @@ import JeenaAccordion from "@/src/components/JeenaAccordion";
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
+import { useTranslation } from "react-i18next";
 const MobileAppDevelopment = () => {
   const accordionTitle = [
     { id: 1, title: "Why Choose Our Mobile App Development Services?" },
@@ -29,6 +30,7 @@ const MobileAppDevelopment = () => {
       content: "We offer flexible and competitive pricing for our mobile app development services. Whether you need a simple app or a more complex solution, we provide packages tailored to your needs, ensuring the best possible return on your investment."
     }
   ];
+  const { t } = useTranslation();
 
   return (
     <Layout>
@@ -50,10 +52,10 @@ const MobileAppDevelopment = () => {
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Expert Mobile App Development Services to Take Your Business Mobile</h2>
+                  <h2>{t('Expert Mobile App Development Services to Take Your Business Mobile')}</h2>
                 </div>
                 <p>
-                  At Elite, we specialize in building high-quality, custom mobile apps for iOS and Android. Our mobile app development services are tailored to meet the unique needs of your business, helping you reach a wider audience and provide a seamless mobile experience to your users.
+                  {t('At Elite, we specialize in building high-quality, custom mobile apps for iOS and Android. Our mobile app development services are tailored to meet the unique needs of your business, helping you reach a wider audience and provide a seamless mobile experience to your users.')}
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
@@ -63,20 +65,20 @@ const MobileAppDevelopment = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>Why Mobile App Development is Crucial for Your Business Growth</h3>
+                    <h3>{t('Why Mobile App Development is Crucial for Your Business Growth')}</h3>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
-                      <li>Enhance Customer Engagement with Mobile Accessibility</li>
-                      <li>Streamline Operations and Improve Efficiency</li>
-                      <li>Reach a Broader Audience Across Platforms</li>
+                      <li>{t('Enhance Customer Engagement with Mobile Accessibility')}</li>
+                      <li>{t('Streamline Operations and Improve Efficiency')}</li>
+                      <li>{t('Reach a Broader Audience Across Platforms')}</li>
                     </ul>
                   </div>
                 </div>
                 <div className="row pb-30">
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
-                      Mobile apps are an essential tool for modern businesses to stay competitive. They offer your customers convenience, accessibility, and direct communication. With our expertise, we ensure that your app meets the highest standards of design, functionality, and performance.
+                      {t('Mobile apps are an essential tool for modern businesses to stay competitive. They offer your customers convenience, accessibility, and direct communication. With our expertise, we ensure that your app meets the highest standards of design, functionality, and performance.')}
                     </p>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -88,9 +90,9 @@ const MobileAppDevelopment = () => {
                     </div>
                   </div>
                 </div>
-                <h3>Our Mobile App Development Strategy and Process</h3>
+                <h3>{t('Our Mobile App Development Strategy and Process')}</h3>
                 <p>
-                  Our development process focuses on understanding your target audience, business goals, and technical requirements. We offer end-to-end mobile app development services, from idea conceptualization to post-launch support, ensuring that your app performs optimally at every stage.
+                  {t('Our development process focuses on understanding your target audience, business goals, and technical requirements. We offer end-to-end mobile app development services, from idea conceptualization to post-launch support, ensuring that your app performs optimally at every stage.')}
                 </p>
                 <div
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
@@ -120,12 +122,12 @@ const MobileAppDevelopment = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/web-development">
-                    Web Development
+                    {t('Web Development')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/web-development">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
@@ -139,12 +141,12 @@ const MobileAppDevelopment = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/social-media">
-                    Social Media
+                    {t('Social Media')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/mobile-app-development">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>

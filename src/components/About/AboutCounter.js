@@ -1,5 +1,6 @@
 import React from 'react';
 import dynamic from "next/dynamic";
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -31,7 +32,7 @@ const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
 });
 const StatisticsComponent = () => {
-
+const { t } = useTranslation();
   return (
     <section className="statistics-area-two rel z-2">
       <div className="container">
@@ -45,11 +46,11 @@ const StatisticsComponent = () => {
             <div className="col-xl-5 col-lg-6">
               <div className="statistics-content mb-55 wow fadeInUp delay-0-2s">
                 <div className="section-title mb-30">
-                  <span className="sub-title mb-15">Company Statistics</span>
-                  <h2>Learn About Our Company Statistics</h2>
+                  <span className="sub-title mb-15">{t('Company Statistics')}</span>
+                  <h2>{t('Learn About Our Company Statistics')}</h2>
                 </div>
                 <a href="/about" className="read-more">
-                  Learn More <i className="fas fa-long-arrow-right" />
+                  {t('Learn More')} <i className="fas fa-long-arrow-right" />
                 </a>
               </div>
             </div>
@@ -66,7 +67,7 @@ const StatisticsComponent = () => {
                       <span className="count-text plus" data-speed={3000} data-stop={stat.count}>
                         <Counter end={stat.count} decimals={stat.decimals || 0} />
                       </span>
-                      <span className="counter-title">{stat.title}</span>
+                      <span className="counter-title">{t(stat.title)}</span>
                     </div>
                   </div>
                 ))}

@@ -4,6 +4,7 @@ import JeenaAccordion from "@/src/components/JeenaAccordion";
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
+import { useTranslation } from "react-i18next";
 
 const DigitalMarketing = () => {
   const accordionTitle = [
@@ -30,7 +31,7 @@ const DigitalMarketing = () => {
       content: "We offer competitive, flexible, and transparent pricing for our digital marketing packages. Whether you're a startup or an established business, we tailor our solutions to meet your unique needs, providing the best return on investment for your marketing efforts."
     }
   ];
-
+const { t } = useTranslation();
   return (
     <Layout>
             <Head>
@@ -51,10 +52,10 @@ const DigitalMarketing = () => {
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Expert Digital Marketing Services to Grow Your Business Online</h2>
+                  <h2>{t('Expert Digital Marketing Services to Grow Your Business Online')}</h2>
                 </div>
                 <p>
-                  At Elite, we specialize in comprehensive digital marketing strategies to help businesses enhance their online presence. Our services include SEO, PPC, content marketing, social media, and email marketing. We aim to drive targeted traffic, increase conversions, and achieve long-term online success.
+                  {t('At Elite, we specialize in comprehensive digital marketing strategies to help businesses enhance their online presence. Our services include SEO, PPC, content marketing, social media, and email marketing. We aim to drive targeted traffic, increase conversions, and achieve long-term online success.')}
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
@@ -64,20 +65,20 @@ const DigitalMarketing = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>Why Digital Marketing is Crucial for Your Business Growth</h3>
+                    <h3>{t('Why Digital Marketing is Crucial for Your Business Growth')}</h3>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
-                      <li>Increase Online Visibility and Brand Awareness</li>
-                      <li>Drive Targeted Traffic to Your Website</li>
-                      <li>Improve Lead Generation and Conversion Rates</li>
+                      <li>{t('Increase Online Visibility and Brand Awareness')}</li>
+                      <li>{t('Drive Targeted Traffic to Your Website')}</li>
+                      <li>{t('Improve Lead Generation and Conversion Rates')}</li>
                     </ul>
                   </div>
                 </div>
                 <div className="row pb-30">
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
-                      Digital marketing is essential for any business that wants to thrive in the competitive online marketplace. Our team stays ahead of industry trends, ensuring your business benefits from the most effective marketing strategies, including SEO, social media management, content creation, and more.
+                      {t('Digital marketing is essential for any business that wants to thrive in the competitive online marketplace. Our team stays ahead of industry trends, ensuring your business benefits from the most effective marketing strategies, including SEO, social media management, content creation, and more.')}
                     </p>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -89,9 +90,9 @@ const DigitalMarketing = () => {
                     </div>
                   </div>
                 </div>
-                <h3>Our Digital Marketing Strategy and Process</h3>
+                <h3>{t('Our Digital Marketing Strategy and Process')}</h3>
                 <p>
-                  We create customized digital marketing strategies designed to achieve your business objectives. Our process includes understanding your target audience, choosing the right marketing channels, and optimizing campaigns to drive conversions and grow your business.
+                  {t('We create customized digital marketing strategies designed to achieve your business objectives. Our process includes understanding your target audience, choosing the right marketing channels, and optimizing campaigns to drive conversions and grow your business.')}
                 </p>
                 <div
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
@@ -121,12 +122,12 @@ const DigitalMarketing = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/content-writing">
-                    Content Writing
+                    {t('Content Writing')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/content-writing">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
@@ -140,12 +141,12 @@ const DigitalMarketing = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/digital-marketing">
-                    Digital Marketing
+                    {t('Digital Marketing')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/digital-marketing">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>

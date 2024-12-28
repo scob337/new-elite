@@ -4,8 +4,10 @@ import JeenaAccordion from "@/src/components/JeenaAccordion";
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
+import { useTranslation } from "react-i18next";
 
 const GraphicDesign = () => {
+  const { t } = useTranslation();
   const accordionTitle = [
     { id: 1, title: "Why Choose Our Graphic Design Services?" },
     { id: 2, title: "How Our Designers Create Stunning Visuals?" },
@@ -51,10 +53,10 @@ const GraphicDesign = () => {
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Expert Graphic Design Services to Elevate Your Brand</h2>
+                  <h2>{t('Expert Graphic Design Services to Elevate Your Brand')}</h2>
                 </div>
                 <p>
-                  At Elite, we specialize in delivering professional graphic design services that enhance your brand’s identity. Whether you need a new logo, a complete brand overhaul, or creative visuals for your marketing campaigns, our designs are crafted to tell your story and captivate your audience.
+                  {t('At Elite, we specialize in delivering professional graphic design services that enhance your brand’s identity. Whether you need a new logo, a complete brand overhaul, or creative visuals for your marketing campaigns, our designs are crafted to tell your story and captivate your audience.')}
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
@@ -64,20 +66,20 @@ const GraphicDesign = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>Why Graphic Design is Essential for Your Brand</h3>
+                    <h3>{t('Why Graphic Design is Essential for Your Brand')}</h3>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
-                      <li>Enhance Your Brand’s Identity and Recognition</li>
-                      <li>Create Visually Stunning and Effective Marketing Materials</li>
-                      <li>Attract and Engage Your Target Audience</li>
+                      <li>{t('Enhance Your Brand’s Identity and Recognition')}</li>
+                      <li>{t('Create Visually Stunning and Effective Marketing Materials')}</li>
+                      <li>{t('Attract and Engage Your Target Audience')}</li>
                     </ul>
                   </div>
                 </div>
                 <div className="row pb-30">
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
-                      Graphic design is more than just creating pretty visuals; it's about strategically using design to communicate your brand’s message and resonate with your audience. Whether for print or digital media, our designs help you stand out and leave a lasting impression.
+                      {t('Graphic design is more than just creating pretty visuals; it’s about strategically using design to communicate your brand’s message and resonate with your audience. Whether for print or digital media, our designs help you stand out and leave a lasting impression.')}
                     </p>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -89,9 +91,9 @@ const GraphicDesign = () => {
                     </div>
                   </div>
                 </div>
-                <h3>Our Graphic Design Strategy and Process</h3>
+                <h3>{t('Our Graphic Design Strategy and Process')}</h3>
                 <p>
-                  We approach each design project with a strategic mindset. Our process includes understanding your brand, defining your objectives, and crafting designs that align with your business goals. We pay attention to every detail, ensuring that the final design is visually compelling and effectively communicates your message.
+                  {t('We approach each design project with a strategic mindset. Our process includes understanding your brand, defining your objectives, and crafting designs that align with your business goals. We pay attention to every detail, ensuring that the final design is visually compelling and effectively communicates your message.')}
                 </p>
                 <div
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
@@ -121,12 +123,12 @@ const GraphicDesign = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/content-writing">
-                    Content Writing
+                    {t('Content Writing')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/content-writing">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
@@ -140,12 +142,12 @@ const GraphicDesign = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="/graphic-design">
-                    Graphic Design
+                    {t('Graphic Design')}
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/graphic-design">
                   <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
+                    {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>

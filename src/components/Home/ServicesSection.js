@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const servicesContent = {
     title: "Elite's Core Services",
     subtitle: "What We Provide",
@@ -50,12 +52,14 @@ const servicesContent = {
   };
   
   const ServicesSection = () => {
+        const { t } = useTranslation();
+    
     return (
       <section className="services-area-two rel z-2">
         <div className="container">
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-10">{servicesContent.subtitle}</span>
-            <h2>{servicesContent.title}</h2>
+            <span className="sub-title mb-10">{t(servicesContent.subtitle)}</span>
+            <h2>{t(servicesContent.title)}</h2>
           </div>
           <div className="row justify-content-center">
             {servicesContent.services.map((service, index) => (
@@ -67,10 +71,10 @@ const servicesContent = {
                     <img src={service.image} alt="Service" />
                   </div>
                   <div className="content">
-                    <h4 className="title">{service.title}</h4>
+                    <h4 className="title">{t(service.title)}</h4>
                     <ul className="list-style-three">
                       {service.list.map((item, i) => (
-                        <li key={i}>{item}</li>
+                        <li key={i}>{t(item)}</li>
                       ))}
                     </ul>
                   </div>

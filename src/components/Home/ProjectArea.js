@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const projects = [
     {
@@ -40,6 +41,7 @@ const projects = [
   ];
   
   export default function ProjectArea() {
+    const { t } = useTranslation();
     return (
       <section className="project-area-two">
         <div className="container-fluid gap-wide">
@@ -54,11 +56,11 @@ const projects = [
                   </div>
                   <div className="content">
                     <span className="number">{`0${project.id}`}</span>
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
+                    <h3>{t(project.title)}</h3>
+                    <p>{t(project.description)}</p>
                     <Link legacyBehavior href={project.link}>
                       <a className="theme-btn">
-                        View Details <i className="fas fa-long-arrow-right" />
+                        {t('View Details')} <i className="fas fa-long-arrow-right" />
                       </a>
                     </Link>
                   </div>
