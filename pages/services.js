@@ -65,7 +65,7 @@ const Services = () => {
                         <i className="flaticon-trust" />
                       </div>
                       <h4>
-                        <Link legacyBehavior  legacyBehavior href="services">
+                        <Link legacyBehavior   href="services">
                           {t('Best Trusted Partner')}
                         </Link>
                       </h4>
@@ -77,7 +77,7 @@ const Services = () => {
                         <i className="flaticon-technical-support" />
                       </div>
                       <h4>
-                        <Link legacyBehavior  legacyBehavior href="services">
+                        <Link legacyBehavior   href="services">
                           {t('24/7 Tehnical Support')}
                         </Link>
                       </h4>
@@ -90,6 +90,7 @@ const Services = () => {
               <div className="cs-image-part ps-0 mb-30 wow fadeInRight delay-0-2s">
                 <div className="image">
                   <img
+                    loading="lazy"
                     src="assets/images/about/satisfaction-two.jpg"
                     alt="Satisfaction"
                   />
@@ -97,6 +98,7 @@ const Services = () => {
                 <div className="experience-years">
                   <h4>{t('25 Years Of Experience IT Solutions')}</h4>
                   <img
+                    loading="lazy"
                     src="assets/images/about/satisfaction-author.png"
                     alt="Author"
                   />

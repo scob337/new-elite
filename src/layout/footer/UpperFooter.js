@@ -11,7 +11,7 @@ const UpperFooter = () => {
       <div className="col-xl-3 col-sm-6">
         <div className="footer-widget widget_about wow fadeInUp delay-0-2s">
           <div className="footer-logo mb-30 ">
-            <Link legacyBehavior  legacyBehavior href="/">
+            <Link legacyBehavior   href="/">
               <a>
                 <img  loading="lazy" src="assets/images/logos/logo-one.png" alt="Logo" />
               </a>
@@ -20,7 +20,7 @@ const UpperFooter = () => {
           <p>
             {t('FooterLogoDesc')}
           </p>
-          <Link legacyBehavior  legacyBehavior href="/about">
+          <Link legacyBehavior   href="/about">
             <a className="read-more">
             {t('FooterLogoLearnMore')} <i className="fas fa-long-arrow-right" />
             </a>

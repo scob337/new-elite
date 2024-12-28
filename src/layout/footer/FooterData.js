@@ -18,7 +18,7 @@
         { href: "social-media", text: "Social Media Management" },
         { href: "content-writing", text: "Content Writing" },
         { href: "digital-marketing", text: "Digital Marketing" },
-        { href: "ui-ux", text: "UX/UI Strategy" },
+        { href: "uidesign", text: "UX/UI Strategy" },
         { href: "graphic-design", text: "Graphic Design" },
       ],
       animationDelay: "0-4s",

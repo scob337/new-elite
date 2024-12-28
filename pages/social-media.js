@@ -61,6 +61,7 @@ const SocialMediaManagement = () => {
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
+                    loading="lazy"
                     src="assets/images/services/service-details.jpg"
                     alt="Social Media Management Services"
                   />
@@ -86,6 +87,7 @@ const SocialMediaManagement = () => {
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
                     <div className="image">
                       <img
+                      loading="lazy"
                         src="assets/images/services/service-middle.jpg"
                         alt="Social Media Strategy"
                       />
@@ -117,17 +119,18 @@ const SocialMediaManagement = () => {
             <div className="next-prev-item wow fadeInLeft delay-0-2s">
               <div className="image">
                 <img
+                loading="lazy"
                   src="assets/images/services/service-prev.jpg"
                   alt="Content Writing"
                 />
               </div>
               <div className="content">
                 <h4>
-                  <Link legacyBehavior  legacyBehavior href="/content-writing">
+                  <Link legacyBehavior   href="/content-writing">
                     {t('Content Writing')}
                   </Link>
                 </h4>
-                <Link legacyBehavior  legacyBehavior href="/content-writing">
+                <Link legacyBehavior   href="/content-writing">
                   <a className="read-more">
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
@@ -135,18 +138,18 @@ const SocialMediaManagement = () => {
               </div>
             </div>
 
-            <Link legacyBehavior  legacyBehavior href="/services">
+            <Link legacyBehavior   href="/services">
               <a className="show-all" />
             </Link>
 
             <div className="next-prev-item wow fadeInRight delay-0-2s">
               <div className="content">
                 <h4>
-                  <Link legacyBehavior  legacyBehavior href="/seo">
+                  <Link legacyBehavior   href="/seo">
                     {t('SEO optimization')}
                   </Link>
                 </h4>
-                <Link legacyBehavior  legacyBehavior href="/social-media-management">
+                <Link legacyBehavior   href="/social-media-management">
                   <a className="read-more">
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
@@ -154,6 +157,7 @@ const SocialMediaManagement = () => {
               </div>
               <div className="image">
                 <img
+                loading="lazy"
                   src="assets/images/services/service-next.jpg"
                   alt="Social Media Management Services"
                 />

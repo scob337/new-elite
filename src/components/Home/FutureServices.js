@@ -56,7 +56,7 @@ const features = [
                 <i className={feature.iconClass} />
               </div>
               <h5>
-                <Link legacyBehavior  legacyBehavior href={feature.href}>
+                <Link legacyBehavior  href={feature.href}>
                   {t(feature.title)}
                 </Link>
               </h5>

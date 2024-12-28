@@ -108,7 +108,7 @@ const WhyChooseUs = () => {
                         <li key={index}>{t(item)}</li>
                       ))}
                     </ul>
-                    <Link legacyBehavior  legacyBehavior href="/about">
+                    <Link legacyBehavior  href="/about">
                       <a className="theme-btn mt-30">
                         {t('Learn More')} <i className="fas fa-long-arrow-right" />
                       </a>
@@ -124,11 +124,13 @@ const WhyChooseUs = () => {
   </div>
   <div className="why-choose-shapes">
     <img
+    loading="lazy"
       className="shape one"
       src="assets/images/about/why-choose-shape1.png"
       alt="Shape"
     />
     <img
+    loading="lazy"
       className="shape two"
       src="assets/images/about/why-choose-shape2.png"
       alt="Shape"

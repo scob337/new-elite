@@ -2,10 +2,10 @@ import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
 import JeenaAccordion from "@/src/components/JeenaAccordion";
 import ServiceAside from "@/src/components/ServiceAside";
-import Link from "next/link";
 import Head from "next/head";
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
-const UIUXDesign = () => {
+const uidesign = () => {
 
   const { t } = useTranslation();
 
@@ -136,55 +136,60 @@ const UIUXDesign = () => {
       </section>
 
       <div className="next-prev-service pb-80 rpb-50">
-        <div className="container">
-          <hr />
-          <div className="next-prev-service mt-80">
-            <div className="next-prev-item wow fadeInLeft delay-0-2s">
-              <div className="image">
-                <img
-                  src="assets/images/services/service-prev.jpg"
-                  alt="Web Development"
-                />
-              </div>
-              <div className="content">
-                <h4>
-                  <Link legacyBehavior   href="/web-development">
-                      {t("Web Development")}
-                  </Link>
-                </h4>
-                <Link legacyBehavior   href="/web-development" className="read-more">
-                    {t("Read More")} <i className="fal fa-angle-double-right" />
-                </Link>
-              </div>
-            </div>
-
-            <Link legacyBehavior   href="/services" className="show-all">
+  <div className="container">
+    <hr />
+    <div className="next-prev-service mt-80">
+      <div className="next-prev-item wow fadeInLeft delay-0-2s">
+        <div className="image">
+          <img
+            loading="lazy"
+            src="assets/images/services/service-prev.jpg"
+            alt="Web Development"
+          />
+        </div>
+        <div className="content">
+          <h4>
+            <Link legacyBehavior href="/web-development">
+              <a>{t("Web Development")}</a>
             </Link>
-
-            <div className="next-prev-item wow fadeInRight delay-0-2s">
-              <div className="content">
-                <h4>
-                  <Link legacyBehavior   href="/ui-ux-design">
-                    <a>{t("UI/UX Design")}</a>
-                  </Link>
-                </h4>
-                <Link legacyBehavior   href="/ui-ux-design" className="read-more">
-                    {t("Read More")} <i className="fal fa-angle-double-right" />
-                </Link>
-              </div>
-              <div className="image">
-                <img
-                  loading="lazy"
-                  src="assets/images/services/service-next.jpg"
-                  alt="UI/UX Design Services"
-                />
-              </div>
-            </div>
-          </div>
+          </h4>
+          <Link legacyBehavior href="/web-development">
+            <a className="read-more">
+              {t("Read More")} <i className="fal fa-angle-double-right" />
+            </a>
+          </Link>
         </div>
       </div>
+
+      {/* تم إزالة الـ Link الفارغة هنا */}
+
+      <div className="next-prev-item wow fadeInRight delay-0-2s">
+        <div className="content">
+          <h4>
+            <Link legacyBehavior href="/uidesign">
+              <a>{t("UI/UX Design")}</a>
+            </Link>
+          </h4>
+          <Link legacyBehavior href="/uidesign" className="read-more">
+            <a>
+              {t("Read More")} <i className="fal fa-angle-double-right" />
+            </a>
+          </Link>
+        </div>
+        <div className="image">
+          <img
+            loading="lazy"
+            src="assets/images/services/service-next.jpg"
+            alt="UI/UX Design Services"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     </Layout>
   );
 };
 
-export default UIUXDesign;
+export default uidesign;

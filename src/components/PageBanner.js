@@ -16,7 +16,7 @@ const { t } = useTranslation();
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb justify-content-center mb-5 wow fadeInUp delay-0-4s animated">
               <li className="breadcrumb-item">
-                <Link legacyBehavior  legacyBehavior href="/">
+                <Link legacyBehavior   href="/">
                   <a>{t("Home")}</a>
                 </Link>
               </li>

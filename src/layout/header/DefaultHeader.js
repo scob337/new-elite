@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Link from "next/link";
 import HeaderTop from "./HeaderTop";
 import Menu from "./Menu";
@@ -15,7 +14,7 @@ const DefaultHeader = () => {
           <div className={"header-inner rel d-flex align-items-center justify-content-between"}>
             <div className="logo-outer">
               <div className="logo bgc-gray">
-                <Link legacyBehavior  legacyBehavior href="/" >
+                <Link legacyBehavior   href="/" >
                   <a>
                     <img
                       src="assets/images/logos/logo.png"

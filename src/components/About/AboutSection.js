@@ -36,7 +36,7 @@ const aboutContent = {
                 </div>
                 <p>{t(aboutContent.description)}</p>
                 <div className={` about-btns`}>
-                  <Link legacyBehavior  legacyBehavior href={aboutContent.button.href}>
+                  <Link legacyBehavior   href={aboutContent.button.href}>
                     <a className="theme-btn style-three mt-15">
                       {t(aboutContent.button.text)} <i className={aboutContent.button.iconClass} />
                     </a>

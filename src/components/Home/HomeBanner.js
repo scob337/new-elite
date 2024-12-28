@@ -9,7 +9,7 @@ const HomeBanner = () => {
       <div className="hero-content-two pt-155 pb-160 rpt-115 rpb-65 wow fadeInUp delay-0-4s">
         <span className="sub-title">{t("HTitle")}</span>
         <h1>{t("Hdescription")}</h1>
-        <Link legacyBehavior  legacyBehavior href="/about">
+        <Link legacyBehavior   href="/about">
           <a className="theme-btn mt-25 wow fadeInUp delay-0-6s">
             {t('Let’s Get Started')} <i className="fas fa-long-arrow-right" />
           </a>
@@ -20,6 +20,7 @@ const HomeBanner = () => {
       <div className="hero-gradient-circle">
         <div className="icon">
           <img
+          loading="lazy"
             src="assets/images/hero/hero-circle-icon.png"
             alt="Icon"
           />

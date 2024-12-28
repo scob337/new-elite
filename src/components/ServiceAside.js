@@ -21,7 +21,7 @@ const ServiceAside = () => {
       >
         <span className="h5">{t('Lets Work Together')}</span>
         <h2>{t('Elite  Agency')}</h2>
-        <Link legacyBehavior  legacyBehavior href="/contact">
+        <Link legacyBehavior   href="/contact">
           <a className="theme-btn style-four">
             {t('Contact Us')} <i className="fas fa-angle-double-right" />
           </a>
@@ -31,6 +31,7 @@ const ServiceAside = () => {
           <i className="fas fa-phone" /> +966 55 994 9013
         </a>
         <img
+        loading="lazy"
           className="bg-shape"
           src="assets/images/widgets/cta-bg-lines.png"
           alt="Shape"

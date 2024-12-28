@@ -29,7 +29,7 @@ const services = [
     {
       icon: "flaticon-logo",
       title: "UX/UI Design Strategy",
-      link: "ui-ux",
+      link: "uidesign",
       description:
         "On the other hand, we denounce righteous indignation and dislike men who are demoralized by the charms of pleasure.",
       delay: "0-5s",
@@ -64,7 +64,7 @@ const services = [
                   </div>
                   <div className="content">
                     <h4>
-                      <Link legacyBehavior  legacyBehavior href={service.link}>
+                      <Link legacyBehavior  href={service.link}>
                         {t(service.title)}
                       </Link>
                     </h4>

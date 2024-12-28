@@ -37,7 +37,7 @@ const PartnersComponent = () => {
         <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 justify-content-center">
           {partnersData.map((partner, index) => (
             <div key={index} className="col">
-              <Link legacyBehavior  legacyBehavior href={partner.link}>
+              <Link legacyBehavior   href={partner.link}>
                 <a className={`partner-item-two wow fadeInUp delay-0-${index + 3}s`}>
                   <img  loading="lazy" src={partner.image} alt={partner.alt} />
                 </a>

@@ -24,6 +24,7 @@ const Footer = () => {
       </div>
       <div className="footer-shapes">
         <img
+        loading="lazy"
           className="shape one"
           src="assets/images/footer/footer-bg-weve-shape.png"
           alt="Shape"
@@ -34,6 +35,7 @@ const Footer = () => {
           alt="Shape"
         />
         <img
+        loading="lazy"
           className="shape three wow fadeInRight delay-0-8s"
           src="assets/images/footer/footer-right.png"
           alt="Shape"

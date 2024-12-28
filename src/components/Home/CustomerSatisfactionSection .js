@@ -65,6 +65,7 @@ const customerSatisfactionContent = {
                 <div className="experience-years">
                   <h4>{t(customerSatisfactionContent.experienceYears)}</h4>
                   <img
+                  loading="lazy"
                     src={customerSatisfactionContent.authorImage}
                     alt="Author"
                   />

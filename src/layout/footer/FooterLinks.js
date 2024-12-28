@@ -20,7 +20,7 @@ const FooterLinks = () => {
             <ul className="list-style-two">
               {section.links.map((link, linkIndex) => (
                 <li key={linkIndex}>
-                  <Link legacyBehavior  legacyBehavior href={link.href}>
+                  <Link legacyBehavior   href={link.href}>
                     <a> {t(link.text)}</a>
                   </Link>
                 </li>

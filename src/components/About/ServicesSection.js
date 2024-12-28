@@ -36,7 +36,7 @@ const servicesData = [
                     <i className={service.icon} />
                   </div>
                   <h4>
-                    <Link legacyBehavior  legacyBehavior href={service.link}>
+                    <Link legacyBehavior  href={service.link}>
                       {t(service.title)}
                     </Link>
                   </h4>
