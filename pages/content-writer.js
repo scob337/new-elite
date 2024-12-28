@@ -126,28 +126,28 @@ const ServiceDetails = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="services">
+                  <Link legacyBehavior  legacyBehavior href="services">
                     {t('SEO Optimization')}
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/seo">
+                <Link legacyBehavior  legacyBehavior href="/seo">
                   <a className="read-more">
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
             </div>
-            <Link legacyBehavior href="/services">
+            <Link legacyBehavior  legacyBehavior href="/services">
               <a className="show-all" />
             </Link>
             <div className="next-prev-item wow fadeInRight delay-0-2s">
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="services">
+                  <Link legacyBehavior  legacyBehavior href="services">
                    {t('Graphic Design')}
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/graphic-design">
+                <Link legacyBehavior  legacyBehavior href="/graphic-design">
                   <a className="read-more">
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>

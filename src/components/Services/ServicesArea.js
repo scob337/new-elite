@@ -64,7 +64,7 @@ const services = [
                   </div>
                   <div className="content">
                     <h4>
-                      <Link legacyBehavior href={service.link}>
+                      <Link legacyBehavior  legacyBehavior href={service.link}>
                         {t(service.title)}
                       </Link>
                     </h4>

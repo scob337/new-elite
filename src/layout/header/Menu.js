@@ -45,7 +45,7 @@ const MobileMenu = () => {
       <Accordion>
         <div className={`navbar-header gap-5 d-flex  justify-content-between ${storedLang === 'ar' && 'flex-row-reverse'}`}>
           <div className="mobile-logo">
-            <Link href="/">
+            <Link legacyBehavior  href="/">
                 <img
                   src="assets/images/logos/logo-one.png"
                   alt="Logo"
@@ -83,7 +83,7 @@ const MobileMenu = () => {
           <ul className="navigation clearfix">
             {NavLinks.map((item, index) => (
               <li key={index} className={router.pathname === item.url ? "active" : ""}>
-<Link href={item.url}>
+<Link legacyBehavior  href={item.url}>
   {t(item.name)}
 </Link>
               </li>
@@ -110,7 +110,7 @@ const DeskTopMenu = () => {
     <nav className="main-menu navbar-expand-lg desktop-menu mx-auto w-50">
       <div className="navbar-header w-100">
         <div className="mobile-logo">
-          <Link href="/">
+          <Link legacyBehavior  href="/">
               <img
                 src="assets/images/logos/logo-one.png"
                 alt="Logo"
@@ -136,7 +136,7 @@ const DeskTopMenu = () => {
           <ul className="navigation clearfix d-flex">
             {NavLinks.map((item, index) => (
               <li key={index} className={router.pathname === item.url ? "active" : ""}>
-<Link href={item.url}>
+<Link legacyBehavior  href={item.url}>
   {t(item.name)}
 </Link>
               </li>

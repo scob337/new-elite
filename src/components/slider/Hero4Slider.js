@@ -28,7 +28,7 @@ export default class Hero4Slider extends Component {
               <div className="slide-content">
                 <span className="sub-title">Welcome to Jeena</span>
                 <h1>IT Services Agency</h1>
-                <Link legacyBehavior href="/about">
+                <Link legacyBehavior  legacyBehavior href="/about">
                   <a className="theme-btn mt-15">
                     Let’s Get Started <i className="fas fa-long-arrow-right" />
                   </a>
@@ -53,12 +53,12 @@ export default class Hero4Slider extends Component {
               <div className="slide-content">
                 <span className="sub-title">IT Solution Comapny</span>
                 <h1>IT Services Agency</h1>
-                <Link legacyBehavior href="/about">
+                <Link legacyBehavior  legacyBehavior href="/about">
                   <a className="theme-btn mt-15">
                     Let’s Get Started <i className="fas fa-long-arrow-right" />
                   </a>
                 </Link>
-                <Link legacyBehavior href="/contact">
+                <Link legacyBehavior  legacyBehavior href="/contact">
                   <a className="theme-btn style-two mt-15">
                     Contact Us <i className="fas fa-long-arrow-right" />
                   </a>
@@ -77,7 +77,7 @@ export default class Hero4Slider extends Component {
               <div className="slide-content">
                 <span className="sub-title">Welcome to Jeena</span>
                 <h1>IT Services Agency</h1>
-                <Link legacyBehavior href="/about">
+                <Link legacyBehavior  legacyBehavior href="/about">
                   <a className="theme-btn mt-15">
                     Let’s Get Started <i className="fas fa-long-arrow-right" />
                   </a>
@@ -102,12 +102,12 @@ export default class Hero4Slider extends Component {
               <div className="slide-content">
                 <span className="sub-title">IT Solution Comapny</span>
                 <h1>IT Services Agency</h1>
-                <Link legacyBehavior href="/about">
+                <Link legacyBehavior  legacyBehavior href="/about">
                   <a className="theme-btn mt-15">
                     Let’s Get Started <i className="fas fa-long-arrow-right" />
                   </a>
                 </Link>
-                <Link legacyBehavior href="/contact">
+                <Link legacyBehavior  legacyBehavior href="/contact">
                   <a className="theme-btn style-two mt-15">
                     Contact Us <i className="fas fa-long-arrow-right" />
                   </a>
@@ -126,7 +126,7 @@ export default class Hero4Slider extends Component {
               <div className="slide-content">
                 <span className="sub-title">Welcome to Jeena</span>
                 <h1>IT Services Agency</h1>
-                <Link legacyBehavior href="/about">
+                <Link legacyBehavior  legacyBehavior href="/about">
                   <a className="theme-btn mt-15">
                     Let’s Get Started <i className="fas fa-long-arrow-right" />
                   </a>

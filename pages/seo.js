@@ -125,11 +125,11 @@ const SEO = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="/content-writing">
+                  <Link legacyBehavior  legacyBehavior href="/content-writing">
                     {t('Content Writing ')}
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/content-writing">
+                <Link legacyBehavior  legacyBehavior href="/content-writing">
                   <a className="read-more">
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
@@ -137,18 +137,18 @@ const SEO = () => {
               </div>
             </div>
             
-            <Link legacyBehavior href="/services">
+            <Link legacyBehavior  legacyBehavior href="/services">
               <a className="show-all" />
             </Link>
 
             <div className="next-prev-item wow fadeInRight delay-0-2s">
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="/digital-marketing">
+                  <Link legacyBehavior  legacyBehavior href="/digital-marketing">
                     {t('Digital Marketing')}
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/digital-marketing">
+                <Link legacyBehavior  legacyBehavior href="/digital-marketing">
                   <a className="read-more">
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>

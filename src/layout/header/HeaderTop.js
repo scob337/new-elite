@@ -8,7 +8,7 @@ const HeaderTop = () => {
           <div className="text">
             <span className="hello">Hello</span> We’re professional IT solutions
             company. Let’s work together{" "}
-            <Link legacyBehavior href="/contact">
+            <Link legacyBehavior  legacyBehavior href="/contact">
               <a>Contact Us</a>
             </Link>
           </div>

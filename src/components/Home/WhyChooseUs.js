@@ -108,7 +108,7 @@ const WhyChooseUs = () => {
                         <li key={index}>{t(item)}</li>
                       ))}
                     </ul>
-                    <Link legacyBehavior href="/about">
+                    <Link legacyBehavior  legacyBehavior href="/about">
                       <a className="theme-btn mt-30">
                         {t('Learn More')} <i className="fas fa-long-arrow-right" />
                       </a>

@@ -21,7 +21,7 @@ const ServiceAside = () => {
       >
         <span className="h5">{t('Lets Work Together')}</span>
         <h2>{t('Elite  Agency')}</h2>
-        <Link legacyBehavior href="/contact">
+        <Link legacyBehavior  legacyBehavior href="/contact">
           <a className="theme-btn style-four">
             {t('Contact Us')} <i className="fas fa-angle-double-right" />
           </a>
@@ -40,7 +40,7 @@ const ServiceAside = () => {
         <h4 className="widget-title">{t('Download')}</h4>
         <ul>
         <li>
-  <Link href="/assets/Profile.pdf" >
+  <Link legacyBehavior  href="/assets/Profile.pdf" >
     <a download>
       {t('Download PDF')} <i className="far fa-file-pdf" />
     </a>

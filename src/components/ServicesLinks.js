@@ -26,7 +26,7 @@ const ServicesLinks = () => {
           key={index}
           className={router.pathname === service.link ? "active" : ""}
         >
-          <Link legacyBehavior href={service.link}>
+          <Link legacyBehavior  legacyBehavior href={service.link}>
             {t(service.name)}
           </Link>
         </li>

@@ -148,27 +148,27 @@ const UIUXDesign = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link  href="/web-development">
+                  <Link legacyBehavior   href="/web-development">
                       {t("Web Development")}
                   </Link>
                 </h4>
-                <Link  href="/web-development" className="read-more">
+                <Link legacyBehavior   href="/web-development" className="read-more">
                     {t("Read More")} <i className="fal fa-angle-double-right" />
                 </Link>
               </div>
             </div>
 
-            <Link  href="/services" className="show-all">
+            <Link legacyBehavior   href="/services" className="show-all">
             </Link>
 
             <div className="next-prev-item wow fadeInRight delay-0-2s">
               <div className="content">
                 <h4>
-                  <Link  href="/ui-ux-design">
+                  <Link legacyBehavior   href="/ui-ux-design">
                     <a>{t("UI/UX Design")}</a>
                   </Link>
                 </h4>
-                <Link  href="/ui-ux-design" className="read-more">
+                <Link legacyBehavior   href="/ui-ux-design" className="read-more">
                     {t("Read More")} <i className="fal fa-angle-double-right" />
                 </Link>
               </div>

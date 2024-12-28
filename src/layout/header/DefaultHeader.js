@@ -15,7 +15,7 @@ const DefaultHeader = () => {
           <div className={"header-inner rel d-flex align-items-center justify-content-between"}>
             <div className="logo-outer">
               <div className="logo bgc-gray">
-                <Link legacyBehavior href="/" >
+                <Link legacyBehavior  legacyBehavior href="/" >
                   <a>
                     <img
                       src="assets/images/logos/logo.png"

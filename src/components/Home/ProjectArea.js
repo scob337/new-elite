@@ -58,7 +58,7 @@ const projects = [
                     <span className="number">{`0${project.id}`}</span>
                     <h3>{t(project.title)}</h3>
                     <p>{t(project.description)}</p>
-                    <Link legacyBehavior href={project.link}>
+                    <Link legacyBehavior  legacyBehavior href={project.link}>
                       <a className="theme-btn">
                         {t('View Details')} <i className="fas fa-long-arrow-right" />
                       </a>

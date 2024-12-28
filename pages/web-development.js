@@ -111,11 +111,11 @@ const WebDevelopment = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="/mobile-application">
+                  <Link legacyBehavior  legacyBehavior href="/mobile-application">
                     {t('Mobile Application Development')}
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/mobile-application">
+                <Link legacyBehavior  legacyBehavior href="/mobile-application">
                   <a className="read-more">
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
@@ -123,18 +123,18 @@ const WebDevelopment = () => {
               </div>
             </div>
 
-            <Link legacyBehavior href="/services2">
+            <Link legacyBehavior  legacyBehavior href="/services2">
               <a className="show-all" />
             </Link>
 
             <div className="next-prev-item wow fadeInRight delay-0-2s">
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="/web-development">
+                  <Link legacyBehavior  legacyBehavior href="/web-development">
                     {t('Web Development')}
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/web-development">
+                <Link legacyBehavior  legacyBehavior href="/web-development">
                   <a className="read-more">
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
