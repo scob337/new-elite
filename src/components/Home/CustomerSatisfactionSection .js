@@ -60,7 +60,7 @@ const customerSatisfactionContent = {
                   <i className="fas fa-play" />
                 </a>
                 <div className="image">
-                  <img src={customerSatisfactionContent.image} alt="Satisfaction" />
+                  <img  loading="lazy" src={customerSatisfactionContent.image} alt="Satisfaction" />
                 </div>
                 <div className="experience-years">
                   <h4>{t(customerSatisfactionContent.experienceYears)}</h4>

@@ -49,7 +49,7 @@ const processSteps = [
           <h2>Industry Best Practices to the Core</h2>
         </div>
         <div className="work-process-line text-center">
-          <img src="assets/images/shapes/work-process-line.png" alt="line" />
+          <img  loading="lazy" src="assets/images/shapes/work-process-line.png" alt="line" />
         </div>
         <div className="container">
           <div className="row row-cols-xl-5 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">

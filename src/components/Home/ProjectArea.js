@@ -52,7 +52,7 @@ const projects = [
                   className={`project-item wow fadeInUp delay-${project.delay}`}
                 >
                   <div className="image">
-                    <img src={project.image} alt="Project" />
+                    <img  loading="lazy" src={project.image} alt="Project" />
                   </div>
                   <div className="content">
                     <span className="number">{`0${project.id}`}</span>

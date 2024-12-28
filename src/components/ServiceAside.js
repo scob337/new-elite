@@ -40,7 +40,7 @@ const ServiceAside = () => {
         <h4 className="widget-title">{t('Download')}</h4>
         <ul>
         <li>
-  <Link href="/assets/Profile.pdf" legacyBehavior>
+  <Link href="/assets/Profile.pdf" >
     <a download>
       {t('Download PDF')} <i className="far fa-file-pdf" />
     </a>

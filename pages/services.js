@@ -27,7 +27,7 @@ const Services = () => {
       <div className="video-area-two rel z-1">
         <div className="container">
           <div className="video-wrap-two wow fadeInUp delay-0-2s">
-            <img src="assets/images/background/video.jpg" alt="Video" />
+            <img  loading="lazy" src="assets/images/background/video.jpg" alt="Video" />
             <a
               href="https://www.youtube.com/watch?v=9Y7ma241N8k"
               className="mfp-iframe video-play"

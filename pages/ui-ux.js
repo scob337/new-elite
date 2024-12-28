@@ -6,6 +6,7 @@ import Link from "next/link";
 import Head from 'next/head';
 import { useTranslation } from "react-i18next";
 const UIUXDesign = () => {
+
   const { t } = useTranslation();
   const accordionTitle = [
     { id: 1, title: "Why Choose Our UI/UX Design Services?" },
@@ -84,6 +85,7 @@ const UIUXDesign = () => {
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
                     <div className="image">
                       <img
+                      loading="lazy"
                         src="assets/images/services/service-middle.jpg"
                         alt="UI/UX Design Process"
                       />

@@ -19,7 +19,7 @@ const E404 = () => {
               </Link>
             </div>
             <div className="image mb-80 rmb-55 wow fadeInUp delay-0-4s">
-              <img src="assets/images/background/404.png" alt="Error" />
+              <img  loading="lazy" src="assets/images/background/404.png" alt="Error" />
             </div>
             <div className="row justify-content-center wow fadeInUp delay-0-2s">
               <div className="col-xl-8 col-lg-10">

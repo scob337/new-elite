@@ -59,7 +59,7 @@ const TeamComponent = () => {
           {teamData.map((member, index) => (
             <div key={index} className="col-xl-3 col-lg-4 col-md-6">
               <div className={`team-member style-two wow fadeInUp delay-0-${index * 2 + 2}s`}>
-                <img src={member.image} alt="Team" />
+                <img  loading="lazy" src={member.image} alt="Team" />
                 <h4>{member.name}</h4>
                 <span className="designation">{member.designation}</span>
                 <div className="social-style-two">
@@ -75,8 +75,8 @@ const TeamComponent = () => {
         </div>
       </div>
       <div className="team-shapes">
-        <img className="shape one" src="assets/images/team/team-shape-one.png" alt="Shape" />
-        <img className="shape two" src="assets/images/team/team-shape-two.png" alt="Shape" />
+        <img  loading="lazy" className="shape one" src="assets/images/team/team-shape-one.png" alt="Shape" />
+        <img  loading="lazy" className="shape two" src="assets/images/team/team-shape-two.png" alt="Shape" />
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ const UpperFooter = () => {
           <div className="footer-logo mb-30 ">
             <Link legacyBehavior href="/">
               <a>
-                <img src="assets/images/logos/logo-one.png" alt="Logo" />
+                <img  loading="lazy" src="assets/images/logos/logo-one.png" alt="Logo" />
               </a>
             </Link>
           </div>

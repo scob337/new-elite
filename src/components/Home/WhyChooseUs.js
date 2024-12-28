@@ -96,7 +96,7 @@ const WhyChooseUs = () => {
               <div className="row gap-90 align-items-center">
                 <div className="col-lg-6">
                   <div className="why-choose-image rmb-55">
-                    <img src={service.image} alt="Why Choose" />
+                    <img  loading="lazy" src={service.image} alt="Why Choose" />
                   </div>
                 </div>
                 <div className="col-lg-6">

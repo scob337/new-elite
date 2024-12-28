@@ -34,7 +34,7 @@ const Index2 = () => {
         </div>
 
         <div className="hero-shapes-two">
-          <img src="assets/images/hero/hero-bg-lines.png" alt="BG Lines" />
+          <img  loading="lazy" src="assets/images/hero/hero-bg-lines.png" alt="BG Lines" />
         </div>
       </section>
       {/* Hero Section End */}

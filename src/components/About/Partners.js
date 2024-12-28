@@ -39,7 +39,7 @@ const PartnersComponent = () => {
             <div key={index} className="col">
               <Link legacyBehavior href={partner.link}>
                 <a className={`partner-item-two wow fadeInUp delay-0-${index + 3}s`}>
-                  <img src={partner.image} alt={partner.alt} />
+                  <img  loading="lazy" src={partner.image} alt={partner.alt} />
                 </a>
               </Link>
             </div>

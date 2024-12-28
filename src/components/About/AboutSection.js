@@ -24,7 +24,7 @@ const aboutContent = {
           <div className="row align-items-center gap-90">
             <div className="col-lg-6">
               <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
-                <img src="assets/images/about/about-two.jpg" alt="About" />
+                <img  loading="lazy" src="assets/images/about/about-two.jpg" alt="About" />
                 <div className="bg-circle-shape" />
               </div>
             </div>

@@ -68,7 +68,7 @@ const servicesContent = {
                   className={`service-item-two wow fadeInUp delay-${0.2 * (index + 1)}s`}
                 >
                   <div className="image">
-                    <img src={service.image} alt="Service" />
+                    <img  loading="lazy" src={service.image} alt="Service" />
                   </div>
                   <div className="content">
                     <h4 className="title">{t(service.title)}</h4>
