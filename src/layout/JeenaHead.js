@@ -11,9 +11,7 @@ const JeenaHead = () => {
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
       {/* Title */}
-      <title>
-        Jeena - IT solutions &amp; Services HTML Template || Home Four
-      </title>
+
       {/* Favicon Icon */}
       <link
         rel="shortcut icon"
