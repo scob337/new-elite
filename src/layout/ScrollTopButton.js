@@ -1,8 +1,8 @@
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { scrollTopActive } from "../utils";
 
 const ScrollTopButton = () => {
-  useLayoutEffect(() => {
+  useEffect(() => {
     scrollTopActive();
   }, []);
   const scrollTop = () => {

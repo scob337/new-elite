@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Accordion } from "react-bootstrap";
 import { Fragment } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from 'react-i18next';
 
 const NavLinks = [
   { name: "Home", url: "/" },
   { name: "About", url: "/about" },
   { name: "Services", url: "/services" },
-  // { name: "Projects", url: "/projects" },
   { name: "Contact", url: "/contact" },
 ];
 
@@ -22,27 +22,38 @@ const Menu = () => {
 };
 
 const MobileMenu = () => {
-  const [activeMenu, setActiveMenu] = useState(null);
-  const active = (value) => setActiveMenu(value === activeMenu ? null : value);
+  const { i18n , t} = useTranslation();
+  const [storedLang, setStoredLang] = useState('en');
   const router = useRouter();
+
+  useEffect(() => {
+    const lang = localStorage.getItem('lang') || 'en';
+    setStoredLang(lang);
+    i18n.changeLanguage(lang);
+  }, [i18n]);
+
+  const toggleLanguage = () => {
+    const newLanguage = i18n.language === 'en' ? 'ar' : 'en';
+    i18n.changeLanguage(newLanguage);
+    localStorage.setItem('lang', newLanguage);
+    setStoredLang(newLanguage);
+    location.reload();
+  };
 
   return (
     <nav className="main-menu navbar-expand-lg mobile-menu">
       <Accordion>
-        <div className="navbar-header">
+        <div className={`navbar-header d-flex ${storedLang === 'en' && 'justify-content-between'} ${storedLang === 'ar' && 'flex-row-reverse'}`}>
           <div className="mobile-logo">
-            <Link href="/" legacyBehavior>
-              <a>
+            <Link href="/">
                 <img
                   src="assets/images/logos/logo-one.png"
                   alt="Logo"
                   title="Logo"
                 />
-              </a>
             </Link>
           </div>
 
-          {/* Toggle Button */}
           <Accordion.Toggle
             as={"button"}
             type="button"
@@ -54,20 +65,27 @@ const MobileMenu = () => {
             <span className="icon-bar" />
             <span className="icon-bar" />
           </Accordion.Toggle>
+
+          <div className="menu-btns mx-3">
+            <img
+              onClick={toggleLanguage}
+              src={`${i18n.language === 'en' ? 'assets/images/AR.svg' : 'assets/images/EN.svg'}`}
+              alt="Language Icon"
+              title={i18n.language === 'en' ? 'AR' : 'EN'}
+              width={50}
+              height={30}
+              style={{ cursor: 'pointer', objectFit: 'cover' }}
+            />
+          </div>
         </div>
-        <Accordion.Collapse
-          eventKey="collapse"
-          className="navbar-collapse clearfix"
-        >
+
+        <Accordion.Collapse eventKey="collapse" className="navbar-collapse clearfix">
           <ul className="navigation clearfix">
             {NavLinks.map((item, index) => (
-              <li
-                key={index}
-                className={router.pathname === item.url ? "active" : ""}
-              >
-                <Link href={item.url} legacyBehavior>
-                  <a>{item.name}</a>
-                </Link>
+              <li key={index} className={router.pathname === item.url ? "active" : ""}>
+<Link href={item.url}>
+  {t(item.name)}
+</Link>
               </li>
             ))}
           </ul>
@@ -78,23 +96,29 @@ const MobileMenu = () => {
 };
 
 const DeskTopMenu = () => {
+  const { i18n , t} = useTranslation();
   const router = useRouter();
+
+  const toggleLanguage = () => {
+    const newLanguage = i18n.language === 'en' ? 'ar' : 'en';
+    i18n.changeLanguage(newLanguage);
+    localStorage.setItem('lang', newLanguage);
+    location.reload();
+  };
 
   return (
     <nav className="main-menu navbar-expand-lg desktop-menu">
       <div className="navbar-header">
         <div className="mobile-logo">
-          <Link href="/" legacyBehavior>
-            <a>
+          <Link href="/">
               <img
                 src="assets/images/logos/logo-one.png"
                 alt="Logo"
                 title="Logo"
               />
-            </a>
           </Link>
         </div>
-        {/* Toggle Button */}
+
         <button
           type="button"
           className="navbar-toggle"
@@ -106,19 +130,30 @@ const DeskTopMenu = () => {
           <span className="icon-bar" />
         </button>
       </div>
+
       <div className="navbar-collapse collapse clearfix">
-        <ul className="navigation clearfix">
-          {NavLinks.map((item, index) => (
-            <li
-              key={index}
-              className={router.pathname === item.url ? "active" : ""}
-            >
-              <Link href={item.url} legacyBehavior>
-                <a>{item.name}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="d-flex justify-content-between w-100">
+          <ul className="navigation clearfix d-flex">
+            {NavLinks.map((item, index) => (
+              <li key={index} className={router.pathname === item.url ? "active" : ""}>
+<Link href={item.url}>
+  {t(item.name)}
+</Link>
+              </li>
+            ))}
+          </ul>
+          <div className="menu-btns mx-3">
+            <img
+              onClick={toggleLanguage}
+              src={`${i18n.language === 'en' ? 'assets/images/AR.svg' : 'assets/images/EN.svg'}`}
+              alt="Language Icon"
+              title={i18n.language === 'en' ? 'AR' : 'EN'}
+              width={50}
+              height={30}
+              style={{ cursor: 'pointer', objectFit: 'cover' }}
+            />
+          </div>
+        </div>
       </div>
     </nav>
   );

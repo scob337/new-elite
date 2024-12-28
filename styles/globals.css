@@ -1,6 +1,14 @@
 .main-menu li.dropdown:hover > ul {
   display: block;
 }
+html[dir="rtl"] {
+  text-align: right !important;
+
+}
+
+html[dir="ltr"] {
+  text-align: left !important;
+}
 
 /* Slick slider */
 .slick-dots {

@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
-
+import { useTranslation } from 'react-i18next'; 
 const HomeBanner = () => {
+  const { t } = useTranslation();
   return (
-    <div className="row align-items-center">
+    <div className="row align-items-center" >
     <div className="col-lg-8">
       <div className="hero-content-two pt-155 pb-160 rpt-115 rpb-65 wow fadeInUp delay-0-4s">
-        <span className="sub-title">IT Solution Comapny</span>
-        <h1>Innovation Digital IT Solutions</h1>
+        <span className="sub-title">{t("HTitle")}</span>
+        <h1>{t("Hdescription")}</h1>
         <Link legacyBehavior href="/about">
           <a className="theme-btn mt-25 wow fadeInUp delay-0-6s">
             Let’s Get Started <i className="fas fa-long-arrow-right" />

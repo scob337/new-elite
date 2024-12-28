@@ -1,6 +1,9 @@
 import UpperFooter from "./UpperFooter";
 import FooterCTA from "./FooterCTA";
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="main-footer bgc-gray footer-white rel z-1">
       <FooterCTA />
@@ -13,7 +16,7 @@ const Footer = () => {
 
             <div className="col-12 text-center d-flex justify-content-center">
               <div className="copyright-text text-lg-end wow fadeInLeft delay-0-2s">
-                <p>© 2024 Elite Agency. All rights reserved.</p>
+                <p>{t('FooterCopyright')}</p>
               </div>
             </div>
           </div>

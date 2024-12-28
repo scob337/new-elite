@@ -13,7 +13,7 @@ const Index2 = () => {
   return (
     <Layout>
             <Head>
-        <title>Elite-Agency  </title>
+        <title> Elite-Agency  </title>
         <meta name="description" content="هذا وصف لصفحتك الرائعة." />
         <meta name="keywords" content="Next.js, React, SEO, تطوير ويب" />
         <meta name="author" content="اسمك" />
