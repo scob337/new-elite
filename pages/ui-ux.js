@@ -6,7 +6,9 @@ import Link from "next/link";
 import Head from "next/head";
 import { useTranslation } from "react-i18next";
 const UIUXDesign = () => {
+
   const { t } = useTranslation();
+
   const accordionTitle = [
     { id: 1, title: "Why Choose Our UI/UX Design Services?" },
     { id: 2, title: "How Our UI/UX Designers Create Intuitive Experiences?" },
@@ -146,33 +148,28 @@ const UIUXDesign = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="/web-development">
-                      <a>{t("Web Development")}</a>
+                  <Link  href="/web-development">
+                      {t("Web Development")}
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/web-development">
-                  <a className="read-more">
+                <Link  href="/web-development" className="read-more">
                     {t("Read More")} <i className="fal fa-angle-double-right" />
-                  </a>
                 </Link>
               </div>
             </div>
 
-            <Link legacyBehavior href="/services2">
-              <a className="show-all" />
+            <Link  href="/services" className="show-all">
             </Link>
 
             <div className="next-prev-item wow fadeInRight delay-0-2s">
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="/ui-ux-design">
+                  <Link  href="/ui-ux-design">
                     <a>{t("UI/UX Design")}</a>
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/ui-ux-design">
-                  <a className="read-more">
+                <Link  href="/ui-ux-design" className="read-more">
                     {t("Read More")} <i className="fal fa-angle-double-right" />
-                  </a>
                 </Link>
               </div>
               <div className="image">
@@ -189,4 +186,5 @@ const UIUXDesign = () => {
     </Layout>
   );
 };
+
 export default UIUXDesign;
