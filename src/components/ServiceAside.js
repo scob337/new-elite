@@ -6,13 +6,13 @@ import { useTranslation } from 'react-i18next';
 const ServiceAside = () => {
   const { t } = useTranslation();
   return (
-    <div className="col-lg-4">
-    <div className="service-sidebar">
-      <div className="widget widget-category wow fadeInUp delay-0-2s">
+    <article className="col-lg-4">
+    <article className="service-sidebar">
+      <article className="widget widget-category wow fadeInUp delay-0-2s">
         <h4 className="widget-title">{t('Services Category')}</h4>
           <ServicesLinks/>
-      </div>
-      <div
+      </article>
+      <article
         className="widget widget-cta"
         style={{
           backgroundImage:
@@ -36,8 +36,8 @@ const ServiceAside = () => {
           src="assets/images/widgets/cta-bg-lines.png"
           alt="Shape"
         />
-      </div>
-      <div className="widget widget-download wow fadeInUp delay-0-2s">
+      </article>
+      <article className="widget widget-download wow fadeInUp delay-0-2s">
         <h4 className="widget-title">{t('Download')}</h4>
         <ul>
         <li>
@@ -50,9 +50,9 @@ const ServiceAside = () => {
 
 
         </ul>
-      </div>
-    </div>
-  </div>
+      </article>
+    </article>
+  </article>
   )
 }
 

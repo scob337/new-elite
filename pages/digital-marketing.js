@@ -47,79 +47,79 @@ const { t } = useTranslation();
               </Head>
       <PageBanner pageName={"Digital Marketing Services"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
-        <div className="container">
-          <div className="row gap-100">
-            <div className="col-lg-8">
-              <div className="service-details-content">
-                <div className="section-title mb-30">
+        <article className="container">
+          <article className="row gap-100">
+            <article className="col-lg-8">
+              <article className="service-details-content">
+                <article className="section-title mb-30">
                   <h2>{t('Expert Digital Marketing Services to Grow Your Business Online')}</h2>
-                </div>
+                </article>
                 <p>
                   {t('At Elite, we specialize in comprehensive digital marketing strategies to help businesses enhance their online presence. Our services include SEO, PPC, content marketing, social media, and email marketing. We aim to drive targeted traffic, increase conversions, and achieve long-term online success.')}
                 </p>
-                <div className="image my-40 wow fadeInUp delay-0-2s">
+                <article className="image my-40 wow fadeInUp delay-0-2s">
                   <img
                     src="assets/images/services/service-details.jpg"
                     alt="Digital Marketing Services"
                   />
-                </div>
-                <div className="row">
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                </article>
+                <article className="row">
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
                     <h3>{t('Why Digital Marketing is Crucial for Your Business Growth')}</h3>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
                       <li>{t('Increase Online Visibility and Brand Awareness')}</li>
                       <li>{t('Drive Targeted Traffic to Your Website')}</li>
                       <li>{t('Improve Lead Generation and Conversion Rates')}</li>
                     </ul>
-                  </div>
-                </div>
-                <div className="row pb-30">
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                </article>
+                <article className="row pb-30">
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
                       {t('Digital marketing is essential for any business that wants to thrive in the competitive online marketplace. Our team stays ahead of industry trends, ensuring your business benefits from the most effective marketing strategies, including SEO, social media management, content creation, and more.')}
                     </p>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <div className="image">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                    <article className="image">
                       <img
                         src="assets/images/services/service-middle.jpg"
                         alt="Digital Marketing Process"
                       />
-                    </div>
-                  </div>
-                </div>
+                    </article>
+                  </article>
+                </article>
                 <h3>{t('Our Digital Marketing Strategy and Process')}</h3>
                 <p>
                   {t('We create customized digital marketing strategies designed to achieve your business objectives. Our process includes understanding your target audience, choosing the right marketing channels, and optimizing campaigns to drive conversions and grow your business.')}
                 </p>
-                <div
+                <article
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
                   id="faq-accordion"
                 >
                   <JeenaAccordion accordionsTitle={accordionTitle} accordionContent={accordionContent}/>
-                </div>
-              </div>
-            </div>
+                </article>
+              </article>
+            </article>
 
             <ServiceAside />
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
 
-      <div className="next-prev-service pb-80 rpb-50">
-        <div className="container">
+      <article className="next-prev-service pb-80 rpb-50">
+        <article className="container">
           <hr />
-          <div className="next-prev-service mt-80">
-            <div className="next-prev-item wow fadeInLeft delay-0-2s">
-              <div className="image">
+          <article className="next-prev-service mt-80">
+            <article className="next-prev-item wow fadeInLeft delay-0-2s">
+              <article className="image">
                 <img
                   src="assets/images/services/service-prev.jpg"
                   alt="Content Writing"
                 />
-              </div>
-              <div className="content">
+              </article>
+              <article className="content">
                 <h4>
                   <Link legacyBehavior  legacyBehavior href="/content-writing">
                     {t('Content Writing')}
@@ -130,15 +130,15 @@ const { t } = useTranslation();
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-            </div>
+              </article>
+            </article>
 
             <Link legacyBehavior  legacyBehavior href="/services">
               <a className="show-all" />
             </Link>
 
-            <div className="next-prev-item wow fadeInRight delay-0-2s">
-              <div className="content">
+            <article className="next-prev-item wow fadeInRight delay-0-2s">
+              <article className="content">
                 <h4>
                   <Link legacyBehavior  legacyBehavior href="/digital-marketing">
                     {t('Digital Marketing')}
@@ -149,17 +149,17 @@ const { t } = useTranslation();
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-              <div className="image">
+              </article>
+              <article className="image">
                 <img
                   src="assets/images/services/service-next.jpg"
                   alt="Digital Marketing Services"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </article>
+            </article>
+          </article>
+        </article>
+      </article>
     </Layout>
   );
 };

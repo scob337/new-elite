@@ -48,79 +48,79 @@ const GraphicDesign = () => {
                   </Head>
       <PageBanner pageName={"Graphic Design Services"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
-        <div className="container">
-          <div className="row gap-100">
-            <div className="col-lg-8">
-              <div className="service-details-content">
-                <div className="section-title mb-30">
+        <article className="container">
+          <article className="row gap-100">
+            <article className="col-lg-8">
+              <article className="service-details-content">
+                <article className="section-title mb-30">
                   <h2>{t('Expert Graphic Design Services to Elevate Your Brand')}</h2>
-                </div>
+                </article>
                 <p>
                   {t('At Elite, we specialize in delivering professional graphic design services that enhance your brand’s identity. Whether you need a new logo, a complete brand overhaul, or creative visuals for your marketing campaigns, our designs are crafted to tell your story and captivate your audience.')}
                 </p>
-                <div className="image my-40 wow fadeInUp delay-0-2s">
+                <article className="image my-40 wow fadeInUp delay-0-2s">
                   <img
                     src="assets/images/services/service-details.jpg"
                     alt="Graphic Design Services"
                   />
-                </div>
-                <div className="row">
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                </article>
+                <article className="row">
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
                     <h3>{t('Why Graphic Design is Essential for Your Brand')}</h3>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
                       <li>{t('Enhance Your Brand’s Identity and Recognition')}</li>
                       <li>{t('Create Visually Stunning and Effective Marketing Materials')}</li>
                       <li>{t('Attract and Engage Your Target Audience')}</li>
                     </ul>
-                  </div>
-                </div>
-                <div className="row pb-30">
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                </article>
+                <article className="row pb-30">
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
                       {t('Graphic design is more than just creating pretty visuals; it’s about strategically using design to communicate your brand’s message and resonate with your audience. Whether for print or digital media, our designs help you stand out and leave a lasting impression.')}
                     </p>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <div className="image">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                    <article className="image">
                       <img
                         src="assets/images/services/service-middle.jpg"
                         alt="Graphic Design Process"
                       />
-                    </div>
-                  </div>
-                </div>
+                    </article>
+                  </article>
+                </article>
                 <h3>{t('Our Graphic Design Strategy and Process')}</h3>
                 <p>
                   {t('We approach each design project with a strategic mindset. Our process includes understanding your brand, defining your objectives, and crafting designs that align with your business goals. We pay attention to every detail, ensuring that the final design is visually compelling and effectively communicates your message.')}
                 </p>
-                <div
+                <article
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
                   id="faq-accordion"
                 >
                   <JeenaAccordion accordionsTitle={accordionTitle} accordionContent={accordionContent} />
-                </div>
-              </div>
-            </div>
+                </article>
+              </article>
+            </article>
 
             <ServiceAside />
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
 
-      <div className="next-prev-service pb-80 rpb-50">
-        <div className="container">
+      <article className="next-prev-service pb-80 rpb-50">
+        <article className="container">
           <hr />
-          <div className="next-prev-service mt-80">
-            <div className="next-prev-item wow fadeInLeft delay-0-2s">
-              <div className="image">
+          <article className="next-prev-service mt-80">
+            <article className="next-prev-item wow fadeInLeft delay-0-2s">
+              <article className="image">
                 <img
                   src="assets/images/services/service-prev.jpg"
                   alt="Content Writing"
                 />
-              </div>
-              <div className="content">
+              </article>
+              <article className="content">
                 <h4>
                   <Link legacyBehavior  legacyBehavior href="/content-writing">
                     {t('Content Writing')}
@@ -131,15 +131,15 @@ const GraphicDesign = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-            </div>
+              </article>
+            </article>
 
             <Link legacyBehavior  legacyBehavior href="/services">
               <a className="show-all" />
             </Link>
 
-            <div className="next-prev-item wow fadeInRight delay-0-2s">
-              <div className="content">
+            <article className="next-prev-item wow fadeInRight delay-0-2s">
+              <article className="content">
                 <h4>
                   <Link legacyBehavior  legacyBehavior href="/graphic-design">
                     {t('Graphic Design')}
@@ -150,17 +150,17 @@ const GraphicDesign = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-              <div className="image">
+              </article>
+              <article className="image">
                 <img
                   src="assets/images/services/service-next.jpg"
                   alt="Graphic Design Services"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </article>
+            </article>
+          </article>
+        </article>
+      </article>
     </Layout>
   );
 };

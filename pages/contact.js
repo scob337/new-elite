@@ -20,47 +20,47 @@ const Contact = () => {
                   </Head>
       <PageBanner pageName={"Contact Us"} />{" "}
       <section className="contact-page-info pt-130 rpt-100 pb-100 rpb-70 rel z-1">
-        <div className="container">
-          <div className="row text-center mb-35 justify-content-center wow fadeInUp delay-0-2s">
-          <div className="col-xl-8 col-lg-10">
-  <div className="section-title mb-25">
+        <article className="container">
+          <article className="row text-center mb-35 justify-content-center wow fadeInUp delay-0-2s">
+          <article className="col-xl-8 col-lg-10">
+  <article className="section-title mb-25">
     <span className="sub-title mb-15">{t('About Our Company')}</span>
     <h2>{t('Company Information')}</h2>
-  </div>
+  </article>
   <p>
     {t('At Elite, we specialize in providing top-notch web development, mobile application development, and marketing services. With a commitment to delivering high-quality solutions tailored to your business needs, we help companies grow and thrive in the digital world. Our team of experts works tirelessly to ensure that every project is executed with precision and dedication, ensuring client satisfaction at every step.')}
   </p>
-</div>
+</article>
 
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="contact-info-box wow fadeInUp delay-0-2s">
-                <div className="icon">
+          </article>
+          <article className="row justify-content-center">
+            <article className="col-xl-3 col-lg-4 col-md-6">
+              <article className="contact-info-box wow fadeInUp delay-0-2s">
+                <article className="icon">
                   <i className="fal fa-map-marker-alt" />
-                </div>
+                </article>
                 <h4>{t('Locations')}</h4>
                 <span> {t('Saudi Arabia, Riyadh')}</span>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="contact-info-box wow fadeInUp delay-0-3s">
-                <div className="icon">
+              </article>
+            </article>
+            <article className="col-xl-3 col-lg-4 col-md-6">
+              <article className="contact-info-box wow fadeInUp delay-0-3s">
+                <article className="icon">
                   <i className="fal fa-envelope-open" />
-                </div>
-                <h4>t{('Email Us')}</h4>
+                </article>
+                <h4>{t('Email Us')}</h4>
                 <a href="mailto:elitearab2030@gmail.com">
                 elitearab2030@gmail.com
                 </a>
                 <br />
                 <a href="http://www.elitearab.net">www.elitearab.net</a>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="contact-info-box wow fadeInUp delay-0-4s">
-                <div className="icon">
+              </article>
+            </article>
+            <article className="col-xl-3 col-lg-4 col-md-6">
+              <article className="contact-info-box wow fadeInUp delay-0-4s">
+                <article className="icon">
                   <i className="fal fa-phone-plus" />
-                </div>
+                </article>
                 <h4>{t('Locations')}</h4>
                 <span>
                   {t('Mobile')} : <a href="callto:+966559949013">+966 55 994 9013</a>
@@ -68,25 +68,24 @@ const Contact = () => {
                 {/* <span>
                   Teliphone : <a href="callto:+966 55 9949013">+1234566</a>
                 </span> */}
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="contact-info-box wow fadeInUp delay-0-5s">
-                <div className="icon">
+              </article>
+            </article>
+            <article className="col-xl-3 col-lg-4 col-md-6">
+              <article className="contact-info-box wow fadeInUp delay-0-5s">
+                <article className="icon">
                   <i className="fal fa-clock" />
-                </div>
+                </article>
                 <h4>{t('Working Hour')}</h4>
                 <b>{t('Saturday')} _ {t('Thursday')},</b>
                 <span>10:00am - 06:00pm</span>
-              </div>
-            </div>
-          </div>
-        </div>
+              </article>
+            </article>
+          </article>
+        </article>
       </section>
       {/* Contact Info Area end */}
       {/* Location Map Area Start */}
-      <div className="contact-page-map wow fadeInUp delay-0-2s">
-        <div className="our-location">
+      <article className="contact-page-map wow fadeInUp delay-0-2s">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d142190.2862584524!2d-74.01298319978558!3d40.721725351435126!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1663473911885!5m2!1sen!2sbd"
             style={{ border: 0, width: "100%" }}
@@ -94,24 +93,23 @@ const Contact = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
-        </div>
-      </div>
+      </article>
       {/* Location Map Area End */}
       {/* Contact Form Start */}
       <section className="contact-page-form pb-130 rpb-100">
-        <div className="container">
-          <div className="contact-form-wrap form-style-two bgc-lighter wow fadeInUp delay-0-2s">
-          <div className="row text-center mb-35 justify-content-center">
-  <div className="col-xl-9 col-lg-11">
-    <div className="section-title mb-25 wow fadeInUp delay-0-2s">
+        <article className="container">
+          <article className="contact-form-wrap form-style-two bgc-lighter wow fadeInUp delay-0-2s">
+          <article className="row text-center mb-35 justify-content-center">
+  <article className="col-xl-9 col-lg-11">
+    <article className="section-title mb-25 wow fadeInUp delay-0-2s">
       <span className="sub-title mb-15">{t('Contact Us')}</span>
       <h2>{t('Send Us a Message')}</h2>
-    </div>
+    </article>
     <p>
       {t('At Elite, we are always here to assist you. Whether you have questions about our services, need support with your projects, or want to discuss new ideas, our team is ready to help. Reach out to us, and we will get back to you as soon as possible to provide the best solutions for your business needs.')}
     </p>
-  </div>
-</div>
+  </article>
+</article>
 
             <form
               onSubmit={(e) => e.preventDefault()}
@@ -120,9 +118,9 @@ const Contact = () => {
               action="assets/php/form-process.php"
               name="contactForm"
             >
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="form-group">
+              <article className="row">
+                <article className="col-md-6">
+                  <article className="form-group">
                     <input
                       type="text"
                       id="name"
@@ -133,11 +131,11 @@ const Contact = () => {
                       required
                       data-error="Please enter your name"
                     />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-group">
+                    <article className="help-block with-errors" />
+                  </article>
+                </article>
+                <article className="col-md-6">
+                  <article className="form-group">
                     <input
                       type="text"
                       id="phone_number"
@@ -148,11 +146,11 @@ const Contact = () => {
                       required
                       data-error="Please enter your Phone Number"
                     />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-group">
+                    <article className="help-block with-errors" />
+                  </article>
+                </article>
+                <article className="col-md-6">
+                  <article className="form-group">
                     <input
                       type="email"
                       id="email"
@@ -163,11 +161,11 @@ const Contact = () => {
                       required
                       data-error="Please enter your Email"
                     />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-group">
+                    <article className="help-block with-errors" />
+                  </article>
+                </article>
+                <article className="col-md-6">
+                  <article className="form-group">
                     <input
                       type="text"
                       id="subject"
@@ -178,11 +176,11 @@ const Contact = () => {
                       required
                       data-error="Please enter your Subject"
                     />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-md-12">
-                  <div className="form-group">
+                    <article className="help-block with-errors" />
+                  </article>
+                </article>
+                <article className="col-md-12">
+                  <article className="form-group">
                     <textarea
                       name="message"
                       id="message"
@@ -193,21 +191,21 @@ const Contact = () => {
                       data-error="Please enter your Message"
                       defaultValue={""}
                     />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-xl-12">
-                  <div className="form-group text-center mb-0">
+                    <article className="help-block with-errors" />
+                  </article>
+                </article>
+                <article className="col-xl-12">
+                  <article className="form-group text-center mb-0">
                     <button type="submit" className="theme-btn style-two">
                       {t('send message')} <i className="far fa-long-arrow-right" />
                     </button>
-                    <div id="msgSubmit" className="hidden" />
-                  </div>
-                </div>
-              </div>
+                    <article id="msgSubmit" className="hidden" />
+                  </article>
+                </article>
+              </article>
             </form>
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
     </Layout>
   );

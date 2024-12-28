@@ -48,33 +48,33 @@ const services = [
     const { t } = useTranslation();
     return (
       <section className="services-area bgc-lighter pt-75 pb-10 rel z-1">
-        <div className="container">
-          <div className="row medium-gap">
-            <div className="col-xl-4 col-md-6">
-              <div className="section-title mb-60 wow fadeInUp delay-0-2s">
+        <article className="container">
+          <article className="row medium-gap">
+            <article className="col-xl-4 col-md-6">
+              <article className="section-title mb-60 wow fadeInUp delay-0-2s">
                 <span className="sub-title mb-15">Latest Services</span>
                 <h2>We Provide Best IT Services</h2>
-              </div>
-            </div>
+              </article>
+            </article>
             {services.map((service, index) => (
-              <div className="col-xl-4 col-md-6" key={index}>
-                <div className={`service-two-item wow fadeInUp delay-${service.delay}`}>
-                  <div className="icon">
+              <article className="col-xl-4 col-md-6" key={index}>
+                <article className={`service-two-item wow fadeInUp delay-${service.delay}`}>
+                  <article className="icon">
                     <i className={service.icon} />
-                  </div>
-                  <div className="content">
+                  </article>
+                  <article className="content">
                     <h4>
                       <Link legacyBehavior  href={service.link}>
                         {t(service.title)}
                       </Link>
                     </h4>
                     <p>{t(service.description)}</p>
-                  </div>
-                </div>
-              </div>
+                  </article>
+                </article>
+              </article>
             ))}
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
     );
   };

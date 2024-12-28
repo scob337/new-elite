@@ -61,17 +61,17 @@ const WhyChooseUs = () => {
   const { t } = useTranslation();
   return (
 <section className="why-choose-us-area py-130 rpy-100 rel z-1">
-  <div className="container">
-    <div className="row justify-content-center">
-      <div className="col-xl-8">
-        <div className="section-title text-center mb-45 wow fadeInUp delay-0-2s">
+  <article className="container">
+    <article className="row justify-content-center">
+      <article className="col-xl-8">
+        <article className="section-title text-center mb-45 wow fadeInUp delay-0-2s">
           <span className="sub-title mb-15">{t('Why Choose Us')}</span>
           <h2>{t('Top-Notch Software Development and Digital Transformation')}</h2>
-        </div>
-      </div>
-    </div>
+        </article>
+      </article>
+    </article>
     <Tab.Container defaultActiveKey={"wc-tap1"}>
-      <div className="why-choose-tab">
+      <article className="why-choose-tab">
         <Nav
           as={"ul"}
           className="nav nav-pills nav-fill mb-80 rmb-50 wow fadeInUp delay-0-4s"
@@ -93,14 +93,14 @@ const WhyChooseUs = () => {
         <Tab.Content className="tab-content">
           {services.map((service) => (
             <Tab.Pane className="tab-pane fade" eventKey={service.id} key={service.id}>
-              <div className="row gap-90 align-items-center">
-                <div className="col-lg-6">
-                  <div className="why-choose-image rmb-55">
+              <article className="row gap-90 align-items-center">
+                <article className="col-lg-6">
+                  <article className="why-choose-image rmb-55">
                     <img  loading="lazy" src={service.image} alt="Why Choose" />
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="why-choose-content">
+                  </article>
+                </article>
+                <article className="col-lg-6">
+                  <article className="why-choose-content">
                     <h3>{t(service.title)}</h3>
                     <p>{service.description}</p>
                     <ul className="list-style-one pt-5">
@@ -113,16 +113,16 @@ const WhyChooseUs = () => {
                         {t('Learn More')} <i className="fas fa-long-arrow-right" />
                       </a>
                     </Link>
-                  </div>
-                </div>
-              </div>
+                  </article>
+                </article>
+              </article>
             </Tab.Pane>
           ))}
         </Tab.Content>
-      </div>
+      </article>
     </Tab.Container>
-  </div>
-  <div className="why-choose-shapes">
+  </article>
+  <article className="why-choose-shapes">
     <img
     loading="lazy"
       className="shape one"
@@ -135,7 +135,7 @@ const WhyChooseUs = () => {
       src="assets/images/about/why-choose-shape2.png"
       alt="Shape"
     />
-  </div>
+  </article>
 </section>
 
   )

@@ -47,79 +47,79 @@ const MobileAppDevelopment = () => {
                   </Head>
       <PageBanner pageName={"Mobile App Development Services"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
-        <div className="container">
-          <div className="row gap-100">
-            <div className="col-lg-8">
-              <div className="service-details-content">
-                <div className="section-title mb-30">
+        <article className="container">
+          <article className="row gap-100">
+            <article className="col-lg-8">
+              <article className="service-details-content">
+                <article className="section-title mb-30">
                   <h2>{t('Expert Mobile App Development Services to Take Your Business Mobile')}</h2>
-                </div>
+                </article>
                 <p>
                   {t('At Elite, we specialize in building high-quality, custom mobile apps for iOS and Android. Our mobile app development services are tailored to meet the unique needs of your business, helping you reach a wider audience and provide a seamless mobile experience to your users.')}
                 </p>
-                <div className="image my-40 wow fadeInUp delay-0-2s">
+                <article className="image my-40 wow fadeInUp delay-0-2s">
                   <img
                     src="assets/images/services/service-details.jpg"
                     alt="Mobile App Development Services"
                   />
-                </div>
-                <div className="row">
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                </article>
+                <article className="row">
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
                     <h3>{t('Why Mobile App Development is Crucial for Your Business Growth')}</h3>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
                       <li>{t('Enhance Customer Engagement with Mobile Accessibility')}</li>
                       <li>{t('Streamline Operations and Improve Efficiency')}</li>
                       <li>{t('Reach a Broader Audience Across Platforms')}</li>
                     </ul>
-                  </div>
-                </div>
-                <div className="row pb-30">
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                </article>
+                <article className="row pb-30">
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
                       {t('Mobile apps are an essential tool for modern businesses to stay competitive. They offer your customers convenience, accessibility, and direct communication. With our expertise, we ensure that your app meets the highest standards of design, functionality, and performance.')}
                     </p>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <div className="image">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                    <article className="image">
                       <img
                         src="assets/images/services/service-middle.jpg"
                         alt="Mobile App Development Process"
                       />
-                    </div>
-                  </div>
-                </div>
+                    </article>
+                  </article>
+                </article>
                 <h3>{t('Our Mobile App Development Strategy and Process')}</h3>
                 <p>
                   {t('Our development process focuses on understanding your target audience, business goals, and technical requirements. We offer end-to-end mobile app development services, from idea conceptualization to post-launch support, ensuring that your app performs optimally at every stage.')}
                 </p>
-                <div
+                <article
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
                   id="faq-accordion"
                 >
                   <JeenaAccordion accordionsTitle={accordionTitle} accordionContent={accordionContent}/>
-                </div>
-              </div>
-            </div>
+                </article>
+              </article>
+            </article>
 
             <ServiceAside />
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
 
-      <div className="next-prev-service pb-80 rpb-50">
-        <div className="container">
+      <article className="next-prev-service pb-80 rpb-50">
+        <article className="container">
           <hr />
-          <div className="next-prev-service mt-80">
-            <div className="next-prev-item wow fadeInLeft delay-0-2s">
-              <div className="image">
+          <article className="next-prev-service mt-80">
+            <article className="next-prev-item wow fadeInLeft delay-0-2s">
+              <article className="image">
                 <img
                   src="assets/images/services/service-prev.jpg"
                   alt="Web Development"
                 />
-              </div>
-              <div className="content">
+              </article>
+              <article className="content">
                 <h4>
                   <Link legacyBehavior  legacyBehavior href="/web-development">
                     {t('Web Development')}
@@ -130,15 +130,15 @@ const MobileAppDevelopment = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-            </div>
+              </article>
+            </article>
 
             <Link legacyBehavior  legacyBehavior href="/services">
               <a className="show-all" />
             </Link>
 
-            <div className="next-prev-item wow fadeInRight delay-0-2s">
-              <div className="content">
+            <article className="next-prev-item wow fadeInRight delay-0-2s">
+              <article className="content">
                 <h4>
                   <Link legacyBehavior  legacyBehavior href="/social-media">
                     {t('Social Media')}
@@ -149,17 +149,17 @@ const MobileAppDevelopment = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-              <div className="image">
+              </article>
+              <article className="image">
                 <img
                   src="assets/images/services/service-next.jpg"
                   alt="Mobile App Development Services"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </article>
+            </article>
+          </article>
+        </article>
+      </article>
     </Layout>
   );
 };

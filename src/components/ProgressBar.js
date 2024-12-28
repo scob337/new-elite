@@ -3,7 +3,7 @@ import Counter from "./Counter";
 
 const ProgressBar = ({ value, color, extraCls, emptyFill, withoutCounter }) => {
   return (
-    <div
+    <article
       className={`chart-circle ${extraCls ? extraCls : "one"}`}
       style={{ width: 130, height: 130 }}
     >
@@ -27,7 +27,7 @@ const ProgressBar = ({ value, color, extraCls, emptyFill, withoutCounter }) => {
           <span>%</span>
         </span>
       )}
-    </div>
+    </article>
   );
 };
 export default ProgressBar;

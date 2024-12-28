@@ -46,84 +46,84 @@ const SEO = () => {
                               </Head>
       <PageBanner pageName={"SEO Services"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
-        <div className="container">
-          <div className="row gap-100">
-          <div className="col-lg-8">
-  <div className="service-details-content">
-    <div className="section-title mb-30">
+        <article className="container">
+          <article className="row gap-100">
+          <article className="col-lg-8">
+  <article className="service-details-content">
+    <article className="section-title mb-30">
       <h2>{t('Professional SEO Services to Rank Your Website Higher')}</h2>
-    </div>
+    </article>
     <p>
       {t('At Elite, we offer expert SEO services that are tailored to improve your website’s search engine ranking, drive organic traffic, and increase your online visibility. Our team specializes in white-hat SEO strategies that help businesses achieve long-term results and stay ahead of the competition.')}
     </p>
-    <div className="image my-40 wow fadeInUp delay-0-2s">
+    <article className="image my-40 wow fadeInUp delay-0-2s">
       <img
         src="assets/images/services/service-details.jpg"
         alt="SEO Services"
       />
-    </div>
-    <div className="row">
-      <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+    </article>
+    <article className="row">
+      <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
         <h3>{t('Why SEO is Essential for Your Business Growth')}</h3>
-      </div>
-      <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+      </article>
+      <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
         <ul className="list-style-one">
           <li>{t('Increase Organic Traffic and Visibility')}</li>
           <li>{t('Improve Website Rankings on Search Engines')}</li>
           <li>{t('Boost User Engagement and Conversion Rates')}</li>
         </ul>
-      </div>
-    </div>
-    <div className="row pb-30">
-      <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+      </article>
+    </article>
+    <article className="row pb-30">
+      <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
         <p>
           {t('SEO is critical for any business looking to succeed online. Our team employs the latest SEO trends and strategies to ensure your website is fully optimized for search engines like Google. We focus on on-page SEO, off-page optimization, and technical improvements to help your business rank higher and attract the right audience.')}
         </p>
-      </div>
-      <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-        <div className="image">
+      </article>
+      <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+        <article className="image">
           <img
             src="assets/images/services/service-middle.jpg"
             alt="SEO Process"
           />
-        </div>
-      </div>
-    </div>
+        </article>
+      </article>
+    </article>
     <h3>{t('SEO Strategy and Process')}</h3>
     <p>
       {t('Our SEO experts follow a data-driven approach to create custom strategies that align with your business goals. We begin by conducting a thorough SEO audit, identifying areas for improvement, and implementing changes that will improve your websites search engine rankings and performance.')}
     </p>
-    <div
+    <article
       className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
       id="faq-accordion"
     >
 
       <JeenaAccordion accordionsTitle={accordionTitle} accordionContent={accordionContent}/>
 
-    </div>
-  </div>
-</div>
+    </article>
+  </article>
+</article>
 
 
             <ServiceAside/>
 
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
       {/* Service Details Area end */}
       {/* Next Prev Service start */}
-      <div className="next-prev-service pb-80 rpb-50">
-        <div className="container">
+      <article className="next-prev-service pb-80 rpb-50">
+        <article className="container">
           <hr />
-          <div className="next-prev-service mt-80">
-            <div className="next-prev-item wow fadeInLeft delay-0-2s">
-              <div className="image">
+          <article className="next-prev-service mt-80">
+            <article className="next-prev-item wow fadeInLeft delay-0-2s">
+              <article className="image">
                 <img
                   src="assets/images/services/service-prev.jpg"
                   alt="SEO Service"
                 />
-              </div>
-              <div className="content">
+              </article>
+              <article className="content">
                 <h4>
                   <Link legacyBehavior   href="/content-writing">
                     {t('Content Writing ')}
@@ -134,15 +134,15 @@ const SEO = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-            </div>
+              </article>
+            </article>
             
             <Link legacyBehavior   href="/services">
               <a className="show-all" />
             </Link>
 
-            <div className="next-prev-item wow fadeInRight delay-0-2s">
-              <div className="content">
+            <article className="next-prev-item wow fadeInRight delay-0-2s">
+              <article className="content">
                 <h4>
                   <Link legacyBehavior   href="/digital-marketing">
                     {t('Digital Marketing')}
@@ -153,17 +153,17 @@ const SEO = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-              <div className="image">
+              </article>
+              <article className="image">
                 <img
                   src="assets/images/services/service-next.jpg"
                   alt="SEO Services"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </article>
+            </article>
+          </article>
+        </article>
+      </article>
     </Layout>
   );
 };

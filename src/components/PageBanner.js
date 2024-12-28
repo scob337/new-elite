@@ -8,8 +8,8 @@ const { t } = useTranslation();
       className="page-banner-area bgs-cover py-135 rpy-100"
       style={{ backgroundImage: "url(assets/images/background/banner.jpg)" }}
     >
-      <div className="container">
-        <div className="banner-inner text-white text-center">
+      <article className="container">
+        <article className="banner-inner text-white text-center">
           <h1 className="page-title wow fadeInUp delay-0-2s animated">
             {t(pageTitle ? pageTitle : pageName)}
           </h1>
@@ -23,8 +23,8 @@ const { t } = useTranslation();
               <li className="breadcrumb-item active">{t(pageName)}</li>
             </ol>
           </nav>
-        </div>
-      </div>
+        </article>
+      </article>
     </section>
   );
 };

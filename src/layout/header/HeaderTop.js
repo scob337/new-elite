@@ -2,19 +2,19 @@ import Link from "next/link";
 
 const HeaderTop = () => {
   return (
-    <div className="header-top-wrap bgc-secondary">
-      <div className="container-fluid">
-        <div className="header-top">
-          <div className="text">
+    <article className="header-top-wrap bgc-secondary">
+      <article className="container-fluid">
+        <article className="header-top">
+          <article className="text">
             <span className="hello">Hello</span> We’re professional IT solutions
             company. Let’s work together{" "}
             <Link legacyBehavior   href="/contact">
               <a>Contact Us</a>
             </Link>
-          </div>
-        </div>
-      </div>
-    </div>
+          </article>
+        </article>
+      </article>
+    </article>
   );
 };
 export default HeaderTop;

@@ -17,15 +17,15 @@ export default class TestimonialsSlider extends Component {
   render() {
     return (
       <Fragment>
-        <div className="row justify-content-between align-items-end mb-30">
-          <div className="col-lg-8">
-            <div className="section-title mb-25 wow fadeInRight delay-0-2s">
+        <article className="row justify-content-between align-items-end mb-30">
+          <article className="col-lg-8">
+            <article className="section-title mb-25 wow fadeInRight delay-0-2s">
               <span className="sub-title mb-15">Clients Feedback</span>
               <h2>What Our Clients Say Us</h2>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="slider-arrow mb-25 text-lg-end">
+            </article>
+          </article>
+          <article className="col-lg-4">
+            <article className="slider-arrow mb-25 text-lg-end">
               <button
                 className="slick-arrow testi-prev"
                 onClick={this.previous}
@@ -35,110 +35,110 @@ export default class TestimonialsSlider extends Component {
               <button className="slick-arrow testi-next" onClick={this.next}>
                 <i className="far fa-angle-right" />
               </button>
-            </div>
-          </div>
-        </div>
+            </article>
+          </article>
+        </article>
         <Slider
           {...testimonialSlider}
           ref={(c) => (this.slider = c)}
           className="testimonial-slider"
         >
-          <div className="testimonial-item wow fadeInUp delay-0-2s">
-            <div className="image">
+          <article className="testimonial-item wow fadeInUp delay-0-2s">
+            <article className="image">
               <img
                 src="assets/images/testimonials/testi-author1.jpg"
                 alt="Author"
               />
-            </div>
-            <div className="content">
-              <div className="testi-header">
+            </article>
+            <article className="content">
+              <article className="testi-header">
                 <h4>Excellent Works</h4>
-                <div className="ratting">
+                <article className="ratting">
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star-half-alt" />
-                </div>
-              </div>
-              <div className="testi-text">
+                </article>
+              </article>
+              <article className="testi-text">
                 Sed ut perspiciatis unde omnis iste natus voluptatem accus
                 antiume dolorem queauy antium totam aperiam eaque quaey abillosa
                 inventore veritatis vitaec
-              </div>
-              <div className="testi-footer">
-                <div className="icon">
+              </article>
+              <article className="testi-footer">
+                <article className="icon">
                   <i className="flaticon-quotation" />
-                </div>
-                <div className="title">
+                </article>
+                <article className="title">
                   <h4>Andrew D. Bricker</h4>
                   <span className="designation">CEO &amp; Founder</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="testimonial-item wow fadeInUp delay-0-4s">
-            <div className="content">
-              <div className="testi-header">
+                </article>
+              </article>
+            </article>
+          </article>
+          <article className="testimonial-item wow fadeInUp delay-0-4s">
+            <article className="content">
+              <article className="testi-header">
                 <h4>Excellent Works</h4>
-                <div className="ratting">
+                <article className="ratting">
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star-half-alt" />
-                </div>
-              </div>
-              <div className="testi-text">
+                </article>
+              </article>
+              <article className="testi-text">
                 On the other hand denounce righteous indignations and dislike
                 men who beguiled and demoralized by the charms of pleasure
                 moment blinded foresee
-              </div>
-              <div className="testi-footer">
-                <div className="icon">
+              </article>
+              <article className="testi-footer">
+                <article className="icon">
                   <i className="flaticon-quotation" />
-                </div>
-                <div className="title">
+                </article>
+                <article className="title">
                   <h4>Jose T. McMichael</h4>
                   <span className="designation">Senior Manager</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="testimonial-item wow fadeInUp delay-0-6s">
-            <div className="image">
+                </article>
+              </article>
+            </article>
+          </article>
+          <article className="testimonial-item wow fadeInUp delay-0-6s">
+            <article className="image">
               <img
                 src="assets/images/testimonials/testi-author4.jpg"
                 alt="Author"
               />
-            </div>
-            <div className="content">
-              <div className="testi-header">
+            </article>
+            <article className="content">
+              <article className="testi-header">
                 <h4>Excellent Works</h4>
-                <div className="ratting">
+                <article className="ratting">
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star-half-alt" />
-                </div>
-              </div>
-              <div className="testi-text">
+                </article>
+              </article>
+              <article className="testi-text">
                 Unde omnis iste natus voluptatem accus antiume dolorem queauy
                 antium totam aperiam eaque quaey abillosa inventore veritatis
                 etuarchite beatae vitaec
-              </div>
-              <div className="testi-footer">
-                <div className="icon">
+              </article>
+              <article className="testi-footer">
+                <article className="icon">
                   <i className="flaticon-quotation" />
-                </div>
-                <div className="title">
+                </article>
+                <article className="title">
                   <h4>Andrew D. Bricker</h4>
                   <span className="designation">CEO &amp; Founder</span>
-                </div>
-              </div>
-            </div>
-          </div>
+                </article>
+              </article>
+            </article>
+          </article>
         </Slider>
       </Fragment>
     );
@@ -195,42 +195,42 @@ const TestimonialsSlider2 = () => {
         ref={(slider) => setSlider2(slider)}
         className="testi-image-slider"
       >
-        <div className="testi-image-item">
+        <article className="testi-image-item">
           <img
             src="assets/images/testimonials/testi-author1.jpg"
             alt="Author"
           />
-        </div>
-        <div className="testi-image-item">
+        </article>
+        <article className="testi-image-item">
           <img
             src="assets/images/testimonials/testi-author2.jpg"
             alt="Author"
           />
-        </div>
-        <div className="testi-image-item">
+        </article>
+        <article className="testi-image-item">
           <img
             src="assets/images/testimonials/testi-author3.jpg"
             alt="Author"
           />
-        </div>
-        <div className="testi-image-item">
+        </article>
+        <article className="testi-image-item">
           <img
             src="assets/images/testimonials/testi-author4.jpg"
             alt="Author"
           />
-        </div>
-        <div className="testi-image-item">
+        </article>
+        <article className="testi-image-item">
           <img
             src="assets/images/testimonials/testi-author5.jpg"
             alt="Author"
           />
-        </div>
-        <div className="testi-image-item">
+        </article>
+        <article className="testi-image-item">
           <img
             src="assets/images/testimonials/testi-author1.jpg"
             alt="Author"
           />
-        </div>
+        </article>
       </Slider>
       <Slider
         {...slider}
@@ -238,72 +238,72 @@ const TestimonialsSlider2 = () => {
         ref={(slider) => setSlider1(slider)}
         className="testi-content-slider"
       >
-        <div className="testi-content-item">
+        <article className="testi-content-item">
           <p>
             Sed ut perspiciatis unde omnis iste natus voluptatem accus antiume
             dolorem queauy antium totam aperiam eaque quae abillosa inventore
             veritatis etuarchite beatae vitaec voluptas sit aspernatur autodit
           </p>
-          <div className="author">
+          <article className="author">
             <span className="h4">Andrew D. Bricker</span>
             <span>CEO &amp; Founder</span>
-          </div>
-        </div>
-        <div className="testi-content-item">
+          </article>
+        </article>
+        <article className="testi-content-item">
           <p>
             Sed ut perspiciatis unde omnis iste natus voluptatem accus antiume
             dolorem queauy antium totam aperiam eaque quae abillosa inventore
             veritatis etuarchite beatae vitaec voluptas sit aspernatur autodit
           </p>
-          <div className="author">
+          <article className="author">
             <span className="h4">Andrew D. Bricker</span>
             <span>CEO &amp; Founder</span>
-          </div>
-        </div>
-        <div className="testi-content-item">
+          </article>
+        </article>
+        <article className="testi-content-item">
           <p>
             Sed ut perspiciatis unde omnis iste natus voluptatem accus antiume
             dolorem queauy antium totam aperiam eaque quae abillosa inventore
             veritatis etuarchite beatae vitaec voluptas sit aspernatur autodit
           </p>
-          <div className="author">
+          <article className="author">
             <span className="h4">Andrew D. Bricker</span>
             <span>CEO &amp; Founder</span>
-          </div>
-        </div>
-        <div className="testi-content-item">
+          </article>
+        </article>
+        <article className="testi-content-item">
           <p>
             Sed ut perspiciatis unde omnis iste natus voluptatem accus antiume
             dolorem queauy antium totam aperiam eaque quae abillosa inventore
             veritatis etuarchite beatae vitaec voluptas sit aspernatur autodit
           </p>
-          <div className="author">
+          <article className="author">
             <span className="h4">Andrew D. Bricker</span>
             <span>CEO &amp; Founder</span>
-          </div>
-        </div>
-        <div className="testi-content-item">
+          </article>
+        </article>
+        <article className="testi-content-item">
           <p>
             Sed ut perspiciatis unde omnis iste natus voluptatem accus antiume
             dolorem queauy antium totam aperiam eaque quae abillosa inventore
             veritatis etuarchite beatae vitaec voluptas sit aspernatur autodit
           </p>
-          <div className="author">
+          <article className="author">
             <span className="h4">Andrew D. Bricker</span>
             <span>CEO &amp; Founder</span>
-          </div>
-        </div>
-        <div className="testi-content-item">
+          </article>
+        </article>
+        <article className="testi-content-item">
           <p>
             Sed ut perspiciatis unde omnis iste natus voluptatem accus antiume
             dolorem queauy antium totam aperiam eaque quae abillosa inventore
             veritatis etuarchite beatae vitaec voluptas sit aspernatur autodit
           </p>
-          <div className="author">
+          <article className="author">
             <span className="h4">Andrew D. Bricker</span>
             <span>CEO &amp; Founder</span>
-          </div>
-        </div>
+          </article>
+        </article>
       </Slider>
     </Fragment>
   );

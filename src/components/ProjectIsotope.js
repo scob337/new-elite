@@ -17,10 +17,10 @@ const ProjectIsotope = () => {
     }, 1000);
   }, []);
   return (
-    <div className="row project-active">
-      <div className="col-xl-6 col-lg-8 item">
-        <div className="project-grid-item wow fadeInUp delay-0-2s">
-          <div className="image">
+    <article className="row project-active">
+      <article className="col-xl-6 col-lg-8 item">
+        <article className="project-grid-item wow fadeInUp delay-0-2s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry1.jpg"
               alt="Project Masonry"
@@ -29,8 +29,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry1.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 Web Development
@@ -41,12 +41,12 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6 item">
-        <div className="project-grid-item wow fadeInUp delay-0-4s">
-          <div className="image">
+          </article>
+        </article>
+      </article>
+      <article className="col-xl-3 col-lg-4 col-md-6 item">
+        <article className="project-grid-item wow fadeInUp delay-0-4s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry2.jpg"
               alt="Project Masonry"
@@ -55,8 +55,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry2.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 Mobile Applications
@@ -67,12 +67,12 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6 item">
-        <div className="project-grid-item wow fadeInUp delay-0-6s">
-          <div className="image">
+          </article>
+        </article>
+      </article>
+      <article className="col-xl-3 col-lg-4 col-md-6 item">
+        <article className="project-grid-item wow fadeInUp delay-0-6s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry3.jpg"
               alt="Project Masonry"
@@ -81,8 +81,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry3.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 IT Consulting
@@ -93,12 +93,12 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6 item">
-        <div className="project-grid-item wow fadeInUp delay-0-2s">
-          <div className="image">
+          </article>
+        </article>
+      </article>
+      <article className="col-xl-3 col-lg-4 col-md-6 item">
+        <article className="project-grid-item wow fadeInUp delay-0-2s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry4.jpg"
               alt="Project Masonry"
@@ -107,8 +107,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry4.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 Business Analysis
@@ -119,12 +119,12 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6 item">
-        <div className="project-grid-item wow fadeInUp delay-0-2s">
-          <div className="image">
+          </article>
+        </article>
+      </article>
+      <article className="col-xl-3 col-lg-4 col-md-6 item">
+        <article className="project-grid-item wow fadeInUp delay-0-2s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry5.jpg"
               alt="Project Masonry"
@@ -133,8 +133,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry5.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 UX/UI Strategy
@@ -145,12 +145,12 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6 item">
-        <div className="project-grid-item wow fadeInUp delay-0-2s">
-          <div className="image">
+          </article>
+        </article>
+      </article>
+      <article className="col-xl-3 col-lg-4 col-md-6 item">
+        <article className="project-grid-item wow fadeInUp delay-0-2s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry6.jpg"
               alt="Project Masonry"
@@ -159,8 +159,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry6.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 Digital Analysis
@@ -171,12 +171,12 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6 item">
-        <div className="project-grid-item wow fadeInUp delay-0-2s">
-          <div className="image">
+          </article>
+        </article>
+      </article>
+      <article className="col-xl-3 col-lg-4 col-md-6 item">
+        <article className="project-grid-item wow fadeInUp delay-0-2s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry7.jpg"
               alt="Project Masonry"
@@ -185,8 +185,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry7.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 IT Consulting
@@ -197,12 +197,12 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-6 col-lg-8 item">
-        <div className="project-grid-item wow fadeInUp delay-0-2s">
-          <div className="image">
+          </article>
+        </article>
+      </article>
+      <article className="col-xl-6 col-lg-8 item">
+        <article className="project-grid-item wow fadeInUp delay-0-2s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry8.jpg"
               alt="Project Masonry"
@@ -211,8 +211,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry8.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 Mobile Application Development
@@ -223,12 +223,12 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6 item">
-        <div className="project-grid-item wow fadeInUp delay-0-2s">
-          <div className="image">
+          </article>
+        </article>
+      </article>
+      <article className="col-xl-3 col-lg-4 col-md-6 item">
+        <article className="project-grid-item wow fadeInUp delay-0-2s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry9.jpg"
               alt="Project Masonry"
@@ -237,8 +237,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry9.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 Web Design
@@ -249,12 +249,12 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6 item">
-        <div className="project-grid-item wow fadeInUp delay-0-2s">
-          <div className="image">
+          </article>
+        </article>
+      </article>
+      <article className="col-xl-3 col-lg-4 col-md-6 item">
+        <article className="project-grid-item wow fadeInUp delay-0-2s">
+          <article className="image">
             <img
               src="assets/images/projects/project-masonry10.jpg"
               alt="Project Masonry"
@@ -263,8 +263,8 @@ const ProjectIsotope = () => {
               className="plus"
               href="assets/images/projects/project-masonry10.jpg"
             />
-          </div>
-          <div className="content">
+          </article>
+          <article className="content">
             <h5>
               <Link legacyBehavior  legacyBehavior href="project-details">
                 Product Engineering
@@ -275,10 +275,10 @@ const ProjectIsotope = () => {
                 <i className="far fa-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
-    </div>
+          </article>
+        </article>
+      </article>
+    </article>
   );
 };
 export default ProjectIsotope;

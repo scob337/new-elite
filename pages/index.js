@@ -28,14 +28,14 @@ const Index2 = () => {
         style={{ backgroundImage: "url(assets/images/hero/hero-two.jpg)" }}
       >
 
-        <div className="container">
+        <article className="container">
           <HomeBanner />
           <FeaturesGrid />
-        </div>
+        </article>
 
-        <div className="hero-shapes-two">
+        <article className="hero-shapes-two">
           <img  loading="lazy" src="assets/images/hero/hero-bg-lines.png" alt="BG Lines" />
-        </div>
+        </article>
       </section>
       {/* Hero Section End */}
 

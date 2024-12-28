@@ -23,9 +23,9 @@ export default class Hero4Slider extends Component {
           ref={(c) => (this.slider = c)}
           className="slider-two-active"
         >
-          <div className="slider-item-two">
-            <div className="container">
-              <div className="slide-content">
+          <article className="slider-item-two">
+            <article className="container">
+              <article className="slide-content">
                 <span className="sub-title">Welcome to Jeena</span>
                 <h1>IT Services Agency</h1>
                 <Link legacyBehavior  legacyBehavior href="/about">
@@ -39,18 +39,18 @@ export default class Hero4Slider extends Component {
                 >
                   <i className="fas fa-play" /> <span>How IT Works</span>
                 </a>
-              </div>
-            </div>
-            <div
+              </article>
+            </article>
+            <article
               className="slider-image"
               style={{
                 backgroundImage: "url(assets/images/slider/slider1.jpg)",
               }}
             />
-          </div>
-          <div className="slider-item-two">
-            <div className="container">
-              <div className="slide-content">
+          </article>
+          <article className="slider-item-two">
+            <article className="container">
+              <article className="slide-content">
                 <span className="sub-title">IT Solution Comapny</span>
                 <h1>IT Services Agency</h1>
                 <Link legacyBehavior  legacyBehavior href="/about">
@@ -63,18 +63,18 @@ export default class Hero4Slider extends Component {
                     Contact Us <i className="fas fa-long-arrow-right" />
                   </a>
                 </Link>
-              </div>
-            </div>
-            <div
+              </article>
+            </article>
+            <article
               className="slider-image"
               style={{
                 backgroundImage: "url(assets/images/slider/slider2.jpg)",
               }}
             />
-          </div>
-          <div className="slider-item-two">
-            <div className="container">
-              <div className="slide-content">
+          </article>
+          <article className="slider-item-two">
+            <article className="container">
+              <article className="slide-content">
                 <span className="sub-title">Welcome to Jeena</span>
                 <h1>IT Services Agency</h1>
                 <Link legacyBehavior  legacyBehavior href="/about">
@@ -88,18 +88,18 @@ export default class Hero4Slider extends Component {
                 >
                   <i className="fas fa-play" /> <span>How IT Works</span>
                 </a>
-              </div>
-            </div>
-            <div
+              </article>
+            </article>
+            <article
               className="slider-image"
               style={{
                 backgroundImage: "url(assets/images/slider/slider3.jpg)",
               }}
             />
-          </div>
-          <div className="slider-item-two">
-            <div className="container">
-              <div className="slide-content">
+          </article>
+          <article className="slider-item-two">
+            <article className="container">
+              <article className="slide-content">
                 <span className="sub-title">IT Solution Comapny</span>
                 <h1>IT Services Agency</h1>
                 <Link legacyBehavior  legacyBehavior href="/about">
@@ -112,18 +112,18 @@ export default class Hero4Slider extends Component {
                     Contact Us <i className="fas fa-long-arrow-right" />
                   </a>
                 </Link>
-              </div>
-            </div>
-            <div
+              </article>
+            </article>
+            <article
               className="slider-image"
               style={{
                 backgroundImage: "url(assets/images/slider/slider4.jpg)",
               }}
             />
-          </div>
-          <div className="slider-item-two">
-            <div className="container">
-              <div className="slide-content">
+          </article>
+          <article className="slider-item-two">
+            <article className="container">
+              <article className="slide-content">
                 <span className="sub-title">Welcome to Jeena</span>
                 <h1>IT Services Agency</h1>
                 <Link legacyBehavior  legacyBehavior href="/about">
@@ -137,26 +137,26 @@ export default class Hero4Slider extends Component {
                 >
                   <i className="fas fa-play" /> <span>How IT Works</span>
                 </a>
-              </div>
-            </div>
-            <div
+              </article>
+            </article>
+            <article
               className="slider-image"
               style={{
                 backgroundImage: "url(assets/images/slider/slider5.jpg)",
               }}
             />
-          </div>
+          </article>
         </Slider>
-        <div className="slider-arrows">
-          <div className="container rel">
+        <article className="slider-arrows">
+          <article className="container rel">
             <button className="prev-slider slick-arrow" onClick={this.previous}>
               <i className="fal fa-angle-left" />
             </button>
             <button className="next-slider slick-arrow" onClick={this.next}>
               <i className="fal fa-angle-right" />
             </button>
-          </div>
-        </div>
+          </article>
+        </article>
       </Fragment>
     );
   }

@@ -6,17 +6,17 @@ import { useTranslation } from 'react-i18next';
 const UpperFooter = () => {
   const { t } = useTranslation();
   return (
-    <div className="container">
-    <div className="row medium-gap">
-      <div className="col-xl-3 col-sm-6">
-        <div className="footer-widget widget_about wow fadeInUp delay-0-2s">
-          <div className="footer-logo mb-30 ">
+    <article className="container">
+    <article className="row medium-gap">
+      <article className="col-xl-3 col-sm-6">
+        <article className="footer-widget widget_about wow fadeInUp delay-0-2s">
+          <article className="footer-logo mb-30 ">
             <Link legacyBehavior   href="/">
               <a>
                 <img  loading="lazy" src="assets/images/logos/logo-one.png" alt="Logo" />
               </a>
             </Link>
-          </div>
+          </article>
           <p>
             {t('FooterLogoDesc')}
           </p>
@@ -25,13 +25,13 @@ const UpperFooter = () => {
             {t('FooterLogoLearnMore')} <i className="fas fa-long-arrow-right" />
             </a>
           </Link>
-        </div>
-      </div>
+        </article>
+      </article>
         
         <FooterLinks/>
 
-    </div>
-  </div>
+    </article>
+  </article>
   )
 }
 

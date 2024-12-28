@@ -9,11 +9,11 @@ const DefaultHeader = () => {
     <header className="main-header header-two">
       <HeaderTop />
       {/* Header-Upper */}
-      <div className="header-upper bg-white">
-        <div className="container-fluid clearfix">
-          <div className={"header-inner rel d-flex align-items-center justify-content-between"}>
-            <div className="logo-outer">
-              <div className="logo bgc-gray">
+      <article className="header-upper bg-white">
+        <article className="container-fluid clearfix">
+          <article className={"header-inner rel d-flex align-items-center justify-content-between"}>
+            <article className="logo-outer">
+              <article className="logo bgc-gray">
                 <Link legacyBehavior   href="/" >
                   <a>
                     <img
@@ -23,18 +23,18 @@ const DefaultHeader = () => {
                     />
                   </a>
                 </Link>
-              </div>
-            </div>
-            <div className="nav-outer  d-flex align-items-center justify-content-between w-75">
+              </article>
+            </article>
+            <article className="nav-outer  d-flex align-items-center justify-content-between w-75">
               {/* Main Menu */}
               <Menu />
               {/* Main Menu End */}
-            </div>
+            </article>
             {/* Menu Button */}
 
-          </div>
-        </div>
-      </div>
+          </article>
+        </article>
+      </article>
       {/* End Header Upper */}
     </header>
   );

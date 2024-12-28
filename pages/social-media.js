@@ -49,82 +49,82 @@ const SocialMediaManagement = () => {
                                     </Head>
       <PageBanner pageName={"Social Media Management Services"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
-        <div className="container">
-          <div className="row gap-100">
-            <div className="col-lg-8">
-              <div className="service-details-content">
-                <div className="section-title mb-30">
+        <article className="container">
+          <article className="row gap-100">
+            <article className="col-lg-8">
+              <article className="service-details-content">
+                <article className="section-title mb-30">
                   <h2>{t('Expert Social Media Management Services to Grow Your Brand')}</h2>
-                </div>
+                </article>
                 <p>
                   {t('At Elite, we specialize in creating and executing social media strategies that help businesses grow their online presence and engage with their audience. Our services include content creation, community management, social media advertising, and more.')}
                 </p>
-                <div className="image my-40 wow fadeInUp delay-0-2s">
+                <article className="image my-40 wow fadeInUp delay-0-2s">
                   <img
                     loading="lazy"
                     src="assets/images/services/service-details.jpg"
                     alt="Social Media Management Services"
                   />
-                </div>
-                <div className="row">
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                </article>
+                <article className="row">
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
                     <h3>{t('Why Social Media is Crucial for Your Business Growth')}</h3>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
                       <li>{t('Increase Brand Awareness and Reach a Larger Audience')}</li>
                       <li>{t('Engage Directly with Customers and Build a Loyal Community')}</li>
                       <li>{t('Drive Traffic to Your Website and Boost Conversions')}</li>
                     </ul>
-                  </div>
-                </div>
-                <div className="row pb-30">
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                </article>
+                <article className="row pb-30">
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
                       {t('Social media is one of the most effective ways to connect with your audience and build your brand. We stay on top of the latest trends to ensure that your social media efforts are aligned with your business goals and optimized for maximum impact.')}
                     </p>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <div className="image">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                    <article className="image">
                       <img
                       loading="lazy"
                         src="assets/images/services/service-middle.jpg"
                         alt="Social Media Strategy"
                       />
-                    </div>
-                  </div>
-                </div>
+                    </article>
+                  </article>
+                </article>
                 <h3>{t('Our Social Media Management Strategy and Process')}</h3>
                 <p>
                   {t('Our social media strategy is tailored to help your business stand out in a crowded market. We take a holistic approach, from creating engaging content to running effective ad campaigns, ensuring your brand resonates with your audience and drives measurable results.')}
                 </p>
-                <div
+                <article
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
                   id="faq-accordion"
                 >
                   <JeenaAccordion accordionsTitle={accordionTitle} accordionContent={accordionContent}/>
-                </div>
-              </div>
-            </div>
+                </article>
+              </article>
+            </article>
 
             <ServiceAside />
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
 
-      <div className="next-prev-service pb-80 rpb-50">
-        <div className="container">
+      <article className="next-prev-service pb-80 rpb-50">
+        <article className="container">
           <hr />
-          <div className="next-prev-service mt-80">
-            <div className="next-prev-item wow fadeInLeft delay-0-2s">
-              <div className="image">
+          <article className="next-prev-service mt-80">
+            <article className="next-prev-item wow fadeInLeft delay-0-2s">
+              <article className="image">
                 <img
                 loading="lazy"
                   src="assets/images/services/service-prev.jpg"
                   alt="Content Writing"
                 />
-              </div>
-              <div className="content">
+              </article>
+              <article className="content">
                 <h4>
                   <Link legacyBehavior   href="/content-writing">
                     {t('Content Writing')}
@@ -135,15 +135,15 @@ const SocialMediaManagement = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-            </div>
+              </article>
+            </article>
 
             <Link legacyBehavior   href="/services">
               <a className="show-all" />
             </Link>
 
-            <div className="next-prev-item wow fadeInRight delay-0-2s">
-              <div className="content">
+            <article className="next-prev-item wow fadeInRight delay-0-2s">
+              <article className="content">
                 <h4>
                   <Link legacyBehavior   href="/seo">
                     {t('SEO optimization')}
@@ -154,18 +154,18 @@ const SocialMediaManagement = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-              <div className="image">
+              </article>
+              <article className="image">
                 <img
                 loading="lazy"
                   src="assets/images/services/service-next.jpg"
                   alt="Social Media Management Services"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </article>
+            </article>
+          </article>
+        </article>
+      </article>
     </Layout>
   );
 };

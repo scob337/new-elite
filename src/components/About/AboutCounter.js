@@ -35,30 +35,30 @@ const StatisticsComponent = () => {
 const { t } = useTranslation();
   return (
     <section className="statistics-area-two rel z-2">
-      <div className="container">
-        <div
+      <article className="container">
+        <article
           className="statistics-inner style-two bgs-cover text-white p-80 pb-20"
           style={{
             backgroundImage: "url(assets/images/background/statistics.jpg)",
           }}
         >
-          <div className="row align-items-xl-start align-items-center">
-            <div className="col-xl-5 col-lg-6">
-              <div className="statistics-content mb-55 wow fadeInUp delay-0-2s">
-                <div className="section-title mb-30">
+          <article className="row align-items-xl-start align-items-center">
+            <article className="col-xl-5 col-lg-6">
+              <article className="statistics-content mb-55 wow fadeInUp delay-0-2s">
+                <article className="section-title mb-30">
                   <span className="sub-title mb-15">{t('Company Statistics')}</span>
                   <h2>{t('Learn About Our Company Statistics')}</h2>
-                </div>
+                </article>
                 <a href="/about" className="read-more">
                   {t('Learn More')} <i className="fas fa-long-arrow-right" />
                 </a>
-              </div>
-            </div>
-            <div className="col-xl-7 col-lg-6">
-              <div className="row">
+              </article>
+            </article>
+            <article className="col-xl-7 col-lg-6">
+              <article className="row">
                 {statisticsData.map((stat, index) => (
-                  <div key={index} className="col-xl-3 col-small col-6">
-                    <div
+                  <article key={index} className="col-xl-3 col-small col-6">
+                    <article
                       className={`counter-item counter-text-wrap wow fadeIn${
                         index % 2 === 0 ? "Down" : "Up"
                       } delay-0-3s`}
@@ -68,14 +68,14 @@ const { t } = useTranslation();
                         <Counter end={stat.count} decimals={stat.decimals || 0} />
                       </span>
                       <span className="counter-title">{t(stat.title)}</span>
-                    </div>
-                  </div>
+                    </article>
+                  </article>
                 ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </article>
+            </article>
+          </article>
+        </article>
+      </article>
     </section>
   );
 };

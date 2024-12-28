@@ -10,19 +10,19 @@ const Footer = () => {
 
       <UpperFooter />
 
-      <div className="footer-bottom bgc-black mt-20 pt-20">
-        <div className="container">
-          <div className="row align-items-center">
+      <article className="footer-bottom bgc-black mt-20 pt-20">
+        <article className="container">
+          <article className="row align-items-center">
 
-            <div className="col-12 text-center d-flex justify-content-center">
-              <div className="copyright-text text-lg-end wow fadeInLeft delay-0-2s">
+            <article className="col-12 text-center d-flex justify-content-center">
+              <article className="copyright-text text-lg-end wow fadeInLeft delay-0-2s">
                 <p>{t('FooterCopyright')}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="footer-shapes">
+              </article>
+            </article>
+          </article>
+        </article>
+      </article>
+      <article className="footer-shapes">
         <img
         loading="lazy"
           className="shape one"
@@ -40,7 +40,7 @@ const Footer = () => {
           src="assets/images/footer/footer-right.png"
           alt="Shape"
         />
-      </div>
+      </article>
     </footer>
   );
 };

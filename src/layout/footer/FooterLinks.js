@@ -6,14 +6,14 @@ import { useTranslation } from 'react-i18next';
 const FooterLinks = () => {
   const { t } = useTranslation();
   return (
-    <div className="col-9">
-    <div className="row">
+    <article className="col-9">
+    <article className="row">
       {footerSections.map((section, index) => (
-        <div
+        <article
           key={index}
           className="col-md-4 col-6 col-small"
         >
-          <div
+          <article
             className={`footer-widget widget_nav_menu wow fadeInUp delay-${section.animationDelay}`}
           >
             <h4 className="footer-title">{t(section.title)}</h4>
@@ -26,11 +26,11 @@ const FooterLinks = () => {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
+          </article>
+        </article>
       ))}
-    </div>
-      </div>
+    </article>
+      </article>
   )
 }
 

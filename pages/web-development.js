@@ -37,79 +37,79 @@ const WebDevelopment = () => {
     <Layout>
       <PageBanner pageName={"Web Development Services"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
-        <div className="container">
-          <div className="row gap-100">
-            <div className="col-lg-8">
-              <div className="service-details-content">
-                <div className="section-title mb-30">
+        <article className="container">
+          <article className="row gap-100">
+            <article className="col-lg-8">
+              <article className="service-details-content">
+                <article className="section-title mb-30">
                   <h2>{t('Professional Web Development Services to Build Your Online Presence')}</h2>
-                </div>
+                </article>
                 <p>
                   {t('At Elite, we specialize in building custom websites that deliver results. Our services include front-end and back-end development, web design, e-commerce solutions, and CMS development. We focus on creating websites that are fast, responsive, and user-friendly.')}
                 </p>
-                <div className="image my-40 wow fadeInUp delay-0-2s">
+                <article className="image my-40 wow fadeInUp delay-0-2s">
                   <img
                     src="assets/images/services/service-details.jpg"
                     alt="Web Development Services"
                   />
-                </div>
-                <div className="row">
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                </article>
+                <article className="row">
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
                     <h3>{t('Why Web Development is Key to Your Business Growth')}</h3>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
                       <li>{t('Build a Strong Online Presence')}</li>
                       <li>{t('Enhance User Experience and Engagement')}</li>
                       <li>{t('Optimize for Mobile and Desktop Devices')}</li>
                     </ul>
-                  </div>
-                </div>
-                <div className="row pb-30">
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                  </article>
+                </article>
+                <article className="row pb-30">
+                  <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
                       {t('Having a professional website is crucial in todays digital landscape. A well-designed and functional website not only helps you attract new customers but also keeps them engaged and coming back. Our team ensures that every project meets the highest standards of design and performance.')}
                     </p>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <div className="image">
+                  </article>
+                  <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                    <article className="image">
                       <img
                         src="assets/images/services/service-middle.jpg"
                         alt="Web Development Process"
                       />
-                    </div>
-                  </div>
-                </div>
+                    </article>
+                  </article>
+                </article>
                 <h3>{t('Our Web Development Strategy and Process')}</h3>
                 <p>
                   {t('We follow a structured process to ensure the success of every project. From ideation and wireframing to development and testing, our team works closely with you to create a website that meets your needs and exceeds your expectations.')}
                 </p>
-                <div
+                <article
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
                   id="faq-accordion"
                 >
                   <JeenaAccordion accordionsTitle={accordionTitle} accordionContent={accordionContent} />
-                </div>
-              </div>
-            </div>
+                </article>
+              </article>
+            </article>
 
             <ServiceAside />
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
 
-      <div className="next-prev-service pb-80 rpb-50">
-        <div className="container">
+      <article className="next-prev-service pb-80 rpb-50">
+        <article className="container">
           <hr />
-          <div className="next-prev-service mt-80">
-            <div className="next-prev-item wow fadeInLeft delay-0-2s">
-              <div className="image">
+          <article className="next-prev-service mt-80">
+            <article className="next-prev-item wow fadeInLeft delay-0-2s">
+              <article className="image">
                 <img
                   src="assets/images/services/service-prev.jpg"
                   alt="Mobile Application"
                 />
-              </div>
-              <div className="content">
+              </article>
+              <article className="content">
                 <h4>
                   <Link legacyBehavior   href="/mobile-application">
                     {t('Mobile Application Development')}
@@ -120,15 +120,15 @@ const WebDevelopment = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-            </div>
+              </article>
+            </article>
 
             <Link legacyBehavior   href="/services2">
               <a className="show-all" />
             </Link>
 
-            <div className="next-prev-item wow fadeInRight delay-0-2s">
-              <div className="content">
+            <article className="next-prev-item wow fadeInRight delay-0-2s">
+              <article className="content">
                 <h4>
                   <Link legacyBehavior   href="/web-development">
                     {t('Web Development')}
@@ -139,17 +139,17 @@ const WebDevelopment = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-              <div className="image">
+              </article>
+              <article className="image">
                 <img
                   src="assets/images/services/service-next.jpg"
                   alt="Web Development Services"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </article>
+            </article>
+          </article>
+        </article>
+      </article>
     </Layout>
   );
 };

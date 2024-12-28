@@ -44,17 +44,17 @@ const projects = [
     const { t } = useTranslation();
     return (
       <section className="project-area-two">
-        <div className="container-fluid gap-wide">
-          <div className="row no-gap justify-content-center">
+        <article className="container-fluid gap-wide">
+          <article className="row no-gap justify-content-center">
             {projects.map((project) => (
-              <div key={project.id} className="col-xl-3 col-lg-4 col-sm-6">
-                <div
+              <article key={project.id} className="col-xl-3 col-lg-4 col-sm-6">
+                <article
                   className={`project-item wow fadeInUp delay-${project.delay}`}
                 >
-                  <div className="image">
+                  <article className="image">
                     <img  loading="lazy" src={project.image} alt="Project" />
-                  </div>
-                  <div className="content">
+                  </article>
+                  <article className="content">
                     <span className="number">{`0${project.id}`}</span>
                     <h3>{t(project.title)}</h3>
                     <p>{t(project.description)}</p>
@@ -63,12 +63,12 @@ const projects = [
                         {t('View Details')} <i className="fas fa-long-arrow-right" />
                       </a>
                     </Link>
-                  </div>
-                </div>
-              </div>
+                  </article>
+                </article>
+              </article>
             ))}
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
     );
   }

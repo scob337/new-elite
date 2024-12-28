@@ -14,7 +14,7 @@ const Layout = ({ children, header }) => {
     <Fragment>
       <VideoPopup />
       <ImageView />
-      <div className="page-wrapper">
+      <article className="page-wrapper">
         {/* Preloader */}
         {/* <Preloader /> */}
         <Header header={header} />
@@ -24,7 +24,7 @@ const Layout = ({ children, header }) => {
         {/* footer area end */}
         {/* Scroll Top Button */}
         <ScrollTopButton />
-      </div>
+      </article>
     </Fragment>
   );
 };

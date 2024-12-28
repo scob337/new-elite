@@ -56,33 +56,33 @@ const servicesContent = {
     
     return (
       <section className="services-area-two rel z-2">
-        <div className="container">
-          <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
+        <article className="container">
+          <article className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-10">{t(servicesContent.subtitle)}</span>
             <h2>{t(servicesContent.title)}</h2>
-          </div>
-          <div className="row justify-content-center">
+          </article>
+          <article className="row justify-content-center">
             {servicesContent.services.map((service, index) => (
-              <div key={index} className="col-xl-3 col-lg-4 col-md-6">
-                <div
+              <article key={index} className="col-xl-3 col-lg-4 col-md-6">
+                <article
                   className={`service-item-two wow fadeInUp delay-${0.2 * (index + 1)}s`}
                 >
-                  <div className="image">
+                  <article className="image">
                     <img  loading="lazy" src={service.image} alt="Service" />
-                  </div>
-                  <div className="content">
+                  </article>
+                  <article className="content">
                     <h4 className="title">{t(service.title)}</h4>
                     <ul className="list-style-three">
                       {service.list.map((item, i) => (
                         <li key={i}>{t(item)}</li>
                       ))}
                     </ul>
-                  </div>
-                </div>
-              </div>
+                  </article>
+                </article>
+              </article>
             ))}
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
     );
   };

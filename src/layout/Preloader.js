@@ -1,8 +1,8 @@
 const Preloader = () => {
   return (
-    <div className="preloader">
-      <div className="custom-loader" />
-    </div>
+    <article className="preloader">
+      <article className="custom-loader" />
+    </article>
   );
 };
 export default Preloader;

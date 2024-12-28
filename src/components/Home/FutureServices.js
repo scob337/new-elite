@@ -43,27 +43,27 @@ const features = [
   const FeaturesGrid = () => {
     const { t } = useTranslation();
     return (
-      <div className="row justify-content-center">
+      <article className="row justify-content-center">
         {features.map((feature, index) => (
-          <div
+          <article
             key={index}
             className="col-xl-2 col-lg-3 col-md-4 col-6 col-small"
           >
-            <div
+            <article
               className={`feature-item wow ${feature.animation} delay-0-2s`}
             >
-              <div className="icon">
+              <article className="icon">
                 <i className={feature.iconClass} />
-              </div>
+              </article>
               <h5>
                 <Link legacyBehavior  href={feature.href}>
                   {t(feature.title)}
                 </Link>
               </h5>
-            </div>
-          </div>
+            </article>
+          </article>
         ))}
-      </div>
+      </article>
     );
   };
   

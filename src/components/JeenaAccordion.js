@@ -15,7 +15,7 @@ const { t } = useTranslation();
   return (
     <Accordion defaultActiveKey={active}>
       {accordionsTitle.map((accordion) => (
-        <div className="accordion-item" key={accordion.id}>
+        <article className="accordion-item" key={accordion.id}>
           <h5 className="accordion-header">
             <Accordion.Toggle
               as="button"
@@ -28,20 +28,20 @@ const { t } = useTranslation();
           </h5>
 
           <Accordion.Collapse eventKey={accordion.id}>
-            <div className="accordion-body">
-              <div className="row">
+            <article className="accordion-body">
+              <article className="row">
                 {accordionContent
                   .filter((item) => item.id === accordion.id) // التأكد من توافق الـ content مع الـ accordion المناسب
                   .map((item) => (
-                    <div className="col-12" key={item.id}>
+                    <article className="col-12" key={item.id}>
                       <p>{t(item.content)}</p>
-                    </div>
+                    </article>
                   ))}
                 {accordionContent.length === 0 && <p>No content available</p>}
-              </div>
-            </div>
+              </article>
+            </article>
           </Accordion.Collapse>
-        </div>
+        </article>
       ))}
     </Accordion>
   );

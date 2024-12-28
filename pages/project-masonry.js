@@ -13,10 +13,10 @@ const ProjectMasonry = () => {
     <Layout>
       <PageBanner pageName={"Project Masonry"} />
       <section className="project-masonry-area rel z-2 py-130 rpy-100">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-10">
-              <div className="section-title text-center mb-50 wow fadeInUp delay-0-2s">
+        <article className="container">
+          <article className="row justify-content-center">
+            <article className="col-xl-8 col-lg-10">
+              <article className="section-title text-center mb-50 wow fadeInUp delay-0-2s">
                 <h2>Let’s Insides About Recent Project Best Work Gallery</h2>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -24,18 +24,18 @@ const ProjectMasonry = () => {
                   quae abillo inventore veritatis et quasi architecto beatae
                   vitae .
                 </p>
-              </div>
-            </div>
-          </div>
+              </article>
+            </article>
+          </article>
           <ProjectIsotope />
-          <div className="project-more-btn pt-30 text-center">
+          <article className="project-more-btn pt-30 text-center">
             <Link legacyBehavior  legacyBehavior href="/project-grid">
               <a className="theme-btn style-two wow fadeInUp delay-0-2s">
                 View More Gallery <i className="fas fa-long-arrow-right" />
               </a>
             </Link>
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
     </Layout>
   );

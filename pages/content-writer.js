@@ -47,84 +47,84 @@ const ServiceDetails = () => {
         </Head>
       <PageBanner pageName={"Content Writing"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
-        <div className="container">
-          <div className="row gap-100">
-          <div className="col-lg-8">
-  <div className="service-details-content">
-    <div className="section-title mb-30">
+        <article className="container">
+          <article className="row gap-100">
+          <article className="col-lg-8">
+  <article className="service-details-content">
+    <article className="section-title mb-30">
       <h2>{t('Content Writing Services')}</h2>
-    </div>
+    </article>
     <p>
       {t('At Elite, we offer professional content writing services designed to elevate your brands presence and engage your target audience effectively. Our team specializes in creating compelling, SEO-friendly, and tailored content to meet your business needs.')}
     </p>
-    <div className="image my-40 wow fadeInUp delay-0-2s">
+    <article className="image my-40 wow fadeInUp delay-0-2s">
       <img
         src="assets/images/services/service-details.jpg"
         alt="Service Details"
       />
-    </div>
-    <div className="row">
-      <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+    </article>
+    <article className="row">
+      <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
         <h3>{t('Empowering Your Brand with Quality Content')}</h3>
-      </div>
-      <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+      </article>
+      <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
         <ul className="list-style-one">
           <li>{t('SEO-Optimized Blog Posts')}</li>
           <li>{t('Creative Copywriting')}</li>
           <li>{t('Comprehensive Content Strategies')}</li>
         </ul>
-      </div>
-    </div>
-    <div className="row pb-30">
-      <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+      </article>
+    </article>
+    <article className="row pb-30">
+      <article className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
         <p>
           {t('Our expertise lies in crafting content that resonates with your audience, builds trust, and drives meaningful engagement. Whether its for your website, social media, or marketing campaigns, we deliver quality and consistency.')}
         </p>
-      </div>
-      <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-        <div className="image">
+      </article>
+      <article className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+        <article className="image">
           <img
             src="assets/images/services/service-middle.jpg"
             alt="Service"
           />
-        </div>
-      </div>
-    </div>
+        </article>
+      </article>
+    </article>
     <h3>{t('Service Management')}</h3>
     <p>
       {t('We understand the importance of aligning content with your brand’s voice and objectives. Our streamlined process ensures timely delivery and exceptional quality, helping your business stand out in a competitive landscape.')}
     </p>
-    <div
+    <article
       className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
       id="faq-accordion"
     >
 
       <JeenaAccordion accordionsTitle={accordionTitle} accordionContent={accordionContent}/>
 
-    </div>
-  </div>
-</div>
+    </article>
+  </article>
+</article>
 
 
             <ServiceAside/>
 
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
       {/* Service Details Area end */}
       {/* Next Prev Service start */}
-      <div className="next-prev-service pb-80 rpb-50">
-        <div className="container">
+      <article className="next-prev-service pb-80 rpb-50">
+        <article className="container">
           <hr />
-          <div className="next-prev-service mt-80">
-            <div className="next-prev-item wow fadeInLeft delay-0-2s">
-              <div className="image">
+          <article className="next-prev-service mt-80">
+            <article className="next-prev-item wow fadeInLeft delay-0-2s">
+              <article className="image">
                 <img
                   src="assets/images/services/service-prev.jpg"
                   alt="Service"
                 />
-              </div>
-              <div className="content">
+              </article>
+              <article className="content">
                 <h4>
                   <Link legacyBehavior  legacyBehavior href="services">
                     {t('SEO Optimization')}
@@ -135,13 +135,13 @@ const ServiceDetails = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-            </div>
+              </article>
+            </article>
             <Link legacyBehavior  legacyBehavior href="/services">
               <a className="show-all" />
             </Link>
-            <div className="next-prev-item wow fadeInRight delay-0-2s">
-              <div className="content">
+            <article className="next-prev-item wow fadeInRight delay-0-2s">
+              <article className="content">
                 <h4>
                   <Link legacyBehavior  legacyBehavior href="services">
                    {t('Graphic Design')}
@@ -152,17 +152,17 @@ const ServiceDetails = () => {
                     {t('Read More')} <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
-              </div>
-              <div className="image">
+              </article>
+              <article className="image">
                 <img
                   src="assets/images/services/service-next.jpg"
                   alt="Service"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </article>
+            </article>
+          </article>
+        </article>
+      </article>
     </Layout>
   );
 };

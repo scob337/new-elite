@@ -31,23 +31,23 @@ const partnersData = [
 
 const PartnersComponent = () => {
   return (
-    <div className="partners-area-three text-center rel z-1 pb-110 rpb-80">
-      <div className="container">
+    <article className="partners-area-three text-center rel z-1 pb-110 rpb-80">
+      <article className="container">
         <hr className="mb-75" />
-        <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 justify-content-center">
+        <article className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 justify-content-center">
           {partnersData.map((partner, index) => (
-            <div key={index} className="col">
+            <article key={index} className="col">
               <Link legacyBehavior   href={partner.link}>
                 <a className={`partner-item-two wow fadeInUp delay-0-${index + 3}s`}>
                   <img  loading="lazy" src={partner.image} alt={partner.alt} />
                 </a>
               </Link>
-            </div>
+            </article>
           ))}
-        </div>
+        </article>
         <hr className="mt-45" />
-      </div>
-    </div>
+      </article>
+    </article>
   );
 };
 

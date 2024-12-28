@@ -27,25 +27,25 @@ const servicesData = [
     const { t } = useTranslation();
     return (
       <section className="services-area-six pb-100 rpb-70 rel z-1">
-        <div className="container">
-          <div className="row">
+        <article className="container">
+          <article className="row">
             {servicesData.map((service, index) => (
-              <div className="col-lg-4 col-md-6" key={index}>
-                <div className={`service-item-six wow fadeInUp delay-0-${(index + 1) * 2}s`}>
-                  <div className="icon">
+              <article className="col-lg-4 col-md-6" key={index}>
+                <article className={`service-item-six wow fadeInUp delay-0-${(index + 1) * 2}s`}>
+                  <article className="icon">
                     <i className={service.icon} />
-                  </div>
+                  </article>
                   <h4>
                     <Link legacyBehavior  href={service.link}>
                       {t(service.title)}
                     </Link>
                   </h4>
                   <p>{t(service.description)}</p>
-                </div>
-              </div>
+                </article>
+              </article>
             ))}
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
     );
   };

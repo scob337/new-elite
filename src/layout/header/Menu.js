@@ -43,8 +43,8 @@ const MobileMenu = () => {
   return (
     <nav className="main-menu navbar-expand-lg mobile-menu w-100 m-auto ">
       <Accordion>
-        <div className={`navbar-header gap-5 d-flex  justify-content-between ${storedLang === 'ar' && 'flex-row-reverse'}`}>
-          <div className="mobile-logo">
+        <article className={`navbar-header gap-5 d-flex  justify-content-between ${storedLang === 'ar' && 'flex-row-reverse'}`}>
+          <article className="mobile-logo">
             <Link legacyBehavior  href="/">
                 <img
                   src="assets/images/logos/logo-one.png"
@@ -52,7 +52,7 @@ const MobileMenu = () => {
                   title="Logo"
                 />
             </Link>
-          </div>
+          </article>
 
           <Accordion.Toggle
             as={"button"}
@@ -66,7 +66,7 @@ const MobileMenu = () => {
             <span className="icon-bar" />
           </Accordion.Toggle>
 
-          <div className="menu-btns mx-3">
+          <article className="menu-btns mx-3">
             <img
               onClick={toggleLanguage}
               src={`${i18n.language === 'en' ? 'assets/images/AR.svg' : 'assets/images/EN.svg'}`}
@@ -76,8 +76,8 @@ const MobileMenu = () => {
               height={30}
               style={{ cursor: 'pointer', objectFit: 'cover' }}
             />
-          </div>
-        </div>
+          </article>
+        </article>
 
         <Accordion.Collapse eventKey="collapse" className="navbar-collapse clearfix">
           <ul className="navigation clearfix">
@@ -108,8 +108,8 @@ const DeskTopMenu = () => {
 
   return (
     <nav className="main-menu navbar-expand-lg desktop-menu mx-auto w-50">
-      <div className="navbar-header w-100">
-        <div className="mobile-logo">
+      <article className="navbar-header w-100">
+        <article className="mobile-logo">
           <Link legacyBehavior  href="/">
               <img
                 src="assets/images/logos/logo-one.png"
@@ -117,7 +117,7 @@ const DeskTopMenu = () => {
                 title="Logo"
               />
           </Link>
-        </div>
+        </article>
 
         <button
           type="button"
@@ -129,10 +129,10 @@ const DeskTopMenu = () => {
           <span className="icon-bar" />
           <span className="icon-bar" />
         </button>
-      </div>
+      </article>
 
-      <div className="navbar-collapse collapse d-flex ">
-        <div className="d-flex justify-content-between w-100">
+      <article className="navbar-collapse collapse d-flex ">
+        <article className="d-flex justify-content-between w-100">
           <ul className="navigation clearfix d-flex">
             {NavLinks.map((item, index) => (
               <li key={index} className={router.pathname === item.url ? "active" : ""}>
@@ -143,8 +143,8 @@ const DeskTopMenu = () => {
             ))}
           </ul>
 
-        </div>
-                  <div className="menu-btns mx-3 ">
+        </article>
+                  <article className="menu-btns mx-3 ">
             <img
               onClick={toggleLanguage}
               src={`${i18n.language === 'en' ? 'assets/images/AR.svg' : 'assets/images/EN.svg'}`}
@@ -154,8 +154,8 @@ const DeskTopMenu = () => {
               height={30}
               style={{ cursor: 'pointer', objectFit: 'cover' }}
             />
-          </div>
-      </div>
+          </article>
+      </article>
     </nav>
   );
 };

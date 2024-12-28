@@ -7,23 +7,23 @@ const ImgViews = ({ close, src }) => {
   });
   return (
     <Fragment>
-      <div className="mfp-bg mfp-ready" onClick={() => close(false)}></div>
-      <div
+      <article className="mfp-bg mfp-ready" onClick={() => close(false)}></article>
+      <article
         className="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"
         tabIndex={-1}
         style={{ overflow: "hidden auto" }}
       >
-        <div
+        <article
           className={` popup-container mfp-container mfp-s-ready mfp-iframe-holder mfp-img-container`}
         >
-          <div className="mfp-content" ref={domNode}>
-            <div className="mfp-iframe-scaler">
+          <article className="mfp-content" ref={domNode}>
+            <article className="mfp-iframe-scaler">
               <img  loading="lazy" className="mfp-img" src={src} />
-            </div>
-          </div>
-          <div className="mfp-preloader">Loading...</div>
-        </div>
-      </div>
+            </article>
+          </article>
+          <article className="mfp-preloader">Loading...</article>
+        </article>
+      </article>
     </Fragment>
   );
 };
