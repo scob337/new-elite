@@ -29,19 +29,19 @@ const services = [
       ],
       image: "assets/images/about/why-choose1.jpg",
     },
-    {
-      id: "wc-tap3",
-      icon: "flaticon-cyber-security-1",
-      title: "Cyber Security",
-      description:
-        "Protect your data and online presence with our robust cybersecurity services.",
-      listItems: [
-        "Advanced Threat Protection",
-        "Security Audits and Monitoring",
-        "Data Encryption & Backup",
-      ],
-      image: "assets/images/about/why-choose1.jpg",
-    },
+    // {
+    //   id: "wc-tap3",
+    //   icon: "flaticon-cyber-security-1",
+    //   title: "Cyber Security",
+    //   description:
+    //     "Protect your data and online presence with our robust cybersecurity services.",
+    //   listItems: [
+    //     "Advanced Threat Protection",
+    //     "Security Audits and Monitoring",
+    //     "Data Encryption & Backup",
+    //   ],
+    //   image: "assets/images/about/why-choose1.jpg",
+    // },
     {
       id: "wc-tap4",
       icon: "flaticon-support",
@@ -102,7 +102,7 @@ const WhyChooseUs = () => {
                 <article className="col-lg-6">
                   <article className="why-choose-content">
                     <h3>{t(service.title)}</h3>
-                    <p>{service.description}</p>
+                    <p>{t(service.description)}</p>
                     <ul className="list-style-one pt-5">
                       {service.listItems.map((item, index) => (
                         <li key={index}>{t(item)}</li>

@@ -52,8 +52,8 @@ const services = [
           <article className="row medium-gap">
             <article className="col-xl-4 col-md-6">
               <article className="section-title mb-60 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-15">Latest Services</span>
-                <h2>We Provide Best IT Services</h2>
+                <span className="sub-title mb-15">{t('Latest Services')}</span>
+                <h2>{t('We Provide Best IT Services')}</h2>
               </article>
             </article>
             {services.map((service, index) => (

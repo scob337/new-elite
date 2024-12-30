@@ -32,11 +32,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 Web Development
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>
@@ -58,11 +58,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 Mobile Applications
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>
@@ -84,11 +84,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 IT Consulting
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>
@@ -110,11 +110,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 Business Analysis
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>
@@ -136,11 +136,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 UX/UI Strategy
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>
@@ -162,11 +162,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 Digital Analysis
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>
@@ -188,11 +188,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 IT Consulting
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>
@@ -214,11 +214,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 Mobile Application Development
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>
@@ -240,11 +240,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 Web Design
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>
@@ -266,11 +266,11 @@ const ProjectIsotope = () => {
           </article>
           <article className="content">
             <h5>
-              <Link legacyBehavior  legacyBehavior href="project-details">
+              <Link legacyBehavior   href="project-details">
                 Product Engineering
               </Link>
             </h5>
-            <Link legacyBehavior  legacyBehavior href="/project-details">
+            <Link legacyBehavior   href="/project-details">
               <a className="detail-btn">
                 <i className="far fa-arrow-right" />
               </a>

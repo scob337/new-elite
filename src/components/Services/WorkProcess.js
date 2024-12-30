@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const processSteps = [
     {
       number: "01",
@@ -42,11 +44,12 @@ const processSteps = [
   ];
   
   const WorkProcess = () => {
+    const { t } = useTranslation();
     return (
       <section className="work-process-area pt-130 pb-100 rpt-100 rpb-70 rel z-1">
         <article className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
-          <span className="sub-title mb-15">Working Process</span>
-          <h2>Industry Best Practices to the Core</h2>
+          <span className="sub-title mb-15">{t('Working Process')}</span>
+          <h2>{t('Industry Best Practices to the Core')}</h2>
         </article>
         <article className="work-process-line text-center">
           <img  loading="lazy" src="assets/images/shapes/work-process-line.png" alt="line" />
@@ -60,8 +63,8 @@ const processSteps = [
                 >
                   <article className="number">{step.number}</article>
                   <article className="content">
-                    <h4>{step.title}</h4>
-                    <p>{step.description}</p>
+                    <h4>{t(step.title)}</h4>
+                    <p>{t(step.description)}</p>
                   </article>
                 </article>
               </article>

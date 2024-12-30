@@ -33,7 +33,7 @@ const customerSatisfactionContent = {
                   <span className="sub-title mb-15">{t(customerSatisfactionContent.title)}</span>
                   <h2>{t(customerSatisfactionContent.subtitle)}</h2>
                 </article>
-                <p>{customerSatisfactionContent.description}</p>
+                <p>{t(customerSatisfactionContent.description)}</p>
                 <article className="row pt-15">
                   {customerSatisfactionContent.services.map((service, index) => (
                     <article key={index} className="col-sm-6">
