@@ -1,3 +1,4 @@
+import { iterate } from 'glob';
 import Link from 'next/link';
 import React from 'react'
 import { Nav, Tab } from "react-bootstrap";
@@ -5,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 const services = [
     {
       id: "wc-tap1",
+      link:"/uidesign",
       icon: "flaticon-creativity",
       title: "UX/UI Design",
       description:
@@ -18,6 +20,7 @@ const services = [
     },
     {
       id: "wc-tap2",
+      link:"/web-development",
       icon: "flaticon-test",
       title: "Apps Development",
       description:
@@ -108,7 +111,7 @@ const WhyChooseUs = () => {
                         <li key={index}>{t(item)}</li>
                       ))}
                     </ul>
-                    <Link legacyBehavior  href="/about">
+                    <Link legacyBehavior  href={item.link}>
                       <a className="theme-btn mt-30">
                         {t('Learn More')} <i className="fas fa-long-arrow-right" />
                       </a>
