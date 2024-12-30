@@ -59,10 +59,10 @@ const services = [
             {services.map((service, index) => (
               <article className="col-xl-4 col-md-6" key={index}>
                 <article className={`service-two-item wow fadeInUp delay-${service.delay}`}>
-                  <article className="icon">
+                  <article className="icon ">
                     <i className={service.icon} />
                   </article>
-                  <article className="content">
+                  <article className="content mx-3">
                     <h4>
                       <Link legacyBehavior  href={service.link}>
                         {t(service.title)}
