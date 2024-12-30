@@ -19,7 +19,7 @@ const FooterCTA = () => {
           <span className="sub-title">{t('FooterCTATitle')}</span>
           <h2>{t('FooterCTAContent')}</h2>
         </article>
-        <Link legacyBehavior  legacyBehavior href="/contact">
+        <Link legacyBehavior  href="/contact">
           <a className="theme-btn style-three wow fadeInRight delay-0-2s">
           {t('FooterCTAButton')} <i className="fas fa-long-arrow-right" />
           </a>

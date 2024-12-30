@@ -29,7 +29,7 @@ const ProjectMasonry = () => {
           </article>
           <ProjectIsotope />
           <article className="project-more-btn pt-30 text-center">
-            <Link legacyBehavior  legacyBehavior href="/project-grid">
+            <Link legacyBehavior  href="/project-grid">
               <a className="theme-btn style-two wow fadeInUp delay-0-2s">
                 View More Gallery <i className="fas fa-long-arrow-right" />
               </a>

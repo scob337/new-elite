@@ -5,6 +5,7 @@ import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
 import { useTranslation } from "react-i18next";
+import Next_Prev_services from "@/src/components/Next_Prev_services";
 
 
 const SocialMediaManagement = () => {
@@ -112,60 +113,12 @@ const SocialMediaManagement = () => {
         </article>
       </section>
 
-      <article className="next-prev-service pb-80 rpb-50">
-        <article className="container">
-          <hr />
-          <article className="next-prev-service mt-80">
-            <article className="next-prev-item wow fadeInLeft delay-0-2s">
-              <article className="image">
-                <img
-                loading="lazy"
-                  src="assets/images/services/service-prev.jpg"
-                  alt="Content Writing"
-                />
-              </article>
-              <article className="content">
-                <h4>
-                  <Link legacyBehavior   href="/content-writing">
-                    {t('Content Writing')}
-                  </Link>
-                </h4>
-                <Link legacyBehavior   href="/content-writing">
-                  <a className="read-more">
-                    {t('Read More')} <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </article>
-            </article>
-
-            <Link legacyBehavior   href="/services">
-              <a className="show-all" />
-            </Link>
-
-            <article className="next-prev-item wow fadeInRight delay-0-2s">
-              <article className="content">
-                <h4>
-                  <Link legacyBehavior   href="/seo">
-                    {t('SEO optimization')}
-                  </Link>
-                </h4>
-                <Link legacyBehavior   href="/social-media-management">
-                  <a className="read-more">
-                    {t('Read More')} <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </article>
-              <article className="image">
-                <img
-                loading="lazy"
-                  src="assets/images/services/service-next.jpg"
-                  alt="Social Media Management Services"
-                />
-              </article>
-            </article>
-          </article>
-        </article>
-      </article>
+      <Next_Prev_services 
+                    prevTitle={"Graphic Design"}
+                    prevLink={"/graphic-design"}
+                    nextTitle={"Digital Marketing"}
+                    nextLink={"/digital-marketing"}
+                  />
     </Layout>
   );
 };

@@ -5,6 +5,7 @@ import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
 import { useTranslation } from "react-i18next";
+import Next_Prev_services from "@/src/components/Next_Prev_services";
 
 const VideoEditing = () => {
   const { t } = useTranslation();
@@ -138,26 +139,12 @@ const VideoEditing = () => {
               <a className="show-all" />
             </Link>
 
-            <article className="next-prev-item wow fadeInRight delay-0-2s">
-              <article className="content">
-                <h4>
-                  <Link legacyBehavior  href="/video-editing">
-                    {t('Video Editing')}
-                  </Link>
-                </h4>
-                <Link legacyBehavior  href="/video-editing">
-                  <a className="read-more">
-                    {t('Read More')} <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </article>
-              <article className="image">
-                <img
-                  src="assets/images/services/service-next.jpg"
-                  alt="Video Editing Services"
-                />
-              </article>
-            </article>
+            <Next_Prev_services 
+                    prevTitle={"Social Media"}
+                    prevLink={"/social-media"}
+                    nextTitle={"SEO Optimization"}
+                    nextLink={"/seo"}
+                  />
           </article>
         </article>
       </article>

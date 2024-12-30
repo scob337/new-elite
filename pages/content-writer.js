@@ -5,6 +5,7 @@ import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
 import { useTranslation } from "react-i18next";
+import Next_Prev_services from "@/src/components/Next_Prev_services";
 
 const ServiceDetails = () => {
   const { t } = useTranslation();
@@ -113,56 +114,12 @@ const ServiceDetails = () => {
       </section>
       {/* Service Details Area end */}
       {/* Next Prev Service start */}
-      <article className="next-prev-service pb-80 rpb-50">
-        <article className="container">
-          <hr />
-          <article className="next-prev-service mt-80">
-            <article className="next-prev-item wow fadeInLeft delay-0-2s">
-              <article className="image">
-                <img
-                  src="assets/images/services/service-prev.jpg"
-                  alt="Service"
-                />
-              </article>
-              <article className="content">
-                <h4>
-                  <Link legacyBehavior  legacyBehavior href="services">
-                    {t('SEO Optimization')}
-                  </Link>
-                </h4>
-                <Link legacyBehavior  legacyBehavior href="/seo">
-                  <a className="read-more">
-                    {t('Read More')} <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </article>
-            </article>
-            <Link legacyBehavior  legacyBehavior href="/services">
-              <a className="show-all" />
-            </Link>
-            <article className="next-prev-item wow fadeInRight delay-0-2s">
-              <article className="content">
-                <h4>
-                  <Link legacyBehavior  legacyBehavior href="services">
-                   {t('Graphic Design')}
-                  </Link>
-                </h4>
-                <Link legacyBehavior  legacyBehavior href="/graphic-design">
-                  <a className="read-more">
-                    {t('Read More')} <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </article>
-              <article className="image">
-                <img
-                  src="assets/images/services/service-next.jpg"
-                  alt="Service"
-                />
-              </article>
-            </article>
-          </article>
-        </article>
-      </article>
+      <Next_Prev_services 
+                    prevTitle={"SEO Optimization"}
+                    prevLink={"/seo"}
+                    nextTitle={"Graphic Design"}
+                    nextLink={"/graphic-design"}
+                  />
     </Layout>
   );
 };

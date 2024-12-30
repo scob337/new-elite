@@ -307,6 +307,10 @@ input[type=checkbox], input[type=radio] {
     color: white; }
 
 /** Button style **/
+:dir(rtl) .theme-btn i{
+  transform:rotate(180deg);
+  margin-right:10px;
+}
 .theme-btn,
 a.theme-btn {
   z-index: 1;
@@ -439,6 +443,16 @@ a.theme-btn {
       margin-left: 10px; }
 
 /* List style One */
+:dir(rtl) .list-style-one li{
+  display:flex; 
+  gap:10px;
+  align-items:center
+}
+:dir(rtl) .list-style-one li:before{
+  line-height: 0;
+  display:grid;
+  place-items:center
+}
 .list-style-one li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,6 +508,13 @@ a.theme-btn {
   content: "\f101";
   margin-right: 10px;
   font-family: 'Font Awesome 5 Pro'; }
+
+
+:dir(rtl) .list-style-three li{
+  display:flex;
+  gap:10px !important;
+  
+}
 
 /** Social Link One **/
 .social-style-one {
@@ -4309,6 +4330,8 @@ h6, .h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  gap:10px;
+
   -ms-flex-align: center;
   align-items: center; }
   .hotline > i {
@@ -4321,7 +4344,8 @@ h6, .h6 {
     color: var(--secondary-color);
     border: 2px solid var(--border-color); }
   .hotline .content {
-    line-height: 1.65; }
+    line-height: 1.65; 
+  }
     .hotline .content span {
       font-weight: 500; }
     .hotline .content a {
@@ -5178,10 +5202,12 @@ h6, .h6 {
         margin-right: auto; } }
   .next-prev-service .next-prev-item {
     margin-bottom: 30px; }
+
   .next-prev-service .next-prev-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap:10px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -7736,7 +7762,10 @@ blockquote {
     padding: 0; }
     .accordion-item .accordion-body p {
       margin: 10px 0 0; }
-
+:dir(rtl) .accordion-button  {
+  display:flex;
+    gap:20px;
+}
 .style-two .accordion-item {
   z-index: 1;
   -webkit-box-shadow: none;
@@ -8401,7 +8430,10 @@ blockquote {
     max-width: 45%;
     -webkit-animation: down-up-two 15s infinite;
     animation: down-up-two 15s infinite; }
-
+  :dir(rtl) .widget-cta .number{
+    display:flex;
+    gap:10px;
+  }
 .tag-coulds {
   display: -webkit-box;
   display: -ms-flexbox;

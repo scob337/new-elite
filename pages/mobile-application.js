@@ -5,6 +5,7 @@ import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
 import Head from 'next/head';
 import { useTranslation } from "react-i18next";
+import Next_Prev_services from "@/src/components/Next_Prev_services";
 const MobileAppDevelopment = () => {
   const accordionTitle = [
     { id: 1, title: "Why Choose Our Mobile App Development Services?" },
@@ -108,58 +109,12 @@ const MobileAppDevelopment = () => {
         </article>
       </section>
 
-      <article className="next-prev-service pb-80 rpb-50">
-        <article className="container">
-          <hr />
-          <article className="next-prev-service mt-80">
-            <article className="next-prev-item wow fadeInLeft delay-0-2s">
-              <article className="image">
-                <img
-                  src="assets/images/services/service-prev.jpg"
-                  alt="Web Development"
-                />
-              </article>
-              <article className="content">
-                <h4>
-                  <Link legacyBehavior  legacyBehavior href="/web-development">
-                    {t('Web Development')}
-                  </Link>
-                </h4>
-                <Link legacyBehavior  legacyBehavior href="/web-development">
-                  <a className="read-more">
-                    {t('Read More')} <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </article>
-            </article>
-
-            <Link legacyBehavior  legacyBehavior href="/services">
-              <a className="show-all" />
-            </Link>
-
-            <article className="next-prev-item wow fadeInRight delay-0-2s">
-              <article className="content">
-                <h4>
-                  <Link legacyBehavior  legacyBehavior href="/social-media">
-                    {t('Social Media')}
-                  </Link>
-                </h4>
-                <Link legacyBehavior  legacyBehavior href="/mobile-app-development">
-                  <a className="read-more">
-                    {t('Read More')} <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </article>
-              <article className="image">
-                <img
-                  src="assets/images/services/service-next.jpg"
-                  alt="Mobile App Development Services"
-                />
-              </article>
-            </article>
-          </article>
-        </article>
-      </article>
+      <Next_Prev_services 
+                    prevTitle={"Web Development"}
+                    prevLink={"/web-development"}
+                    nextTitle={"Content Writing"}
+                    nextLink={"/content-writing"}
+                  />
     </Layout>
   );
 };

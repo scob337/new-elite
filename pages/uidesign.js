@@ -1,6 +1,7 @@
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
 import JeenaAccordion from "@/src/components/JeenaAccordion";
+import Next_Prev_services from "@/src/components/Next_Prev_services";
 import ServiceAside from "@/src/components/ServiceAside";
 import Head from "next/head";
 import Link from "next/link";
@@ -135,58 +136,13 @@ const uidesign = () => {
         </article>
       </section>
 
-      <section className="next-prev-service pb-80 rpb-50">
-  <article className="container">
-    <hr />
-    <article className="next-prev-service mt-80">
-      <article className="next-prev-item wow fadeInLeft delay-0-2s">
-        <article className="image">
-          <img
-            loading="lazy"
-            src="assets/images/services/service-prev.jpg"
-            alt="Web Development"
-          />
-        </article>
-        <article className="content">
-          <h4>
-            <Link legacyBehavior href="/web-development">
-              <a>{t("Web Development")}</a>
-            </Link>
-          </h4>
-          <Link legacyBehavior href="/web-development">
-            <a className="read-more">
-              {t("Read More")} <i className="fal fa-angle-double-right" />
-            </a>
-          </Link>
-        </article>
-      </article>
 
-      {/* تم إزالة الـ Link الفارغة هنا */}
-
-      <article className="next-prev-item wow fadeInRight delay-0-2s">
-        <article className="content">
-          <h4>
-            <Link legacyBehavior href="/uidesign">
-              <a>{t("UI/UX Design")}</a>
-            </Link>
-          </h4>
-          <Link legacyBehavior href="/uidesign" className="read-more">
-            <a>
-              {t("Read More")} <i className="fal fa-angle-double-right" />
-            </a>
-          </Link>
-        </article>
-        <article className="image">
-          <img
-            loading="lazy"
-            src="assets/images/services/service-next.jpg"
-            alt="UI/UX Design Services"
-          />
-        </article>
-      </article>
-    </article>
-  </article>
-</section>
+                  <Next_Prev_services
+                    prevTitle={"Web Development"}
+                    prevLink={"/web-development"}
+                    nextTitle={"Mobile App Development"}
+                    nextLink={"/mobile-application"}
+                  />
 
     </Layout>
   );

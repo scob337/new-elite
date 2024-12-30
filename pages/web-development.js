@@ -1,6 +1,7 @@
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
 import JeenaAccordion from "@/src/components/JeenaAccordion";
+import Next_Prev_services from "@/src/components/Next_Prev_services";
 
 import ServiceAside from "@/src/components/ServiceAside";
 import Link from "next/link";
@@ -98,58 +99,12 @@ const WebDevelopment = () => {
         </article>
       </section>
 
-      <article className="next-prev-service pb-80 rpb-50">
-        <article className="container">
-          <hr />
-          <article className="next-prev-service mt-80">
-            <article className="next-prev-item wow fadeInLeft delay-0-2s">
-              <article className="image">
-                <img
-                  src="assets/images/services/service-prev.jpg"
-                  alt="Mobile Application"
-                />
-              </article>
-              <article className="content">
-                <h4>
-                  <Link legacyBehavior   href="/mobile-application">
-                    {t('Mobile Application Development')}
-                  </Link>
-                </h4>
-                <Link legacyBehavior   href="/mobile-application">
-                  <a className="read-more">
-                    {t('Read More')} <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </article>
-            </article>
-
-            <Link legacyBehavior   href="/services2">
-              <a className="show-all" />
-            </Link>
-
-            <article className="next-prev-item wow fadeInRight delay-0-2s">
-              <article className="content">
-                <h4>
-                  <Link legacyBehavior   href="/web-development">
-                    {t('Web Development')}
-                  </Link>
-                </h4>
-                <Link legacyBehavior   href="/web-development">
-                  <a className="read-more">
-                    {t('Read More')} <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </article>
-              <article className="image">
-                <img
-                  src="assets/images/services/service-next.jpg"
-                  alt="Web Development Services"
-                />
-              </article>
-            </article>
-          </article>
-        </article>
-      </article>
+      <Next_Prev_services 
+                    prevTitle={"UI/UX Design"}
+                    prevLink={"/uidesign"}
+                    nextTitle={"Video Editing"}
+                    nextLink={"/video-editing"}
+                  />
     </Layout>
   );
 };
